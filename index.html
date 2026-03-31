@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Central de Ajuda CLICKNEX - Documentação técnica e suporte">
+    <title>Central de Ajuda - CLICKNEX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="header-logo">
+            <img src="imgs/logo clicknex.png" class="logo"/>
+        </div>
+
+        <div class="header-actions">
+            <div class="search-container">
+                <input 
+                    type="search" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Buscar na documentação..."
+                    aria-label="Buscar"
+                >
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            
+            <a href="https://crm.clicknex.com.br/" class="btn-subscribe" target="_blank" rel="noopener noreferrer">
+                Assinar
+            </a>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">CLICKNEX</span>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Fechar menu">×</button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <a href="#central-ajuda" class="nav-item active" data-section="central-ajuda">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 14v-4M10 6h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Central de Ajuda
+                </a>
+                <a href="#conheca" class="nav-item" data-section="conheca">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 2L2 7l8 5 8-5-8-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M2 12l8 5 8-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Conheça o CLICKNEX
+                </a>
+                <a href="#diretrizes" class="nav-item" data-section="diretrizes">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 6h12M4 10h12M4 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Diretrizes e Políticas
+                </a>
+                <a href="#termos-condicoes" class="nav-item nav-item-sub" data-section="termos-condicoes">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9 12h6M9 8h6M6 12h.01M6 8h.01M4 4h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Termos e Condições
+                </a>
+                <a href="#api" class="nav-item" data-section="api">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7 8l-4 4 4 4M13 8l4 4-4 4M11 4l-2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    API Oficial
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <h3 class="nav-title">CENTRAL DO ASSINANTE</h3>
+                <a href="#atualizacoes" class="nav-item" data-section="atualizacoes">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10h12M10 4v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Atualizações e Status
+                </a>
+                <a href="#referencia-api" class="nav-item" data-section="referencia-api">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 7h14M3 12h14M7 3v14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Referência da API
+                </a>
+                <a href="#gestao" class="nav-item" data-section="gestao">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 2v16M2 10h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Gestão da Assinatura
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <h3 class="nav-title">PRIMEIRO ACESSO</h3>
+                <a href="#onboarding" class="nav-item" data-section="onboarding">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM14 8l-4 4-2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Onboarding
+                </a>
+                <a href="#instalar" class="nav-item" data-section="instalar">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3v10M6 9l4 4 4-4M3 17h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Instalar CLICKNEX
+                </a>
+                <a href="#primeiro-acesso" class="nav-item" data-section="primeiro-acesso">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 2L3 7v6c0 4 7 5 7 5s7-1 7-5V7l-7-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                    Primeiro Acesso
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <h3 class="nav-title">CONFIGURAÇÕES</h3>
+                <a href="#integracoes" class="nav-item" data-section="integracoes">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="5" cy="10" r="2" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="15" cy="10" r="2" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M7 10h6" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    Integrações
+                </a>
+                <a href="#sistema" class="nav-item" data-section="sistema">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3a7 7 0 100 14 7 7 0 000-14zM10 7v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Sistema
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+            <!-- Hero Section -->
+            <section id="central-ajuda" class="content-section active">
+                <div class="hero">
+                    <div class="hero-icon"></div>
+                    <h1 class="hero-title">Central de Ajuda CLICKNEX</h1>
+                    <p class="hero-description">
+                        Esta Central de Ajuda contém a documentação técnica para consulta e 
+                        orientação sobre as funcionalidades da plataforma.
+                    </p>
+                </div>
+
+                <div class="platform-image">
+                    <img src="imgs/teste.png" alt="Plataforma CLICKNEX" class="platform-screenshot">
+                </div>
+
+                <div class="content-text">
+                    <h2>O que é o CLICKNEX?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sequi qui facere id commodi aut autem et perferendis a, tempora, perspiciatis ex maxime accusantium atque quo impedit, vitae quasi provident.
+                    </p>
+                    <p>
+                        O sistema é instalado em um servidor do próprio, garantindo maior controle sobre 
+                        o ambiente e os dados.
+                    </p>
+
+                    <h2>Funcionalidades Principais</h2>
+                    <p>
+                        Suas funcionalidades principais incluem a gestão de múltiplos atendentes e a 
+                        criação de chatbots para automatizar respostas, melhorando a eficiência no 
+                        atendimento ao cliente. A plataforma também oferece recursos avançados de 
+                        relatórios e análises, permitindo que as empresas monitorem o desempenho e 
+                        otimizem suas estratégias de comunicação.
+                    </p>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="card-icon">🚀</div>
+                            <h3>Rápido e Eficiente</h3>
+                            <p>Atendimento ágil com automação inteligente</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="card-icon">🔒</div>
+                            <h3>Seguro</h3>
+                            <p>Seus dados protegidos em servidor próprio</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="card-icon">⚡</div>
+                            <h3>Personalizável</h3>
+                            <p>White Label com sua marca</p>
+                        </div>
+                    </div>
+
+                    <h2>Começando</h2>
+                    <p>
+                        Para começar a usar o CLICKNEX, siga os passos na seção de 
+                        <a href="#onboarding" class="text-link">Onboarding</a> ou acesse diretamente 
+                        o guia de <a href="#instalar" class="text-link">Instalação</a>.
+                    </p>
+
+                    <div class="navigation-buttons">
+                        <button class="btn-nav" data-next="conheca">
+                            Próximo: Conheça o CLICKNEX
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Outras seções serão carregadas dinamicamente -->
+            <section id="conheca" class="content-section">
+                <h1>Conheça o CLICKNEX</h1>
+                <p>Descubra todos os recursos e funcionalidades da plataforma.</p>
+            </section>
+
+            <section id="diretrizes" class="content-section">
+                <div class="hero">
+                    <div class="hero-icon">📋</div>
+                    <h1 class="hero-title">Diretrizes e Políticas</h1>
+                    <p class="hero-description">
+                        A seção "Diretrizes da Plataforma" reúne os documentos fundamentais que definem a relação 
+                        técnica, operacional e legal para o uso do software CLICKNEX.
+                    </p>
+                </div>
+
+                <div class="content-text">
+                    <div class="info-box">
+                        <p>
+                            <strong>A leitura destes artigos é recomendada para todos</strong>, pois eles estabelecem as bases de 
+                            responsabilidades, requisitos e políticas que garantem o bom funcionamento e a segurança da 
+                            sua instalação.
+                        </p>
+                    </div>
+
+                    <h2>Nesta seção você encontrará os seguintes artigos:</h2>
+                    
+                    <ul class="policy-list">
+                        <li>
+                            <a href="#termos-condicoes" class="policy-link">
+                                <span class="policy-icon">📄</span>
+                                <div class="policy-content">
+                                    <strong>Termos e Condições de Uso</strong>
+                                    <p>Regras e condições para utilização da plataforma</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#requisitos-uso" class="policy-link">
+                                <span class="policy-icon">✅</span>
+                                <div class="policy-content">
+                                    <strong>Requisitos de Uso</strong>
+                                    <p>Requisitos técnicos e operacionais necessários</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#suporte-tecnico" class="policy-link">
+                                <span class="policy-icon">🛠️</span>
+                                <div class="policy-content">
+                                    <strong>Política de Suporte Técnico</strong>
+                                    <p>Como funciona nosso suporte e atendimento</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#manutencao" class="policy-link">
+                                <span class="policy-icon">⚙️</span>
+                                <div class="policy-content">
+                                    <strong>Manutenção e Segurança</strong>
+                                    <p>Políticas de manutenção e segurança do sistema</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#api-oficial" class="policy-link">
+                                <span class="policy-icon">🔌</span>
+                                <div class="policy-content">
+                                    <strong>API Oficial e Não Oficial (WhatsApp)</strong>
+                                    <p>Diferenças entre APIs oficiais e não oficiais</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#privacidade" class="policy-link">
+                                <span class="policy-icon">🔒</span>
+                                <div class="policy-content">
+                                    <strong>Aviso de Privacidade</strong>
+                                    <p>Como tratamos seus dados e informações</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="navigation-footer">
+                        <a href="#central-ajuda" class="nav-footer-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Anterior: Central de Ajuda
+                        </a>
+                        <a href="#termos-condicoes" class="nav-footer-link">
+                            Próximo: Termos e Condições de Uso
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="update-info">
+                        <small>Atualizado há 5 dias</small>
+                    </div>
+                </div>
+            </section>
+
+            <section id="api" class="content-section">
+                <h1>API Oficial</h1>
+                <p>Documentação completa da API do CLICKNEX.</p>
+            </section>
+
+            <!-- Termos e Condições -->
+            <section id="termos-condicoes" class="content-section">
+                <div class="breadcrumb">
+                    <a href="#diretrizes">Diretrizes e Políticas</a>
+                    <span>/</span>
+                    <span>Termos e Condições Gerais de Uso e Licenciamento</span>
+                </div>
+
+                <div class="document-header">
+                    <div class="document-icon">📄</div>
+                    <h1>Termos e Condições Gerais de Uso e Licenciamento</h1>
+                    
+                    <div class="document-meta">
+                        <p><strong>Data de disponibilização:</strong> 22/05/2024</p>
+                        <p><strong>Última atualização:</strong> 27/03/2026</p>
+                    </div>
+                </div>
+
+                <div class="content-text document-content">
+                    <div class="alert-box">
+                        <p>
+                            Estes Termos e Condições de Uso ("Termos") regulam a relação comercial e o licenciamento de
+                            uso entre a empresa <strong>empresa ???</strong>, pessoa jurídica de direito
+                            privado, inscrita no CNPJ sob o nº 35.617.749/0001-67, doravante denominada "CLICKNEX" ou
+                            "<strong>LICENCIANTE</strong>", e a pessoa física ou jurídica que adquire a licença, doravante denominada
+                            "<strong>CLIENTE</strong>" ou "<strong>LICENCIADO</strong>".
+                        </p>
+                        <p>
+                            O objeto deste instrumento é o regramento da utilização do software de gestão e automação de
+                            atendimentos denominado "<strong>SISTEMA CLICKNEX</strong>", fornecido na modalidade auto-hospedada (self-hosted).
+                        </p>
+                        <p class="highlight-text">
+                            <strong>AO CONTRATAR E UTILIZAR O SISTEMA CLICKNEX, O CLIENTE DECLARA TER LIDO, COMPREENDIDO E 
+                            ACEITO INTEGRALMENTE ESTES TERMOS.</strong>
+                        </p>
+                    </div>
+
+                    <div class="toc-box">
+                        <h3>QUAIS AS INFORMAÇÕES QUE VOCÊ ENCONTRARÁ NESTES TERMOS</h3>
+                        <ol class="toc-numbered">
+                            <li><a href="#conceitos">CONCEITOS IMPORTANTES NESTES TERMOS</a></li>
+                            <li><a href="#natureza">NATUREZA E EFICÁCIA DOS TERMOS</a></li>
+                            <li><a href="#requisitos">REQUISITOS TÉCNICOS E CONDIÇÕES DE OPERAÇÃO</a></li>
+                            <li><a href="#delimitacao">DELIMITAÇÃO DE RESPONSABILIDADES E RELAÇÃO COM TERCEIROS</a></li>
+                            <li><a href="#objeto">OBJETO E LICENÇA DE USO</a></li>
+                            <li><a href="#planos">PLANOS, PAGAMENTO, RENOVAÇÃO E CANCELAMENTO</a></li>
+                            <li><a href="#suporte">POLÍTICA DE SUPORTE TÉCNICO E SLA</a></li>
+                            <li><a href="#obrigacoes">OBRIGAÇÕES, RESPONSABILIDADES E LIMITAÇÕES</a></li>
+                            <li><a href="#propriedade">PROPRIEDADE INTELECTUAL</a></li>
+                            <li><a href="#privacidade">PRIVACIDADE E PROTEÇÃO DE DADOS (LGPD)</a></li>
+                            <li><a href="#disposicoes">DISPOSIÇÕES GERAIS</a></li>
+                            <li><a href="#foro">FORO E LEGISLAÇÃO APLICÁVEL</a></li>
+                        </ol>
+                    </div>
+
+                    <h2 id="conceitos">1. CONCEITOS IMPORTANTES NESTES TERMOS</h2>
+                    <p>Para facilitar a leitura e interpretação deste documento, adotamos as seguintes definições:</p>
+                    <ul>
+                        <li><strong>Cliente (ou Licenciado):</strong> Pessoa física ou jurídica que adquire a Licença de Uso do Software CLICKNEX, responsável pelo pagamento, pela contratação da infraestrutura (VPS) e pela gestão dos Usuários e Clientes Finais (Tenants).</li>
+                        <li><strong>Sistema CLICKNEX:</strong> Software desenvolvido e de propriedade exclusiva da CLICKNEX, fornecido sob regime de licenciamento self-hosted. Trata-se de uma solução tecnológica para centralização e gestão de multicanais de atendimento e automação.</li>
+                        <li><strong>Licença de Uso Anual:</strong> Modalidade de contratação que concede ao Cliente o direito de uso do Sistema CLICKNEX pelo período de 12 (doze) meses, instalada na infraestrutura providenciada pelo Cliente.</li>
+                        <li><strong>Modelo White-Label:</strong> Característica do Sistema CLICKNEX que permite ao Cliente personalizar a identidade visual e revender o acesso ao software para terceiros sob sua própria marca.</li>
+                        <li><strong>Infraestrutura (VPS):</strong> Servidor Virtual Privado (Virtual Private Server) contratado e custeado diretamente pelo Cliente junto a terceiros, onde o Sistema CLICKNEX será instalado.</li>
+                        <li><strong>Usuário:</strong> Pessoa autorizada pelo Cliente a acessar o painel do sistema (Super Admin, Admin, supervisores ou atendentes).</li>
+                        <li><strong>Tenant (Cliente Final):</strong> Conta ou instância criada pelo Cliente dentro do Sistema CLICKNEX para revender serviços a terceiros.</li>
+                    </ul>
+
+                    <h2 id="natureza">2. NATUREZA E EFICÁCIA DOS TERMOS</h2>
+                    <p><strong>2.1.</strong> Ao adquirir a Licença de Uso, o Cliente concorda integralmente com estes Termos. A aceitação destas regras é condição indispensável para a liberação do acesso, instalação e utilização do Sistema CLICKNEX.</p>
+                    <p><strong>2.2.</strong> A realização do pagamento ou o simples início da utilização do Sistema CLICKNEX implica, para todos os fins de direito, na aceitação plena, inequívoca e irrevogável de todas as condições estabelecidas nestes Termos e suas futuras atualizações.</p>
+                    <p><strong>2.3.</strong> O Cliente reconhece que estes Termos possuem força de contrato vinculante, substituindo quaisquer acordos verbais ou trocas de mensagens anteriores.</p>
+                    <p><strong>2.4.</strong> Pela teoria da aparência, a CLICKNEX considerará válida a contratação realizada mediante o fornecimento de dados cadastrais e pagamento, declarando o Cliente que a pessoa responsável pela compra possui plenos poderes para representá-lo.</p>
+                    <p><strong>2.5.</strong> A CLICKNEX poderá alterar estes Termos a qualquer momento. O uso continuado do sistema após a publicação das alterações confirma a aceitação dos novos Termos.</p>
+
+                    <h2 id="requisitos">3. REQUISITOS TÉCNICOS E CONDIÇÕES DE OPERAÇÃO</h2>
+                    <p>Para garantir a performance, segurança e estabilidade do Sistema CLICKNEX, o Cliente deve observar rigorosamente os seguintes requisitos técnicos.</p>
+                    
+                    <h3>3.1. Requisitos da Estação de Trabalho (Usuário):</h3>
+                    <p>Recomendamos que o sistema operacional e o navegador do Usuário estejam atualizados. As máquinas utilizadas para acessar o painel devem satisfazer, no mínimo:</p>
+                    <ul>
+                        <li>Memória (RAM): 8GB ou mais.</li>
+                        <li>Processador: Intel i5 ou superior (ou equivalente).</li>
+                        <li>Conexão: Internet rápida e estável.</li>
+                    </ul>
+
+                    <h3>3.2. Requisitos do Servidor (Infraestrutura VPS):</h3>
+                    <p>A VPS onde o sistema será instalado deverá satisfazer os seguintes requisitos mínimos obrigatórios:</p>
+                    <ul>
+                        <li>Memória (RAM): 16GB ou mais.</li>
+                        <li>Processamento: 4 vCPUs ou mais.</li>
+                        <li>Latência: 50ms ou menos (recomendado servidor no Brasil ou próximo).</li>
+                        <li>Sistema Operacional: Ubuntu 20.04 ou 22.04 LTS (limpo, sem painel).</li>
+                        <li>Armazenamento: SSD ou NVMe a partir de 200GB.</li>
+                    </ul>
+
+                    <div class="note-box">
+                        <p><strong>Nota:</strong> Os requisitos detalhados e atualizados constam no link oficial da documentação técnica.</p>
+                    </div>
+
+                    <div class="navigation-footer">
+                        <a href="#diretrizes" class="nav-footer-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Voltar para Diretrizes e Políticas
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+        <div class="toc">
+            <h3>Nesta página</h3>
+            <ul class="toc-list" id="tocList">
+                <li><a href="#central-ajuda" class="toc-link active">Central de Ajuda</a></li>
+                <li><a href="#o-que-e">O que é o CLICKNEX?</a></li>
+                <li><a href="#funcionalidades">Funcionalidades Principais</a></li>
+                <li><a href="#comecando">Começando</a></li>
+            </ul>
+        </div>
+
+        <div class="feedback">
+            <h3>Isso foi útil?</h3>
+            <div class="feedback-buttons">
+                <button class="btn-feedback" data-feedback="yes" aria-label="Sim, foi útil">
+                    👍
+                </button>
+                <button class="btn-feedback" data-feedback="no" aria-label="Não foi útil">
+                    👎
+                </button>
+            </div>
+        </div>
+
+        <div class="quick-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="https://crm.clicknex.com.br/" target="_blank" rel="noopener noreferrer">Portal do Cliente</a></li>
+                <li><a href="#" class="copy-link" data-copy="url">Copiar link desta página</a></li>
+                <li><a href="#api">Documentação API</a></li>
+                <li><a href="#" id="supportLink">Suporte Técnico</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Overlay para mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
