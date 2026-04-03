@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">📊</div>
+    <div class="module-icon">
+        <i data-lucide="bar-chart-3"></i>
+    </div>
     <h1>Relatórios de Agenda</h1>
     <p class="module-description">
         Analise produtividade e cumprimento de compromissos
@@ -15,19 +17,153 @@
 <div class="content-text">
     <h2>O que são Relatórios de Agenda?</h2>
     <p>
-        Visualize métricas sobre agendamentos realizados, cancelados e pendentes. 
-        Identifique padrões de produtividade da equipe.
+        Área de inteligência para análise de performance e métricas financeiras. 
+        Visualize dados consolidados sobre agendamentos, receita e desempenho da equipe 
+        para tomar decisões estratégicas baseadas em dados reais.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">💰</div>
+            <h3>Métricas Financeiras</h3>
+            <p>Ticket médio e receita total</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">📊</div>
+            <h3>Análise de Serviços</h3>
+            <p>Serviços mais vendidos</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">📈</div>
+            <h3>Performance</h3>
+            <p>Indicadores de produtividade</p>
+        </div>
+    </div>
+
+    <h2>Como Utilizar</h2>
+    
+    <div class="feature-section">
+        <h3>Passo 1: Filtrar por Período</h3>
+        <p>No topo da tela de relatórios, você encontra o seletor de período:</p>
+        <ol class="step-list">
+            <li>Clique no campo de período</li>
+            <li>Selecione uma das opções:
+                <ul>
+                    <li><strong>Hoje:</strong> Dados do dia atual</li>
+                    <li><strong>Últimos 7 dias:</strong> Semana atual</li>
+                    <li><strong>Últimos 30 dias:</strong> Mês atual</li>
+                    <li><strong>Personalizado:</strong> Escolha data início e fim</li>
+                </ul>
+            </li>
+            <li>Os relatórios serão atualizados automaticamente</li>
+        </ol>
+    </div>
+
+    <div class="feature-section">
+        <h3>Passo 2: Analisar Ticket Médio e Receita Total</h3>
+        <p>Duas métricas financeiras essenciais são exibidas em destaque:</p>
+        <ul>
+            <li><strong>Ticket Médio:</strong> Valor médio por agendamento realizado
+                <ul>
+                    <li>Calculado dividindo receita total pelo número de atendimentos</li>
+                    <li>Indica o valor médio que cada cliente gasta</li>
+                    <li>Útil para definir metas e estratégias de precificação</li>
+                </ul>
+            </li>
+            <li><strong>Receita Total:</strong> Soma de todos os valores faturados no período
+                <ul>
+                    <li>Mostra o faturamento consolidado</li>
+                    <li>Permite comparar períodos diferentes</li>
+                    <li>Essencial para acompanhamento de metas</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Passo 3: Verificar Gráficos de Serviços Mais Vendidos</h3>
+        <p>Analise quais serviços têm maior demanda:</p>
+        <ul>
+            <li><strong>Gráfico de Barras:</strong> Mostra quantidade de cada serviço vendido</li>
+            <li><strong>Ranking:</strong> Lista ordenada dos serviços mais populares</li>
+            <li><strong>Percentual:</strong> Participação de cada serviço no total</li>
+        </ul>
+        
+        <p><strong>Use essas informações para:</strong></p>
+        <ul>
+            <li>Identificar serviços mais lucrativos</li>
+            <li>Planejar estoque e recursos</li>
+            <li>Criar promoções estratégicas</li>
+            <li>Treinar equipe nos serviços mais demandados</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Dicas de Análise</h4>
+        <ul>
+            <li>Compare períodos similares (mesmo mês do ano anterior)</li>
+            <li>Identifique tendências de crescimento ou queda</li>
+            <li>Cruze dados de serviços com ticket médio</li>
+            <li>Exporte relatórios para apresentações gerenciais</li>
+        </ul>
+    </div>
 
     <h2>Métricas Disponíveis</h2>
     
     <div class="feature-section">
-        <h3>Principais Indicadores</h3>
+        <h3>Indicadores Financeiros</h3>
         <ul>
-            <li><strong>Taxa de Cumprimento:</strong> % de agendamentos realizados</li>
-            <li><strong>Agendamentos por Tipo:</strong> Distribuição de atividades</li>
-            <li><strong>Tempo Médio:</strong> Duração média dos compromissos</li>
-            <li><strong>Produtividade por Operador:</strong> Quem cumpre mais agendamentos</li>
+            <li><strong>Receita Total:</strong> Faturamento do período selecionado</li>
+            <li><strong>Ticket Médio:</strong> Valor médio por atendimento</li>
+            <li><strong>Receita por Setor:</strong> Faturamento dividido por departamento</li>
+            <li><strong>Receita por Profissional:</strong> Performance individual de vendas</li>
         </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Indicadores de Performance</h3>
+        <ul>
+            <li><strong>Taxa de Comparecimento:</strong> % de clientes que compareceram</li>
+            <li><strong>Taxa de Cancelamento:</strong> % de agendamentos cancelados</li>
+            <li><strong>Tempo Médio de Atendimento:</strong> Duração média dos serviços</li>
+            <li><strong>Agendamentos por Profissional:</strong> Produtividade da equipe</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Análise de Serviços</h3>
+        <ul>
+            <li><strong>Serviços Mais Vendidos:</strong> Ranking de popularidade</li>
+            <li><strong>Serviços Mais Lucrativos:</strong> Maior receita gerada</li>
+            <li><strong>Tempo Médio por Serviço:</strong> Duração de cada tipo</li>
+            <li><strong>Taxa de Retorno:</strong> Clientes que agendam novamente</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Exportação de Dados</h3>
+        <p>Exporte relatórios em diferentes formatos:</p>
+        <ul>
+            <li><strong>PDF:</strong> Para apresentações e impressão</li>
+            <li><strong>Excel:</strong> Para análises detalhadas</li>
+            <li><strong>CSV:</strong> Para integração com outras ferramentas</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Importante</h4>
+        <p>
+            Os relatórios são atualizados em tempo real. Para análises históricas, 
+            sempre salve ou exporte os dados periodicamente.
+        </p>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="vendas-negocios">
+            Próximo: Vendas - Negócios
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

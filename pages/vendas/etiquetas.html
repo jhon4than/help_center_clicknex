@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">🏷️</div>
+    <div class="module-icon">
+        <i data-lucide="tag"></i>
+    </div>
     <h1>Etiquetas</h1>
     <p class="module-description">
         Organize e categorize leads, negócios e contatos com tags
@@ -15,29 +17,178 @@
 <div class="content-text">
     <h2>O que são Etiquetas?</h2>
     <p>
-        Etiquetas (ou tags) são marcadores que você pode aplicar em leads, negócios e contatos 
-        para categorizá-los e facilitar filtros e buscas.
+        Ferramenta de segmentação visual. As etiquetas servem para categorizar Leads e Negócios 
+        de forma personalizada, permitindo identificar rapidamente o perfil ou a necessidade de um contacto. 
+        São marcadores coloridos que facilitam a organização e priorização.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="palette"></i>
+            </div>
+            <h3>Visual</h3>
+            <p>Cores vibrantes para identificação rápida</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="search"></i>
+            </div>
+            <h3>Segmentação</h3>
+            <p>Filtre por perfil ou necessidade</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="bar-chart-3"></i>
+            </div>
+            <h3>Controlo</h3>
+            <p>Veja quantos leads/negócios por tag</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Criar Etiqueta</h3>
+        <h3>1. Criação Personalizada</h3>
+        <p>Crie etiquetas que façam sentido para seu negócio:</p>
         <ol class="step-list">
-            <li>Acesse <strong>Vendas</strong> → <strong>Etiquetas</strong></li>
-            <li>Clique em <strong>"+ Nova Etiqueta"</strong></li>
-            <li>Defina nome e cor</li>
-            <li>Salve</li>
+            <li>Clique no botão <strong>"+ Nova Etiqueta"</strong></li>
+            <li>Defina um <strong>nome</strong> descritivo:
+                <ul>
+                    <li><strong>"Hot Lead":</strong> Leads com alta probabilidade de compra</li>
+                    <li><strong>"Interessado em Cozinha":</strong> Segmentação por produto</li>
+                    <li><strong>"Urgente":</strong> Requer atenção imediata</li>
+                    <li><strong>"VIP":</strong> Clientes importantes</li>
+                    <li><strong>"Follow-up Semanal":</strong> Necessita acompanhamento</li>
+                </ul>
+            </li>
+            <li>Escolha uma <strong>cor vibrante</strong>:
+                <ul>
+                    <li><strong>Vermelho:</strong> Urgente, prioridade alta</li>
+                    <li><strong>Verde:</strong> Qualificado, pronto para comprar</li>
+                    <li><strong>Amarelo:</strong> Em análise, aguardando</li>
+                    <li><strong>Azul:</strong> Informativo, categorização</li>
+                    <li><strong>Roxo:</strong> VIP, especial</li>
+                </ul>
+            </li>
+            <li>Clique em <strong>"Salvar"</strong></li>
         </ol>
+        
+        <div class="tips-box">
+            <h4>💡 Dica de Cores</h4>
+            <p>Use um padrão de cores consistente em toda a equipe. Por exemplo: sempre use vermelho para urgência e verde para qualificado.</p>
+        </div>
     </div>
 
     <div class="feature-section">
-        <h3>Exemplos de Uso</h3>
+        <h3>2. Adicionar Descrição</h3>
+        <p>Documente o significado de cada etiqueta:</p>
         <ul>
-            <li><strong>Urgente:</strong> Leads que precisam de atenção imediata</li>
-            <li><strong>VIP:</strong> Clientes importantes</li>
-            <li><strong>Grande Porte:</strong> Empresas com alto potencial</li>
-            <li><strong>Recorrente:</strong> Clientes que compram regularmente</li>
+            <li>No campo <strong>"Descrição"</strong>, explique quando usar a etiqueta</li>
+            <li>Adicione critérios de aplicação</li>
+            <li>Útil para alinhar a equipe</li>
+            <li>Aparece como tooltip ao passar o mouse</li>
         </ul>
+        
+        <p><strong>Exemplo:</strong></p>
+        <div class="code-block">
+            <pre>Nome: Hot Lead
+Cor: Vermelho
+Descrição: Lead que demonstrou interesse concreto, 
+respondeu perguntas de qualificação e tem orçamento 
+definido. Prioridade máxima de follow-up.</pre>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Controlo de Uso</h3>
+        <p>Na tabela principal, o sistema mostra estatísticas de cada etiqueta:</p>
+        
+        <h4>Coluna "Leads"</h4>
+        <ul>
+            <li>Quantidade de leads com esta etiqueta</li>
+            <li>Clique no número para ver a lista filtrada</li>
+            <li>Útil para identificar etiquetas mais usadas</li>
+        </ul>
+        
+        <h4>Coluna "Negócios"</h4>
+        <ul>
+            <li>Quantidade de negócios marcados com a etiqueta</li>
+            <li>Permite análise de conversão por segmento</li>
+            <li>Identifique quais etiquetas geram mais vendas</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Análise de Performance</h4>
+            <p>Compare quantos leads têm cada etiqueta vs quantos viraram negócios. Isso mostra quais segmentos convertem melhor.</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Gestão de Etiquetas</h3>
+        <p>Use o menu de ações <strong>"..."</strong> ao lado de cada etiqueta:</p>
+        
+        <h4>Editar</h4>
+        <ul>
+            <li>Altere o nome da etiqueta</li>
+            <li>Mude a cor para melhor organização</li>
+            <li>Atualize a descrição</li>
+            <li>Alterações aplicam-se a todos os registros existentes</li>
+        </ul>
+        
+        <h4>Excluir</h4>
+        <ul>
+            <li>Remove a etiqueta do sistema</li>
+            <li>⚠️ A etiqueta será removida de todos os leads e negócios</li>
+            <li>Ação irreversível - use com cuidado</li>
+            <li>Considere desativar ao invés de excluir</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Aplicar Etiquetas</h3>
+        <p>Como usar as etiquetas criadas:</p>
+        
+        <h4>Em Leads</h4>
+        <ol class="step-list">
+            <li>Abra o lead</li>
+            <li>Clique em <strong>"Adicionar Etiqueta"</strong></li>
+            <li>Selecione uma ou múltiplas etiquetas</li>
+            <li>As etiquetas aparecem coloridas no card do lead</li>
+        </ol>
+        
+        <h4>Em Negócios</h4>
+        <ol class="step-list">
+            <li>No pipeline, clique no negócio</li>
+            <li>Adicione etiquetas para priorização</li>
+            <li>Útil para identificar negócios urgentes ou especiais</li>
+        </ol>
+        
+        <h4>Filtros</h4>
+        <ul>
+            <li>Use filtros por etiqueta para segmentar visualizações</li>
+            <li>Crie campanhas direcionadas por etiqueta</li>
+            <li>Gere relatórios específicos por segmento</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Boas Práticas</h4>
+        <ul>
+            <li>Não crie etiquetas demais - mantenha entre 5-15 principais</li>
+            <li>Use nomes claros e objetivos</li>
+            <li>Documente o significado de cada uma</li>
+            <li>Revise periodicamente etiquetas não utilizadas</li>
+            <li>Padronize o uso com toda a equipe</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="projetos-projetos">
+            Próximo: Projetos
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

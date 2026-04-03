@@ -5,56 +5,263 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">🔤</div>
-    <h1>Variáveis Personalizadas</h1>
+    <div class="module-icon">
+        <i data-lucide="code-2"></i>
+    </div>
+    <h1>Variáveis</h1>
     <p class="module-description">
-        Crie campos customizados para armazenar informações específicas
+        Gestor de campos dinâmicos do sistema
     </p>
 </div>
 
 <div class="content-text">
     <h2>O que são Variáveis?</h2>
     <p>
-        Variáveis personalizadas são campos adicionais que você pode criar para armazenar 
-        informações específicas do seu negócio em leads, contatos e negócios.
+        É o gestor de campos dinâmicos do sistema. As variáveis permitem inserir informações que mudam conforme o contexto 
+        (ex: nome do funcionário, nome da empresa, preço) dentro de mensagens padronizadas ou templates de atendimento. 
+        Isto personaliza a comunicação automaticamente, sem esforço manual do operador.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">✨</div>
+            <h3>Personalização</h3>
+            <p>Mensagens únicas para cada cliente</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">⚡</div>
+            <h3>Automação</h3>
+            <p>Sem digitação manual</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🎯</div>
+            <h3>Precisão</h3>
+            <p>Dados sempre atualizados</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Criar Variável</h3>
-        <ol class="step-list">
-            <li>Acesse <strong>Sistema</strong> → <strong>Variáveis</strong></li>
-            <li>Clique em <strong>"+ Nova Variável"</strong></li>
-            <li>Defina:
+        <h3>1. Criar Nova Variável</h3>
+        <p>No formulário <strong>"Nova Variável"</strong>, configura:</p>
+        
+        <h4>Nome da Tag</h4>
+        <ul>
+            <li>Define o nome começando sempre com <code>@</code></li>
+            <li>Exemplos válidos:
                 <ul>
-                    <li><strong>Nome:</strong> Ex: "Tamanho da Empresa"</li>
-                    <li><strong>Tipo:</strong> Texto, Número, Data, Lista</li>
-                    <li><strong>Onde usar:</strong> Leads, Contatos, Negócios</li>
+                    <li><code>@NOME_VARIAVEL</code></li>
+                    <li><code>@FUNCIONARIO</code></li>
+                    <li><code>@SITE</code></li>
+                    <li><code>@PRECO_PRODUTO</code></li>
                 </ul>
             </li>
-            <li>Salve</li>
-        </ol>
+            <li>Regras:
+                <ul>
+                    <li>Sempre em MAIÚSCULAS</li>
+                    <li>Usa underscore (_) para separar palavras</li>
+                    <li>Sem espaços ou caracteres especiais</li>
+                    <li>Deve ser descritivo e claro</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <div class="feature-section">
-        <h3>Tipos de Variáveis</h3>
+        <h3>2. Valor de Atribuição</h3>
+        <p>Escolhe o tipo de dado que a variável representa:</p>
+        
+        <h4>Fixo (Estático)</h4>
         <ul>
-            <li><strong>Texto:</strong> Campo livre</li>
-            <li><strong>Número:</strong> Valores numéricos</li>
-            <li><strong>Data:</strong> Datas específicas</li>
-            <li><strong>Lista:</strong> Opções pré-definidas</li>
-            <li><strong>Sim/Não:</strong> Checkbox</li>
+            <li><strong>O que é:</strong> Um texto que não muda</li>
+            <li><strong>Quando usar:</strong> Informações constantes da empresa</li>
+            <li><strong>Exemplos:</strong>
+                <ul>
+                    <li><code>@SITE</code> → <code>www.teusite.com</code></li>
+                    <li><code>@TELEFONE</code> → <code>+351 912 345 678</code></li>
+                    <li><code>@EMAIL</code> → <code>contato@empresa.com</code></li>
+                    <li><code>@HORARIO</code> → <code>Segunda a Sexta, 9h-18h</code></li>
+                    <li><code>@ENDERECO</code> → <code>Rua Exemplo, 123</code></li>
+                </ul>
+            </li>
+            <li>Preenche o campo "Valor Fixo" com o texto desejado</li>
+        </ul>
+        
+        <h4>Variável (Dinâmico)</h4>
+        <ul>
+            <li><strong>O que é:</strong> Dados que o sistema puxa automaticamente do banco de dados</li>
+            <li><strong>Quando usar:</strong> Informações que mudam por contexto</li>
+            <li><strong>Exemplos:</strong>
+                <ul>
+                    <li><code>@FUNCIONARIO</code> → Nome de quem está a atender</li>
+                    <li><code>@CLIENTE</code> → Nome do cliente na conversa</li>
+                    <li><code>@LEAD_TELEFONE</code> → Telefone do lead</li>
+                    <li><code>@NEGOCIO_VALOR</code> → Valor do negócio em aberto</li>
+                    <li><code>@AGENDAMENTO_DATA</code> → Data do próximo compromisso</li>
+                </ul>
+            </li>
+            <li>Seleciona o campo do banco de dados correspondente</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Uso nas Mensagens</h3>
+        <p>Para usar uma variável, basta escrever a tag exatamente como a criaste no meio de qualquer texto:</p>
+        
+        <h4>Exemplo 1: Atendimento Personalizado</h4>
+        <p><strong>Mensagem com variável:</strong></p>
+        <p><code>"Olá, sou o @FUNCIONARIO, como posso ajudar?"</code></p>
+        <p><strong>Cliente recebe:</strong></p>
+        <p><code>"Olá, sou o João Silva, como posso ajudar?"</code></p>
+        
+        <h4>Exemplo 2: Informações da Empresa</h4>
+        <p><strong>Mensagem com variável:</strong></p>
+        <p><code>"Visite nosso site @SITE ou ligue para @TELEFONE"</code></p>
+        <p><strong>Cliente recebe:</strong></p>
+        <p><code>"Visite nosso site www.empresa.com ou ligue para +351 912 345 678"</code></p>
+        
+        <h4>Exemplo 3: Dados do Negócio</h4>
+        <p><strong>Mensagem com variável:</strong></p>
+        <p><code>"Olá @CLIENTE, sua proposta de @NEGOCIO_VALOR está pronta!"</code></p>
+        <p><strong>Cliente recebe:</strong></p>
+        <p><code>"Olá Maria Santos, sua proposta de €1.500,00 está pronta!"</code></p>
+        
+        <h4>Onde Usar</h4>
+        <ul>
+            <li><strong>Templates de WhatsApp:</strong> Mensagens padronizadas</li>
+            <li><strong>Campanhas:</strong> Disparos em massa personalizados</li>
+            <li><strong>Chatbots:</strong> Respostas automáticas</li>
+            <li><strong>Agentes IA:</strong> Conversas inteligentes</li>
+            <li><strong>Respostas Rápidas:</strong> Atalhos de texto</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Gestão de Variáveis</h3>
+        <p>Na lista à direita, podes ver e gerir todas as variáveis cadastradas:</p>
+        
+        <h4>Informações Exibidas</h4>
+        <ul>
+            <li><strong>Tag:</strong> Nome da variável (ex: <code>@FUNCIONARIO</code>)</li>
+            <li><strong>Tipo:</strong> Fixo ou Dinâmico</li>
+            <li><strong>Valor:</strong> Conteúdo (se fixo) ou origem (se dinâmico)</li>
+            <li><strong>Criado em:</strong> Data de criação</li>
+            <li><strong>Usado em:</strong> Quantas mensagens/templates usam esta variável</li>
+        </ul>
+        
+        <h4>Ações Disponíveis (Menu "...")</h4>
+        <ul>
+            <li><strong>Editar:</strong> Alterar valor fixo ou origem dinâmica</li>
+            <li><strong>Ver Uso:</strong> Lista onde a variável está sendo usada</li>
+            <li><strong>Duplicar:</strong> Criar variação similar</li>
+            <li><strong>Excluir:</strong> Remover variável
+                <ul>
+                    <li>⚠️ Cuidado: Mensagens que usam esta variável ficarão com texto quebrado</li>
+                    <li>Sistema avisa se variável está em uso</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Variáveis Dinâmicas Disponíveis</h3>
+        <p>O sistema oferece acesso a diversos campos do banco de dados:</p>
+        
+        <h4>Dados do Operador</h4>
+        <ul>
+            <li><code>@FUNCIONARIO</code> → Nome do operador</li>
+            <li><code>@FUNCIONARIO_EMAIL</code> → Email do operador</li>
+            <li><code>@FUNCIONARIO_SETOR</code> → Setor do operador</li>
+        </ul>
+        
+        <h4>Dados do Cliente/Lead</h4>
+        <ul>
+            <li><code>@CLIENTE</code> → Nome do contato</li>
+            <li><code>@CLIENTE_TELEFONE</code> → Telefone</li>
+            <li><code>@CLIENTE_EMAIL</code> → Email</li>
+            <li><code>@CLIENTE_EMPRESA</code> → Nome da organização</li>
+        </ul>
+        
+        <h4>Dados de Negócio</h4>
+        <ul>
+            <li><code>@NEGOCIO_TITULO</code> → Nome do negócio</li>
+            <li><code>@NEGOCIO_VALOR</code> → Valor monetário</li>
+            <li><code>@NEGOCIO_ETAPA</code> → Etapa atual no pipeline</li>
+        </ul>
+        
+        <h4>Dados de Agendamento</h4>
+        <ul>
+            <li><code>@AGENDAMENTO_DATA</code> → Data do compromisso</li>
+            <li><code>@AGENDAMENTO_HORA</code> → Horário</li>
+            <li><code>@AGENDAMENTO_SERVICO</code> → Tipo de serviço</li>
+        </ul>
+        
+        <h4>Dados da Empresa</h4>
+        <ul>
+            <li><code>@EMPRESA_NOME</code> → Nome da empresa</li>
+            <li><code>@EMPRESA_SITE</code> → Website</li>
+            <li><code>@EMPRESA_TELEFONE</code> → Telefone principal</li>
         </ul>
     </div>
 
     <div class="tips-box">
-        <h4>💡 Exemplos de Uso</h4>
+        <h4>💡 Dica: Personalização Aumenta Engajamento</h4>
+        <p>O uso de variáveis dinâmicas aumenta a percepção de cuidado no atendimento, pois o sistema personaliza 
+        a conversa sem esforço manual do operador.</p>
         <ul>
-            <li>Número de funcionários</li>
-            <li>Segmento de atuação</li>
-            <li>Data de aniversário</li>
-            <li>Preferência de contato</li>
+            <li>Clientes sentem-se mais valorizados</li>
+            <li>Taxa de resposta aumenta</li>
+            <li>Reduz erros de digitação</li>
+            <li>Economiza tempo da equipa</li>
         </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Exemplos Práticos de Uso</h3>
+        
+        <h4>Boas-vindas Personalizado</h4>
+        <p><code>"Olá @CLIENTE! Sou @FUNCIONARIO da @EMPRESA_NOME. Como posso ajudar hoje?"</code></p>
+        
+        <h4>Confirmação de Agendamento</h4>
+        <p><code>"@CLIENTE, seu agendamento está confirmado para @AGENDAMENTO_DATA às @AGENDAMENTO_HORA. Nos vemos em breve!"</code></p>
+        
+        <h4>Follow-up de Proposta</h4>
+        <p><code>"Olá @CLIENTE, gostaria de saber se teve oportunidade de analisar nossa proposta de @NEGOCIO_VALOR?"</code></p>
+        
+        <h4>Informações de Contato</h4>
+        <p><code>"Para mais informações, visite @EMPRESA_SITE ou ligue para @EMPRESA_TELEFONE no horário @HORARIO"</code></p>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Importante</h4>
+        <ul>
+            <li>Escreve tags exatamente como cadastradas (case-sensitive)</li>
+            <li>Não esqueças o <code>@</code> no início</li>
+            <li>Se variável não existir, texto aparece literal para o cliente</li>
+            <li>Testa mensagens antes de usar em campanhas</li>
+            <li>Variáveis dinâmicas só funcionam se dados existirem no sistema</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li><strong>Nomes Descritivos:</strong> <code>@PRECO_PRODUTO</code> é melhor que <code>@P1</code></li>
+            <li><strong>Padronização:</strong> Mantém padrão de nomenclatura (MAIÚSCULAS, underscore)</li>
+            <li><strong>Documentação:</strong> Usa descrição para explicar quando usar</li>
+            <li><strong>Testes:</strong> Sempre testa variáveis antes de usar em produção</li>
+            <li><strong>Fallback:</strong> Considera o que acontece se dado não existir</li>
+            <li><strong>Revisão:</strong> Remove variáveis obsoletas periodicamente</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="sistema-auditoria">
+            Próximo: Auditoria
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">🏢</div>
+    <div class="module-icon">
+        <i data-lucide="building-2"></i>
+    </div>
     <h1>Organizações</h1>
     <p class="module-description">
         Gerencie empresas clientes e suas informações
@@ -15,31 +17,133 @@
 <div class="content-text">
     <h2>O que são Organizações?</h2>
     <p>
-        Organizações são empresas clientes cadastradas no sistema. Você pode vincular múltiplos 
-        contatos, negócios e projetos a uma mesma organização.
+        Este é o diretório central de empresas. Serve para agrupar diferentes contactos (Leads) 
+        sob uma única entidade jurídica, permitindo uma visão B2B do histórico de vendas. 
+        Ideal para gestão de contas corporativas e relacionamento com empresas.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="building-2"></i>
+            </div>
+            <h3>Visão B2B</h3>
+            <p>Gerencie empresas, não apenas contactos</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="bar-chart-3"></i>
+            </div>
+            <h3>Estatísticas Automáticas</h3>
+            <p>Histórico de negócios por empresa</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="link"></i>
+            </div>
+            <h3>Vínculos</h3>
+            <p>Múltiplos leads por organização</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Cadastrar Organização</h3>
+        <h3>1. Registo Centralizado</h3>
+        <p>Crie o perfil completo da empresa:</p>
         <ol class="step-list">
-            <li>Acesse <strong>Vendas</strong> → <strong>Organizações</strong></li>
-            <li>Clique em <strong>"+ Nova Organização"</strong></li>
-            <li>Preencha: Nome, CNPJ, Endereço, Telefone</li>
-            <li>Adicione contatos vinculados</li>
-            <li>Salve</li>
+            <li>Clique no botão <strong>"+ Nova Empresa"</strong></li>
+            <li>Preencha os dados corporativos:
+                <ul>
+                    <li><strong>Nome:</strong> Razão social ou nome fantasia</li>
+                    <li><strong>Domínio:</strong> Website da empresa (ex: empresa.com.br)</li>
+                    <li><strong>Setor:</strong> Área de atuação (Tecnologia, Varejo, Serviços, etc)</li>
+                    <li><strong>Website:</strong> URL completa do site</li>
+                </ul>
+            </li>
+            <li>Adicione informações complementares:
+                <ul>
+                    <li>CNPJ</li>
+                    <li>Endereço completo</li>
+                    <li>Telefone principal</li>
+                    <li>Email corporativo</li>
+                </ul>
+            </li>
+            <li>Clique em <strong>"Salvar"</strong></li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Informações Armazenadas</h3>
+        <h3>2. Filtros e Colunas Personalizadas</h3>
+        <p>Tal como nos Leads, você pode personalizar a visualização:</p>
+        <ol class="step-list">
+            <li>Clique no botão <strong>"Colunas"</strong> no topo da tabela</li>
+            <li>Selecione as informações que deseja exibir:
+                <ul>
+                    <li><strong>Setor:</strong> Área de atuação</li>
+                    <li><strong>Website:</strong> Link do site</li>
+                    <li><strong>Domínio:</strong> Domínio web</li>
+                    <li><strong>Negócios Ganhos:</strong> Quantidade de vendas fechadas</li>
+                    <li><strong>Negócios Abertos:</strong> Oportunidades em andamento</li>
+                    <li><strong>Valor Total:</strong> Receita gerada pela empresa</li>
+                </ul>
+            </li>
+            <li>Use filtros para segmentar por setor ou status</li>
+        </ol>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Estatísticas Automáticas</h3>
+        <p>O sistema gera automaticamente dados sobre cada organização:</p>
         <ul>
-            <li>Dados cadastrais completos</li>
-            <li>Histórico de negócios</li>
-            <li>Projetos em andamento</li>
-            <li>Contatos da empresa</li>
-            <li>Documentos anexados</li>
+            <li><strong>Negócios Ganhos:</strong> Quantas vendas foram fechadas com esta empresa</li>
+            <li><strong>Negócios Abertos:</strong> Oportunidades em andamento</li>
+            <li><strong>Valor Total Faturado:</strong> Receita gerada historicamente</li>
+            <li><strong>Ticket Médio:</strong> Valor médio por negócio</li>
+            <li><strong>Última Interação:</strong> Data do último contacto</li>
+            <li><strong>Leads Vinculados:</strong> Quantos contactos pertencem à empresa</li>
         </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Análise de Contas</h4>
+            <p>Use estas estatísticas para identificar seus melhores clientes corporativos e priorizar relacionamento.</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Vínculo de Leads</h3>
+        <p>Associe múltiplos contactos a uma organização:</p>
+        <ol class="step-list">
+            <li>Abra a página da Organização</li>
+            <li>Na aba <strong>"Contactos"</strong>, clique em <strong>"+ Adicionar Lead"</strong></li>
+            <li>Selecione leads existentes ou crie novos</li>
+            <li>Defina o cargo de cada contacto na empresa</li>
+            <li>Identifique o contacto principal (tomador de decisão)</li>
+        </ol>
+        
+        <p><strong>Benefícios do vínculo:</strong></p>
+        <ul>
+            <li>Visualize todos os contactos de uma empresa em um só lugar</li>
+            <li>Histórico unificado de interações</li>
+            <li>Facilita gestão de contas grandes com múltiplos decisores</li>
+            <li>Negócios criados a partir de qualquer lead são vinculados à organização</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Importante</h4>
+        <p>
+            Ao criar um negócio a partir de um lead vinculado a uma organização, 
+            o negócio automaticamente herda a associação com a empresa.
+        </p>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="vendas-produtos">
+            Próximo: Produtos
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

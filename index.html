@@ -311,11 +311,13 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="content-wrapper">
+        <div class="content-wrapper container">
             <!-- Central de Ajuda - Única seção inline -->
             <section id="central-ajuda" class="content-section active">
                 <div class="hero">
-                    <div class="hero-icon"></div>
+                    <div class="hero-icon">
+                        <i data-lucide="help-circle" class="hero-icon-svg"></i>
+                    </div>
                     <h1 class="hero-title">Central de Ajuda CLICKNEX</h1>
                     <p class="hero-description">
                         Esta Central de Ajuda contém a documentação técnica para consulta e 
@@ -348,17 +350,23 @@
 
                     <div class="info-cards">
                         <div class="info-card">
-                            <div class="card-icon">🚀</div>
+                            <div class="card-icon">
+                                <i data-lucide="zap"></i>
+                            </div>
                             <h3>Rápido e Eficiente</h3>
                             <p>Atendimento ágil com automação inteligente</p>
                         </div>
                         <div class="info-card">
-                            <div class="card-icon">🔒</div>
+                            <div class="card-icon">
+                                <i data-lucide="shield-check"></i>
+                            </div>
                             <h3>Seguro</h3>
                             <p>Seus dados protegidos em servidor próprio</p>
                         </div>
                         <div class="info-card">
-                            <div class="card-icon">⚡</div>
+                            <div class="card-icon">
+                                <i data-lucide="palette"></i>
+                            </div>
                             <h3>Personalizável</h3>
                             <p>White Label com sua marca</p>
                         </div>
@@ -402,10 +410,10 @@
             <h3>Isso foi útil?</h3>
             <div class="feedback-buttons">
                 <button class="btn-feedback" data-feedback="yes" aria-label="Sim, foi útil">
-                    👍
+                    <i data-lucide="thumbs-up"></i>
                 </button>
                 <button class="btn-feedback" data-feedback="no" aria-label="Não foi útil">
-                    👎
+                    <i data-lucide="thumbs-down"></i>
                 </button>
             </div>
         </div>
@@ -424,6 +432,8 @@
     <!-- Overlay para mobile -->
     <div class="overlay" id="overlay"></div>
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

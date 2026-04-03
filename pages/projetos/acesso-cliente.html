@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">🔐</div>
+    <div class="module-icon">
+        <i data-lucide="key"></i>
+    </div>
     <h1>Acesso do Cliente</h1>
     <p class="module-description">
         Permita que clientes acompanhem seus projetos
@@ -15,34 +17,178 @@
 <div class="content-text">
     <h2>O que é Acesso do Cliente?</h2>
     <p>
-        Você pode dar acesso limitado aos clientes para que acompanhem o andamento de seus 
-        projetos, vejam tarefas concluídas e façam comentários.
+        É o portal de transparência do teu sistema. Permite que geres um link seguro para que o teu cliente 
+        acompanhe, em tempo real, o andamento dos projetos dele sem precisar de ter uma conta de utilizador 
+        completa no sistema. Transparência que gera confiança e reduz solicitações de status.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">🔗</div>
+            <h3>Link Seguro</h3>
+            <p>Acesso controlado por link único</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">⏰</div>
+            <h3>Validade 30 Dias</h3>
+            <p>Renovação automática de segurança</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">👁️</div>
+            <h3>Transparência</h3>
+            <p>Cliente vê progresso em tempo real</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Conceder Acesso</h3>
+        <h3>1. Gerar Link de Acesso</h3>
+        <p>Conceda acesso ao cliente de forma simples:</p>
         <ol class="step-list">
-            <li>Abra o projeto</li>
-            <li>Clique em <strong>"Configurações"</strong> → <strong>"Acesso Cliente"</strong></li>
-            <li>Ative a opção "Permitir acesso do cliente"</li>
-            <li>Envie o link de acesso por email</li>
+            <li>Acesse <strong>Projetos</strong> → <strong>Acesso do Cliente</strong></li>
+            <li>Na lista de clientes, localize o cliente desejado</li>
+            <li>Clique no botão <strong>"🔗 Gerar Link"</strong> ao lado do nome</li>
+            <li>O sistema cria um link único e seguro instantaneamente</li>
+            <li>Copie o link gerado</li>
+            <li>Envie ao cliente por email ou WhatsApp</li>
         </ol>
+        
+        <div class="tips-box">
+            <h4>💡 Mensagem Sugerida</h4>
+            <p>"Olá! Criamos um portal exclusivo para você acompanhar o andamento do seu projeto em tempo real. Acesse: [link]"</p>
+        </div>
     </div>
 
     <div class="feature-section">
-        <h3>O que o Cliente Pode Ver</h3>
+        <h3>2. Validade do Link</h3>
+        <p>Cada link gerado tem características de segurança:</p>
         <ul>
-            <li>Progresso geral do projeto</li>
-            <li>Tarefas concluídas</li>
-            <li>Arquivos compartilhados</li>
-            <li>Comentários da equipe</li>
+            <li><strong>Validade:</strong> 30 dias a partir da geração</li>
+            <li><strong>Motivo:</strong> Questões de segurança e controle de acesso</li>
+            <li><strong>Após expiração:</strong> Cliente não consegue mais acessar</li>
+            <li><strong>Renovação:</strong> Gere um novo link quando necessário</li>
+            <li><strong>Notificação:</strong> Sistema alerta quando link está próximo de expirar</li>
+        </ul>
+        
+        <div class="alert-box">
+            <h4>⚠️ Segurança</h4>
+            <p>Links expirados automaticamente garantem que apenas clientes ativos tenham acesso aos dados dos projetos.</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Controlo de Status</h3>
+        <p>Na tabela principal, visualize o estado de cada cliente:</p>
+        
+        <h4>Status: "Sem acesso"</h4>
+        <ul>
+            <li>Nenhum link foi gerado ainda</li>
+            <li>Cliente não tem acesso ao portal</li>
+            <li>Cor: Cinza</li>
+            <li>Ação: Clique em "Gerar Link"</li>
+        </ul>
+        
+        <h4>Status: "Ativo"</h4>
+        <ul>
+            <li>Link foi gerado e está válido</li>
+            <li>Cliente pode acessar o portal</li>
+            <li>Cor: Verde</li>
+            <li>Mostra data de expiração</li>
+        </ul>
+        
+        <h4>Status: "Expirado"</h4>
+        <ul>
+            <li>Link passou dos 30 dias de validade</li>
+            <li>Cliente não consegue mais acessar</li>
+            <li>Cor: Vermelho</li>
+            <li>Ação: Gere um novo link</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Revogação de Acesso</h3>
+        <p>Tens controlo total sobre os acessos:</p>
+        <ol class="step-list">
+            <li>Na lista de clientes, localize o cliente com acesso ativo</li>
+            <li>Clique no botão <strong>"Revogar"</strong> ou no menu <strong>"..."</strong></li>
+            <li>Confirme a revogação</li>
+            <li>O link é cancelado instantaneamente</li>
+            <li>Cliente perde acesso imediatamente</li>
+        </ol>
+        
+        <p><strong>Quando revogar:</strong></p>
+        <ul>
+            <li>Projeto foi concluído e entregue</li>
+            <li>Cliente solicitou cancelamento</li>
+            <li>Suspeita de compartilhamento indevido do link</li>
+            <li>Mudança de responsável pelo projeto</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>O que o Cliente Vê</h3>
+        <p>Ao clicar no link, o cliente tem acesso a uma visão simplificada e profissional:</p>
+        
+        <h4>Informações Visíveis</h4>
+        <ul>
+            <li><strong>Lista de Projetos:</strong> Todos os projetos vinculados a ele</li>
+            <li><strong>Progresso:</strong> Barra de conclusão percentual</li>
+            <li><strong>Tarefas Concluídas:</strong> Lista do que já foi entregue</li>
+            <li><strong>Tarefas em Andamento:</strong> O que está sendo feito agora</li>
+            <li><strong>Prazos:</strong> Data de início e término previsto</li>
+            <li><strong>Status Geral:</strong> Ativo, Pausado ou Concluído</li>
+        </ul>
+        
+        <h4>Informações Ocultas (Privacidade)</h4>
+        <ul>
+            <li>Valores financeiros do projeto</li>
+            <li>Horas trabalhadas pela equipe</li>
+            <li>Tarefas marcadas como "internas"</li>
+            <li>Comentários privados da equipe</li>
+            <li>Custos e margens</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Benefícios do Portal do Cliente</h3>
+        <ul>
+            <li><strong>Transparência:</strong> Cliente vê progresso sem precisar perguntar</li>
+            <li><strong>Reduz Solicitações:</strong> Menos emails e ligações pedindo status</li>
+            <li><strong>Profissionalismo:</strong> Demonstra organização e controle</li>
+            <li><strong>Confiança:</strong> Cliente se sente mais seguro com visibilidade</li>
+            <li><strong>Satisfação:</strong> Experiência moderna e conveniente</li>
         </ul>
     </div>
 
     <div class="alert-box">
-        <h4>⚠️ Segurança</h4>
-        <p>Clientes não veem valores, horas trabalhadas ou tarefas internas marcadas como privadas.</p>
+        <h4>⚠️ Importante</h4>
+        <ul>
+            <li>Cada cliente vê apenas seus próprios projetos</li>
+            <li>Links não podem ser transferidos entre clientes</li>
+            <li>Cliente não pode editar ou adicionar tarefas</li>
+            <li>Acesso é somente leitura (read-only)</li>
+            <li>Não é necessário criar login/senha para o cliente</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li>Gere o link logo após criar o projeto</li>
+            <li>Envie junto com mensagem de boas-vindas</li>
+            <li>Renove links antes de expirarem para clientes ativos</li>
+            <li>Use como diferencial competitivo nas vendas</li>
+            <li>Mantenha projetos atualizados para boa impressão</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="atendimento-whatsapp">
+            Próximo: Atendimento - WhatsApp
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

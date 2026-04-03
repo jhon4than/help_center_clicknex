@@ -800,3 +800,340 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ========================================
+   CONTAINER CENTRALIZADO
+   ======================================== */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ========================================
+   ÍCONES LUCIDE
+   ======================================== */
+.hero-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: rgba(30, 58, 138, 0.1);
+    border-radius: 16px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero-icon-svg {
+    width: 40px;
+    height: 40px;
+    color: var(--color-accent-hover);
+}
+
+.card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(30, 58, 138, 0.1);
+    border-radius: 12px;
+    margin-bottom: var(--spacing-md);
+}
+
+.card-icon i {
+    width: 24px;
+    height: 24px;
+    color: var(--color-accent-hover);
+}
+
+.module-icon,
+.document-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: rgba(30, 58, 138, 0.1);
+    border-radius: 14px;
+    margin-bottom: var(--spacing-md);
+}
+
+.module-icon i,
+.document-icon i {
+    width: 32px;
+    height: 32px;
+    color: var(--color-accent-hover);
+}
+
+/* Ícones nos botões de feedback */
+.btn-feedback i {
+    width: 20px;
+    height: 20px;
+}
+
+/* ========================================
+   EFEITOS VISUAIS MODERNOS
+   ======================================== */
+
+/* Hover suave nos cards */
+.info-card,
+.learning-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-card:hover,
+.learning-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação de entrada para cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-card,
+.learning-card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.info-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.info-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.info-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Efeito de brilho nos botões */
+.btn-nav,
+.btn-subscribe {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-nav::before,
+.btn-subscribe::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-nav:hover::before,
+.btn-subscribe:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Efeito de pulso nos ícones */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.hero-icon:hover .hero-icon-svg,
+.card-icon:hover i,
+.module-icon:hover i {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+/* Gradiente sutil no background dos boxes */
+.tips-box,
+.info-box,
+.alert-box {
+    background: linear-gradient(135deg, var(--color-bg-secondary) 0%, rgba(30, 58, 138, 0.05) 100%);
+    transition: all 0.3s ease;
+}
+
+.tips-box:hover,
+.info-box:hover,
+.alert-box:hover {
+    transform: translateX(4px);
+    border-left-width: 4px;
+}
+
+/* Efeito de foco nos inputs */
+.search-input {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+}
+
+/* Animação suave para navegação */
+.nav-item {
+    position: relative;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--color-accent);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-item.active::before,
+.nav-item:hover::before {
+    transform: scaleY(1);
+}
+
+/* Efeito de loading suave */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.loading {
+    background: linear-gradient(
+        90deg,
+        var(--color-bg-secondary) 0%,
+        var(--color-bg-tertiary) 50%,
+        var(--color-bg-secondary) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* Sombras suaves para profundidade */
+.header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar,
+.right-sidebar {
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Transição suave para seções */
+.content-section {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efeito de hover nos links do TOC */
+.toc-link {
+    position: relative;
+    padding-left: 12px;
+}
+
+.toc-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 0;
+    background: var(--color-accent);
+    transition: height 0.3s ease;
+}
+
+.toc-link:hover::before,
+.toc-link.active::before {
+    height: 100%;
+}
+
+/* Efeito glassmorphism nos cards (opcional) */
+.info-card,
+.learning-card {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Scroll suave customizado */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animação de entrada para hero */
+.hero {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.hero-title {
+    animation: fadeInUp 0.7s ease-out;
+}
+
+.hero-description {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Efeito de hover nos botões de feedback */
+.btn-feedback {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-feedback:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.btn-feedback.active {
+    transform: scale(1.15);
+}
+
+/* Responsivo para container */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 32px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 24px 16px;
+    }
+    
+    .hero-icon {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .hero-icon-svg {
+        width: 32px;
+        height: 32px;
+    }
+}

@@ -5,46 +5,280 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">⚙️</div>
-    <h1>Configurações do WhatsApp</h1>
+    <div class="module-icon">
+        <i data-lucide="smartphone"></i>
+    </div>
+    <h1>Configurações do WhatsApp (Conexões)</h1>
     <p class="module-description">
-        Configure conexões e parâmetros do WhatsApp
+        Motor de comunicação do sistema
     </p>
 </div>
 
 <div class="content-text">
-    <h2>O que são Configurações do WhatsApp?</h2>
+    <h2>O que é Config. WhatsApp?</h2>
     <p>
-        Aqui você gerencia as conexões com WhatsApp, tanto API Oficial quanto Não Oficial, 
-        configurando números, webhooks e parâmetros de envio.
+        É o motor de comunicação do sistema. Aqui geres as instâncias (números de telefone) que serão utilizadas 
+        para enviar e receber mensagens. O sistema permite múltiplas conexões simultâneas para escalar a tua operação, 
+        garantindo que possas atender mais clientes ao mesmo tempo com diferentes números.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">📱</div>
+            <h3>Múltiplas Instâncias</h3>
+            <p>Conecte vários números simultaneamente</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🤖</div>
+            <h3>Automação</h3>
+            <p>Vincule a Chatbots e Agentes IA</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">📊</div>
+            <h3>Monitorização</h3>
+            <p>Logs webhook em tempo real</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Conectar Número</h3>
-        <ol class="step-list">
-            <li>Acesse <strong>Sistema</strong> → <strong>Config. WhatsApp</strong></li>
-            <li>Clique em <strong>"+ Adicionar Número"</strong></li>
-            <li>Escolha o tipo: API Oficial ou Não Oficial</li>
-            <li>Siga o processo de autenticação</li>
-            <li>Aguarde validação</li>
-        </ol>
+        <h3>1. Criar Nova Instância</h3>
+        <p>Clica em <strong>"+ Nova Conexão"</strong>. O sistema guiar-te-á num processo de 3 passos simples:</p>
     </div>
 
     <div class="feature-section">
-        <h3>Configurações Disponíveis</h3>
+        <h3>2. Passo 1: Configurar Instância</h3>
+        <p>Preenche os dados básicos da conexão:</p>
+        
+        <h4>Nome da Instância</h4>
         <ul>
-            <li>Mensagem de ausência automática</li>
-            <li>Horário de atendimento</li>
-            <li>Limite de mensagens por minuto</li>
-            <li>Webhooks para integrações</li>
-            <li>Backup de conversas</li>
+            <li>Dá um nome interno identificável (ex: "Suporte-Vendas", "Atendimento-Geral")</li>
+            <li><strong>Regra:</strong> Usa apenas letras, números e hífens</li>
+            <li>Não pode conter espaços ou caracteres especiais</li>
+            <li>Exemplo válido: <code>comercial-2024</code></li>
+            <li>Exemplo inválido: <code>Comercial (Principal)</code></li>
+        </ul>
+        
+        <h4>Número de Telefone</h4>
+        <ul>
+            <li>Insere o número que será conectado</li>
+            <li><strong>Formato:</strong> Com código do país (ex: +351912345678)</li>
+            <li>Deve ser um número válido de WhatsApp</li>
+            <li>Não pode estar conectado em outro sistema simultaneamente</li>
+            <li>Recomendado: Número exclusivo para uso comercial</li>
+        </ul>
+        
+        <h4>Provedor de API</h4>
+        <ul>
+            <li>Seleciona o provedor técnico que desejas utilizar</li>
+            <li>Opções disponíveis:
+                <ul>
+                    <li><strong>Evolution API:</strong> Solução não oficial, mais flexível</li>
+                    <li><strong>API Oficial Meta:</strong> Solução empresarial (configurar em módulo específico)</li>
+                    <li><strong>Outros provedores:</strong> Conforme disponibilidade</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Opções de Automação</h3>
+        <p>No momento da criação, podes ativar comportamentos automáticos para essa instância:</p>
+        
+        <h4>Ignorar Grupos</h4>
+        <ul>
+            <li>Quando ativado: Sistema não processa mensagens de grupos do WhatsApp</li>
+            <li>Útil para: Focar apenas em conversas individuais</li>
+            <li>Recomendado: Ativar se não usas grupos para atendimento</li>
+        </ul>
+        
+        <h4>Sempre Online</h4>
+        <ul>
+            <li>Mantém o status de "visto por último" sempre ativo</li>
+            <li>Cliente vê: "online" constantemente</li>
+            <li>Benefício: Passa impressão de disponibilidade 24/7</li>
+            <li>Atenção: Pode gerar expectativa de resposta imediata</li>
+        </ul>
+        
+        <h4>Marcar como Lido</h4>
+        <ul>
+            <li>Dá check azul (✓✓) automático nas mensagens recebidas</li>
+            <li>Cliente sabe: Mensagem foi visualizada</li>
+            <li>Útil para: Confirmar recebimento instantâneo</li>
+            <li>Cuidado: Cliente pode esperar resposta rápida após o check</li>
+        </ul>
+        
+        <h4>Rejeitar Chamadas</h4>
+        <ul>
+            <li>Bloqueia chamadas de voz e vídeo automaticamente</li>
+            <li>Foco: Apenas comunicação por texto</li>
+            <li>Cliente recebe: Mensagem de chamada rejeitada</li>
+            <li>Recomendado: Para operações que trabalham exclusivamente com mensagens</li>
+            <li>Pode enviar mensagem automática: "Preferimos atendimento por texto"</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Conectar (QR Code)</h3>
+        <p>Após preencher os dados, o sistema gerará um QR Code nos passos seguintes:</p>
+        
+        <h4>Processo de Conexão</h4>
+        <ol class="step-list">
+            <li>Clique em <strong>"Gerar QR Code"</strong></li>
+            <li>Abre o WhatsApp no teu telemóvel</li>
+            <li>Vai para <strong>WhatsApp → Menu (⋮) → Aparelhos Conectados</strong></li>
+            <li>Toca em <strong>"Conectar um aparelho"</strong></li>
+            <li>Aponta a câmara para o QR Code no ecrã</li>
+            <li>Aguarda confirmação de conexão (geralmente 5-10 segundos)</li>
+        </ol>
+        
+        <h4>Status de Conexão</h4>
+        <ul>
+            <li><strong>🟢 Conectado:</strong> Instância ativa e funcional</li>
+            <li><strong>🟡 Conectando:</strong> Aguardando leitura do QR Code</li>
+            <li><strong>🔴 Desconectado:</strong> Conexão perdida ou inativa</li>
+            <li><strong>⚠️ Erro:</strong> Problema na configuração</li>
+        </ul>
+        
+        <h4>Reconexão</h4>
+        <ul>
+            <li>Se a conexão cair, clique em <strong>"Reconectar"</strong></li>
+            <li>Novo QR Code será gerado</li>
+            <li>Repete o processo de leitura</li>
+            <li>Histórico de mensagens é mantido</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Logs Webhook</h3>
+        <p>Através do botão <strong>"👁️ Logs Webhook"</strong>, podes monitorizar a comunicação técnica:</p>
+        
+        <h4>O que são Logs Webhook?</h4>
+        <ul>
+            <li>Registo de todas as comunicações entre WhatsApp e o sistema</li>
+            <li>Mostra eventos em tempo real (mensagens enviadas, recebidas, erros)</li>
+            <li>Útil para identificar falhas de conexão</li>
+            <li>Ferramenta de diagnóstico técnico</li>
+        </ul>
+        
+        <h4>Informações Disponíveis</h4>
+        <ul>
+            <li><strong>Timestamp:</strong> Data e hora exata do evento</li>
+            <li><strong>Tipo de Evento:</strong> message.received, message.sent, connection.update</li>
+            <li><strong>Status:</strong> Sucesso ou erro</li>
+            <li><strong>Payload:</strong> Dados técnicos da requisição</li>
+            <li><strong>Resposta:</strong> Retorno do servidor</li>
+        </ul>
+        
+        <h4>Quando Usar</h4>
+        <ul>
+            <li>Mensagens não estão a ser entregues</li>
+            <li>Conexão cai frequentemente</li>
+            <li>Debugging de integrações</li>
+            <li>Suporte técnico solicita informações</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>6. Vincular a Agentes IA e Chatbots</h3>
+        <p>Cada instância criada pode ser atribuída a um <strong>Agente de IA</strong> ou <strong>Chatbot</strong> específico:</p>
+        
+        <h4>Como Vincular</h4>
+        <ol class="step-list">
+            <li>Vai para <strong>Atendimento → Agentes IA</strong> ou <strong>Atendimento → Chatbots</strong></li>
+            <li>Ao criar ou editar um agente/chatbot</li>
+            <li>Seleciona a instância desejada no campo <strong>"Número WhatsApp"</strong></li>
+            <li>Salva a configuração</li>
+        </ol>
+        
+        <h4>Benefícios</h4>
+        <ul>
+            <li>Automação completa de atendimento</li>
+            <li>Cada número pode ter comportamento diferente</li>
+            <li>Segmentação por tipo de cliente ou serviço</li>
+            <li>Exemplo: Número 1 para vendas (Agente IA), Número 2 para suporte (Chatbot)</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>7. Gestão de Instâncias</h3>
+        <p>Na tabela principal, visualiza e gere todas as conexões:</p>
+        
+        <h4>Colunas da Tabela</h4>
+        <ul>
+            <li><strong>Nome:</strong> Identificador da instância</li>
+            <li><strong>Número:</strong> Telefone conectado</li>
+            <li><strong>Status:</strong> Estado da conexão (🟢🟡🔴)</li>
+            <li><strong>Provedor:</strong> API utilizada</li>
+            <li><strong>Criado em:</strong> Data de criação</li>
+            <li><strong>Ações:</strong> Menu com opções</li>
+        </ul>
+        
+        <h4>Ações Disponíveis (Menu "...")</h4>
+        <ul>
+            <li><strong>Ver QR Code:</strong> Gera novo código para reconexão</li>
+            <li><strong>Logs Webhook:</strong> Abre painel de monitorização</li>
+            <li><strong>Editar:</strong> Altera configurações e automações</li>
+            <li><strong>Desconectar:</strong> Encerra conexão (mantém configuração)</li>
+            <li><strong>Excluir:</strong> Remove instância permanentemente</li>
         </ul>
     </div>
 
     <div class="alert-box">
         <h4>⚠️ Importante</h4>
-        <p>Não desconecte o número durante campanhas ativas. Isso pode causar falhas nos envios.</p>
+        <ul>
+            <li>Cada número só pode estar conectado em um sistema por vez</li>
+            <li>Não desconectes durante campanhas ativas (pode causar falhas)</li>
+            <li>Mantém o telemóvel com internet para estabilidade</li>
+            <li>Conexão pode cair se o telemóvel ficar offline por muito tempo</li>
+            <li>Recomendado: Usar número dedicado (não pessoal)</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li><strong>Nomes Claros:</strong> Use nomes que identifiquem o propósito (ex: vendas-principal, suporte-24h)</li>
+            <li><strong>Múltiplas Instâncias:</strong> Separe por departamento ou função</li>
+            <li><strong>Monitorização:</strong> Verifica logs webhook semanalmente</li>
+            <li><strong>Backup:</strong> Mantém sempre uma instância reserva configurada</li>
+            <li><strong>Testes:</strong> Envia mensagem de teste após cada conexão</li>
+            <li><strong>Documentação:</strong> Anota qual número está vinculado a qual agente/chatbot</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Troubleshooting Comum</h3>
+        
+        <h4>QR Code não funciona</h4>
+        <ul>
+            <li>Verifica se o número já está conectado noutro lugar</li>
+            <li>Tenta gerar novo QR Code</li>
+            <li>Confirma que o WhatsApp está atualizado</li>
+        </ul>
+        
+        <h4>Conexão cai frequentemente</h4>
+        <ul>
+            <li>Verifica estabilidade da internet do telemóvel</li>
+            <li>Mantém o WhatsApp aberto em segundo plano</li>
+            <li>Evita desconectar outros aparelhos vinculados</li>
+        </ul>
+        
+        <h4>Mensagens não enviam</h4>
+        <ul>
+            <li>Verifica status da conexão (deve estar 🟢)</li>
+            <li>Consulta logs webhook para erros específicos</li>
+            <li>Confirma que o número não foi bloqueado pelo WhatsApp</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="sistema-api-oficial-meta">
+            Próximo: API Oficial Meta
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

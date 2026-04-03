@@ -649,7 +649,49 @@ git push
 
 ## 📊 Histórico de Mudanças
 
-### v2.0.0 - Tema Dark Minimalista (Atual)
+### v2.1.0 - Refatoração UI com Lucide Icons (Atual)
+**Data**: 03/04/2026
+
+**Mudanças Principais**:
+- ✅ Substituição de emojis por ícones Lucide (SVG vetoriais)
+- ✅ Container centralizado (max-width: 1000px)
+- ✅ Efeitos visuais modernos (animações, hover, transições)
+- ✅ Ícones com background `rgba(30, 58, 138, 0.1)`
+- ✅ Hero icon: 80x80px, Module icon: 64x64px, Card icon: 48x48px
+- ✅ Inicialização automática do Lucide via CDN
+
+**Ícones Implementados**:
+- Hero: `help-circle`, `zap`, `shield-check`, `palette`
+- Vendas: `briefcase`, `target`, `building-2`, `package`, `tag`
+- Sistema: `smartphone`, `globe`, `list`, `code-2`, `search`, `settings`
+- Equipes: `user`, `shield`, `building-2`
+- Atendimento: `message-square`, `send`, `file-text`, `users`, `bot`, `cpu`
+- Projetos: `folder`, `check-square`, `file-text`, `key`
+- Inteligência: `activity`, `git-branch`, `bar-chart-3`
+- Agenda: `calendar`, `bar-chart-3`
+- Dashboard: `layout-dashboard`
+
+**Arquivos Modificados**:
+- `index.html` - Adicionado Lucide CDN, substituído emojis
+- `css/style.css` - +300 linhas (container, ícones, animações)
+- `js/app.js` - Inicialização Lucide
+- `TEMPLATE-PAGINA.html` - Atualizado com ícones
+- `pages/vendas/*.html` - 5 páginas atualizadas
+
+**Efeitos Visuais**:
+- Animações: fadeInUp, fadeIn, pulse
+- Hover: translateY(-4px), scale(1.1), rotate(5deg)
+- Transições: cubic-bezier para suavidade
+- Sombras: profundidade em cards e sidebars
+- Gradientes: sutis em boxes
+
+**Estatísticas**:
+- Páginas atualizadas: 5/41 (12%)
+- Linhas CSS adicionadas: +300
+- Ícones Lucide: 30+ disponíveis
+- Performance: SVG mais leve que emojis
+
+### v2.0.0 - Tema Dark Minimalista
 **Data**: 02/02/2026
 
 **Mudanças Principais**:

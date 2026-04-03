@@ -5,79 +5,400 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">⚙️</div>
+    <div class="module-icon">
+        <i data-lucide="settings"></i>
+    </div>
     <h1>Configurações Gerais</h1>
     <p class="module-description">
-        Configure parâmetros globais do sistema
+        Centro de gestão da conta e empresa
     </p>
 </div>
 
 <div class="content-text">
-    <h2>O que são Configurações Gerais?</h2>
+    <h2>O que são Configurações?</h2>
     <p>
-        Aqui você define configurações que afetam todo o sistema, como dados da empresa, 
-        preferências de interface, integrações e segurança.
+        É o centro de gestão da conta e do "tenant" (empresa). Aqui controlas os teus dados de perfil, informações da empresa, 
+        detalhes da tua assinatura atual e questões de privacidade. É o painel central para ajustes pessoais e empresariais 
+        no sistema.
     </p>
 
-    <h2>Seções de Configuração</h2>
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">👤</div>
+            <h3>Perfil</h3>
+            <p>Dados pessoais e credenciais</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🏢</div>
+            <h3>Empresa</h3>
+            <p>Informações corporativas</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🔒</div>
+            <h3>Privacidade</h3>
+            <p>Conformidade LGPD</p>
+        </div>
+    </div>
+
+    <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Dados da Empresa</h3>
+        <h3>1. Perfil</h3>
+        <p>Visualiza e edita os teus dados básicos:</p>
+        
+        <h4>Informações Exibidas</h4>
         <ul>
-            <li>Nome e logo da empresa</li>
-            <li>CNPJ e endereço</li>
-            <li>Telefones e emails de contato</li>
-            <li>Redes sociais</li>
+            <li><strong>Nome Completo:</strong> Teu nome como aparece no sistema</li>
+            <li><strong>Email:</strong> Endereço de email (usado para login)</li>
+            <li><strong>Telefone:</strong> Número de contacto (opcional)</li>
+            <li><strong>Foto de Perfil:</strong> Avatar exibido na interface</li>
+            <li><strong>Cargo/Função:</strong> Tua função na empresa</li>
+        </ul>
+        
+        <h4>Editar Perfil</h4>
+        <ol class="step-list">
+            <li>Clica em <strong>"Editar Perfil"</strong></li>
+            <li>Atualiza as informações desejadas:
+                <ul>
+                    <li>Nome completo</li>
+                    <li>Email de contacto</li>
+                    <li>Telefone</li>
+                </ul>
+            </li>
+            <li>Upload de nova foto (opcional):
+                <ul>
+                    <li>Formatos aceites: JPG, PNG</li>
+                    <li>Tamanho máximo: 2MB</li>
+                    <li>Recomendado: 400x400 pixels</li>
+                </ul>
+            </li>
+            <li>Clica em <strong>"Salvar Alterações"</strong></li>
+        </ol>
+        
+        <h4>Notificações Pessoais</h4>
+        <ul>
+            <li>Configura preferências de notificações:
+                <ul>
+                    <li>Email: Receber alertas por email</li>
+                    <li>WhatsApp: Notificações via WhatsApp</li>
+                    <li>Push: Notificações no navegador</li>
+                </ul>
+            </li>
+            <li>Escolhe tipos de alertas:
+                <ul>
+                    <li>Novos leads atribuídos</li>
+                    <li>Negócios ganhos/perdidos</li>
+                    <li>Tarefas vencidas</li>
+                    <li>Mensagens não lidas</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>2. Empresa</h3>
+        <p>Exibe informações oficiais da empresa no sistema:</p>
+        
+        <h4>Nome da Empresa</h4>
+        <ul>
+            <li>Nome oficial cadastrado</li>
+            <li>Aparece em:
+                <ul>
+                    <li>Cabeçalho do sistema</li>
+                    <li>Relatórios exportados</li>
+                    <li>Emails automáticos</li>
+                </ul>
+            </li>
+            <li>Alteração: Contacta suporte (requer validação)</li>
+        </ul>
+        
+        <h4>Slug (Identificador Único)</h4>
+        <ul>
+            <li><strong>O que é:</strong> Identificador único na URL</li>
+            <li><strong>Exemplo:</strong> <code>minhaempresa.clicknex.com</code></li>
+            <li>Usado para:
+                <ul>
+                    <li>Acesso ao sistema</li>
+                    <li>Links de acesso cliente</li>
+                    <li>Integrações via API</li>
+                </ul>
+            </li>
+            <li><strong>Importante:</strong> Não pode ser alterado após criação</li>
+        </ul>
+        
+        <h4>Dados Adicionais</h4>
+        <ul>
+            <li>CNPJ/NIF (Número fiscal)</li>
+            <li>Endereço completo</li>
+            <li>Telefone corporativo</li>
+            <li>Website</li>
+            <li>Logo da empresa</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Plano e Uso</h3>
+        <p>Acompanha em tempo real os detalhes da tua assinatura e o consumo atual:</p>
+        
+        <h4>Informações do Plano</h4>
+        <ul>
+            <li><strong>Plano Atual:</strong> Nome do plano contratado
+                <ul>
+                    <li>Starter, Professional, Enterprise, etc.</li>
+                </ul>
+            </li>
+            <li><strong>Status:</strong> Ativo, Teste, Suspenso</li>
+            <li><strong>Data de Renovação:</strong> Próxima cobrança</li>
+            <li><strong>Valor Mensal:</strong> Custo da assinatura</li>
+            <li><strong>Método de Pagamento:</strong> Cartão, Boleto, etc.</li>
+        </ul>
+        
+        <h4>Limites e Consumo</h4>
+        <p>Métricas de uso face aos limites contratados:</p>
+        
+        <h5>Mensagens</h5>
+        <ul>
+            <li><strong>Limite:</strong> Quantidade incluída no plano</li>
+            <li><strong>Usado:</strong> Mensagens enviadas no mês</li>
+            <li><strong>Disponível:</strong> Saldo restante</li>
+            <li>Barra de progresso visual</li>
+            <li>Alerta quando atingir 80% do limite</li>
+        </ul>
+        
+        <h5>Leads/Contatos</h5>
+        <ul>
+            <li><strong>Limite:</strong> Máximo de leads cadastrados</li>
+            <li><strong>Atual:</strong> Leads ativos no sistema</li>
+            <li><strong>Disponível:</strong> Espaço para novos leads</li>
+        </ul>
+        
+        <h5>Operadores</h5>
+        <ul>
+            <li><strong>Limite:</strong> Usuários incluídos no plano</li>
+            <li><strong>Ativos:</strong> Operadores com acesso</li>
+            <li><strong>Disponível:</strong> Vagas para novos usuários</li>
+        </ul>
+        
+        <h5>Instâncias WhatsApp</h5>
+        <ul>
+            <li><strong>Limite:</strong> Números que podem ser conectados</li>
+            <li><strong>Conectadas:</strong> Instâncias ativas</li>
+            <li><strong>Disponível:</strong> Conexões adicionais possíveis</li>
+        </ul>
+        
+        <h4>Ações Disponíveis</h4>
+        <ul>
+            <li><strong>Upgrade de Plano:</strong> Aumentar limites</li>
+            <li><strong>Adicionar Recursos:</strong> Comprar extras (mensagens, operadores)</li>
+            <li><strong>Histórico de Faturas:</strong> Ver cobranças anteriores</li>
+            <li><strong>Atualizar Pagamento:</strong> Trocar cartão/método</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Privacidade e Dados (LGPD)</h3>
+        <p>Ferramentas de conformidade com Lei Geral de Proteção de Dados:</p>
+        
+        <h4>Exportar Meus Dados</h4>
+        <ul>
+            <li><strong>O que é:</strong> Descarrega relatório com todas as tuas informações pessoais</li>
+            <li><strong>Como usar:</strong>
+                <ol class="step-list">
+                    <li>Clica em <strong>"Exportar Meus Dados"</strong></li>
+                    <li>Sistema gera arquivo com:
+                        <ul>
+                            <li>Dados de perfil</li>
+                            <li>Histórico de ações</li>
+                            <li>Logs de acesso</li>
+                            <li>Conversas onde participaste</li>
+                        </ul>
+                    </li>
+                    <li>Recebes email com link de download</li>
+                    <li>Link válido por 48 horas</li>
+                </ol>
+            </li>
+            <li><strong>Formato:</strong> ZIP contendo JSON e CSV</li>
+            <li><strong>Direito LGPD:</strong> Portabilidade de dados</li>
+        </ul>
+        
+        <h4>Solicitar Exclusão de Conta</h4>
+        <ul>
+            <li><strong>O que é:</strong> Agenda remoção total da conta do sistema</li>
+            <li><strong>⚠️ ATENÇÃO:</strong> Ação irreversível após período de segurança</li>
+            <li><strong>Como funciona:</strong>
+                <ol class="step-list">
+                    <li>Clica em <strong>"Solicitar Exclusão de Conta"</strong></li>
+                    <li>Sistema pede confirmação (digita "EXCLUIR" para confirmar)</li>
+                    <li>Período de segurança: <strong>30 dias</strong>
+                        <ul>
+                            <li>Conta fica suspensa mas não excluída</li>
+                            <li>Podes cancelar solicitação neste período</li>
+                            <li>Recebes emails de lembrete</li>
+                        </ul>
+                    </li>
+                    <li>Após 30 dias: Exclusão permanente
+                        <ul>
+                            <li>Todos os dados pessoais removidos</li>
+                            <li>Histórico anonimizado (mantém estatísticas)</li>
+                            <li>Não é possível recuperar</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li><strong>O que acontece:</strong>
+                <ul>
+                    <li>✅ Teus dados pessoais são excluídos</li>
+                    <li>✅ Acesso ao sistema é revogado</li>
+                    <li>⚠️ Dados da empresa permanecem (se não fores proprietário)</li>
+                    <li>⚠️ Histórico de ações é anonimizado (ex: "Usuário Excluído")</li>
+                </ul>
+            </li>
+            <li><strong>Direito LGPD:</strong> Direito ao esquecimento</li>
+        </ul>
+        
+        <h4>Consentimentos</h4>
+        <ul>
+            <li>Visualiza e gere consentimentos dados:
+                <ul>
+                    <li>Termos de uso</li>
+                    <li>Política de privacidade</li>
+                    <li>Uso de cookies</li>
+                    <li>Comunicações de marketing</li>
+                </ul>
+            </li>
+            <li>Podes revogar consentimentos a qualquer momento</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Segurança</h3>
+        <p>Secção dedicada à proteção da tua conta:</p>
+        
+        <h4>Alterar Senha</h4>
+        <ol class="step-list">
+            <li>Clica em <strong>"Alterar Senha"</strong></li>
+            <li>Preenche os campos:
+                <ul>
+                    <li><strong>Senha Atual:</strong> Para validar identidade</li>
+                    <li><strong>Nova Senha:</strong> Mínimo 8 caracteres</li>
+                    <li><strong>Confirmar Nova Senha:</strong> Repete para validar</li>
+                </ul>
+            </li>
+            <li>Requisitos de senha forte:
+                <ul>
+                    <li>Mínimo 8 caracteres</li>
+                    <li>Pelo menos 1 letra maiúscula</li>
+                    <li>Pelo menos 1 letra minúscula</li>
+                    <li>Pelo menos 1 número</li>
+                    <li>Recomendado: 1 caractere especial (!@#$%)</li>
+                </ul>
+            </li>
+            <li>Clica em <strong>"Salvar Nova Senha"</strong></li>
+            <li>Sistema desloga automaticamente (requer novo login)</li>
+        </ol>
+        
+        <h4>Autenticação em Dois Fatores (2FA)</h4>
+        <ul>
+            <li><strong>O que é:</strong> Camada extra de segurança no login</li>
+            <li><strong>Como ativar:</strong>
+                <ol class="step-list">
+                    <li>Clica em <strong>"Ativar 2FA"</strong></li>
+                    <li>Escolhe método:
+                        <ul>
+                            <li>App autenticador (Google Authenticator, Authy)</li>
+                            <li>SMS (menos seguro)</li>
+                        </ul>
+                    </li>
+                    <li>Segue instruções de configuração</li>
+                    <li>Guarda códigos de backup em local seguro</li>
+                </ol>
+            </li>
+            <li><strong>Como funciona:</strong> Após login, sistema pede código adicional</li>
+            <li><strong>Recomendado:</strong> Para administradores e proprietários</li>
+        </ul>
+        
+        <h4>Sessões Ativas</h4>
+        <ul>
+            <li>Lista de dispositivos com sessão aberta:
+                <ul>
+                    <li>Dispositivo (Desktop, Mobile)</li>
+                    <li>Navegador</li>
+                    <li>Localização (IP)</li>
+                    <li>Último acesso</li>
+                </ul>
+            </li>
+            <li>Podes encerrar sessões remotamente</li>
+            <li>Útil se esqueceste de fazer logout noutro local</li>
+        </ul>
+        
+        <h4>Histórico de Logins</h4>
+        <ul>
+            <li>Últimos 30 acessos à tua conta</li>
+            <li>Identifica acessos suspeitos</li>
+            <li>Mostra tentativas falhadas</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Importante - Proprietários</h4>
+        <p>Se és o <strong>Proprietário</strong> da conta:</p>
+        <ul>
+            <li>Não podes excluir tua conta sem transferir propriedade</li>
+            <li>Deves nomear outro administrador como proprietário primeiro</li>
+            <li>Contacta suporte para assistência na transferência</li>
+            <li>Garante continuidade do negócio antes de sair</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas de Segurança</h4>
+        <ul>
+            <li><strong>Senha Forte:</strong> Usa gestor de senhas (LastPass, 1Password)</li>
+            <li><strong>2FA Sempre:</strong> Ativa autenticação em dois fatores</li>
+            <li><strong>Revisão Regular:</strong> Verifica sessões ativas mensalmente</li>
+            <li><strong>Email Seguro:</strong> Usa email corporativo (não pessoal)</li>
+            <li><strong>Logout:</strong> Sempre faz logout em computadores partilhados</li>
+            <li><strong>Atualizações:</strong> Mantém dados de contacto atualizados</li>
         </ul>
     </div>
 
     <div class="feature-section">
         <h3>Preferências do Sistema</h3>
+        
+        <h4>Idioma</h4>
         <ul>
-            <li>Fuso horário</li>
-            <li>Idioma padrão</li>
-            <li>Formato de data e hora</li>
-            <li>Moeda</li>
+            <li>Português (PT-BR, PT-PT)</li>
+            <li>Inglês</li>
+            <li>Espanhol</li>
+        </ul>
+        
+        <h4>Fuso Horário</h4>
+        <ul>
+            <li>Define fuso horário local</li>
+            <li>Afeta exibição de datas e horários</li>
+            <li>Importante para agendamentos</li>
+        </ul>
+        
+        <h4>Formato de Data</h4>
+        <ul>
+            <li>DD/MM/AAAA (Português)</li>
+            <li>MM/DD/YYYY (Americano)</li>
+            <li>AAAA-MM-DD (ISO)</li>
+        </ul>
+        
+        <h4>Moeda</h4>
+        <ul>
+            <li>EUR (€), BRL (R$), USD ($)</li>
+            <li>Afeta exibição de valores</li>
         </ul>
     </div>
 
-    <div class="feature-section">
-        <h3>Segurança</h3>
-        <ul>
-            <li>Política de senhas</li>
-            <li>Autenticação em dois fatores</li>
-            <li>Tempo de sessão</li>
-            <li>IPs permitidos</li>
-        </ul>
-    </div>
-
-    <div class="feature-section">
-        <h3>Integrações</h3>
-        <ul>
-            <li>Google Calendar</li>
-            <li>Zapier/Make</li>
-            <li>APIs externas</li>
-            <li>Webhooks</li>
-        </ul>
-    </div>
-
-    <div class="feature-section">
-        <h3>Notificações</h3>
-        <ul>
-            <li>Email de notificações</li>
-            <li>Alertas por WhatsApp</li>
-            <li>Frequência de relatórios</li>
-            <li>Tipos de alertas ativos</li>
-        </ul>
-    </div>
-
-    <div class="alert-box">
-        <h4>⚠️ Atenção</h4>
-        <p>Apenas administradores podem alterar configurações gerais do sistema.</p>
-    </div>
-
-    <div class="tips-box">
-        <h4>💡 Dica</h4>
-        <p>Revise as configurações de segurança regularmente para manter o sistema protegido.</p>
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="dashboard-dashboard">
+            Voltar ao Dashboard
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

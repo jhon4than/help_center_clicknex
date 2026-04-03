@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">📋</div>
+    <div class="module-icon">
+        <i data-lucide="folder"></i>
+    </div>
     <h1>Projetos</h1>
     <p class="module-description">
         Gerencie projetos de clientes do início ao fim
@@ -15,30 +17,182 @@
 <div class="content-text">
     <h2>O que são Projetos?</h2>
     <p>
-        Projetos permitem organizar entregas para clientes, dividindo o trabalho em tarefas, 
-        definindo prazos e acompanhando o progresso.
+        É o centro de gestão de entregas e backlogs. Aqui transformas negócios ganhos em planos de ação concretos, 
+        permitindo acompanhar prazos, tarefas concluídas e o progresso percentual de cada projeto. 
+        Converte oportunidades em execução organizada.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">📊</div>
+            <h3>Progresso Visual</h3>
+            <p>Barra automática de conclusão</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">📋</div>
+            <h3>Templates</h3>
+            <p>Replique estruturas padronizadas</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">✅</div>
+            <h3>Tarefas</h3>
+            <p>Acompanhe cada etapa da entrega</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Criar Projeto</h3>
+        <h3>1. Criação Flexível</h3>
+        <p>Ao clicar em <strong>"+ Novo Projeto"</strong>, tens duas opções:</p>
+        
+        <h4>Opção A: Projeto em Branco</h4>
+        <ul>
+            <li>Para criar algo totalmente novo e personalizado</li>
+            <li>Começas do zero, sem tarefas pré-definidas</li>
+            <li>Ideal para projetos únicos ou experimentais</li>
+            <li>Adiciona tarefas conforme necessário</li>
+        </ul>
+        
+        <h4>Opção B: A partir de Template</h4>
+        <ul>
+            <li>Replica uma estrutura de tarefas já usada anteriormente</li>
+            <li>Ideal para processos padronizados</li>
+            <li>Todas as tarefas do template são copiadas automaticamente</li>
+            <li>Economiza tempo em projetos recorrentes</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Quando usar cada opção?</h4>
+            <p><strong>Projeto em Branco:</strong> Cliente com necessidades específicas<br>
+            <strong>Template:</strong> "Onboarding de Cliente", "Implementação Padrão", "Projeto de Marketing"</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>2. Configuração do Projeto</h3>
+        <p>Após escolher o tipo, preencha os dados essenciais:</p>
         <ol class="step-list">
-            <li>Acesse <strong>Projetos</strong> → <strong>Projetos</strong></li>
-            <li>Clique em <strong>"+ Novo Projeto"</strong></li>
-            <li>Preencha: Nome, Cliente, Data Início/Fim, Valor</li>
-            <li>Adicione membros da equipe</li>
-            <li>Salve</li>
+            <li><strong>Nome do Projeto:</strong> Título claro e descritivo
+                <ul>
+                    <li>Exemplo: "Implementação CRM - Empresa XYZ"</li>
+                    <li>Seja específico para facilitar identificação</li>
+                </ul>
+            </li>
+            <li><strong>Cliente/Empresa:</strong> Vincule ao cliente correspondente
+                <ul>
+                    <li>Selecione da lista de organizações cadastradas</li>
+                    <li>Ou crie um novo cliente diretamente</li>
+                    <li>Vínculo permite acesso do cliente ao projeto</li>
+                </ul>
+            </li>
+            <li><strong>Data de Início:</strong> Quando o projeto começa
+                <ul>
+                    <li>Define o marco inicial</li>
+                    <li>Usado para cálculos de prazo</li>
+                </ul>
+            </li>
+            <li><strong>Data de Término:</strong> Prazo final de entrega
+                <ul>
+                    <li>Estabelece deadline do projeto</li>
+                    <li>Sistema alerta quando próximo do vencimento</li>
+                </ul>
+            </li>
+            <li>Clique em <strong>"Criar Projeto"</strong></li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Acompanhar Progresso</h3>
+        <h3>3. Acompanhamento Visual</h3>
+        <p>A tabela principal exibe informações em tempo real:</p>
+        
+        <h4>Coluna Status</h4>
         <ul>
-            <li>Visualize % de conclusão</li>
-            <li>Veja tarefas pendentes</li>
-            <li>Monitore prazos</li>
-            <li>Gere relatórios de horas</li>
+            <li><strong>Ativo:</strong> Projeto em andamento (cor verde)</li>
+            <li><strong>Pausado:</strong> Temporariamente suspenso (cor amarela)</li>
+            <li><strong>Concluído:</strong> Projeto finalizado (cor azul)</li>
+            <li><strong>Cancelado:</strong> Projeto não será concluído (cor vermelha)</li>
         </ul>
+        
+        <h4>Coluna Tarefas</h4>
+        <ul>
+            <li>Mostra formato: <strong>"X / Y"</strong></li>
+            <li><strong>X:</strong> Número de tarefas concluídas</li>
+            <li><strong>Y:</strong> Total de tarefas do projeto</li>
+            <li>Exemplo: "8 / 12" = 8 tarefas concluídas de 12 totais</li>
+        </ul>
+        
+        <h4>Barra de Progresso Automática</h4>
+        <ul>
+            <li>Calculada automaticamente: (Concluídas / Total) × 100%</li>
+            <li>Atualiza em tempo real conforme tarefas são marcadas</li>
+            <li>Representação visual colorida</li>
+            <li>Permite identificar rapidamente projetos atrasados</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Ações de Gestão</h3>
+        <p>No menu <strong>"..."</strong> de cada projeto, podes:</p>
+        
+        <h4>Editar</h4>
+        <ul>
+            <li>Alterar nome do projeto</li>
+            <li>Ajustar datas de início e término</li>
+            <li>Modificar cliente vinculado</li>
+            <li>Atualizar descrição e observações</li>
+        </ul>
+        
+        <h4>Adicionar Tarefa</h4>
+        <ul>
+            <li>Insere nova tarefa diretamente naquele projeto</li>
+            <li>Atalho rápido sem sair da lista</li>
+            <li>Define título, responsável e prazo</li>
+            <li>Tarefa aparece automaticamente no quadro Kanban</li>
+        </ul>
+        
+        <h4>Excluir</h4>
+        <ul>
+            <li>Remove o projeto do sistema permanentemente</li>
+            <li>⚠️ Ação irreversível - todas as tarefas serão excluídas</li>
+            <li>Só é possível se não houver tarefas em andamento</li>
+            <li>Considere pausar ao invés de excluir</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Filtros de Visualização</h3>
+        <p>No topo da lista, use o seletor de filtros:</p>
+        <ul>
+            <li><strong>Todos os status:</strong> Exibe todos os projetos</li>
+            <li><strong>Ativos:</strong> Apenas projetos em andamento</li>
+            <li><strong>Pausados:</strong> Projetos temporariamente suspensos</li>
+            <li><strong>Concluídos:</strong> Projetos finalizados</li>
+            <li><strong>Atrasados:</strong> Projetos que passaram do prazo</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Foco no que Importa</h4>
+            <p>Use o filtro "Ativos" para focar apenas no que está em andamento e precisa de atenção.</p>
+        </div>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Importante</h4>
+        <ul>
+            <li>Projetos sem tarefas mostram 0% de progresso</li>
+            <li>Ao pausar um projeto, as tarefas não aparecem no Kanban ativo</li>
+            <li>Projetos concluídos não podem ter novas tarefas adicionadas</li>
+            <li>A barra de progresso considera apenas tarefas não canceladas</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="projetos-tarefas">
+            Próximo: Tarefas (Kanban)
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

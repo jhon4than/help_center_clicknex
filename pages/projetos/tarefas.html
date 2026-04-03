@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">✅</div>
+    <div class="module-icon">
+        <i data-lucide="check-square"></i>
+    </div>
     <h1>Tarefas</h1>
     <p class="module-description">
         Organize atividades e acompanhe execução
@@ -13,31 +15,200 @@
 </div>
 
 <div class="content-text">
-    <h2>O que são Tarefas?</h2>
+    <h2>O que são Tarefas (Quadro Kanban)?</h2>
     <p>
-        Tarefas são atividades específicas dentro de projetos. Podem ser atribuídas a membros 
-        da equipe com prazos e prioridades definidas.
+        É o centro operacional onde as atividades são organizadas em um quadro visual (Kanban). 
+        Permite gerir o fluxo de trabalho desde o planeamento até à conclusão, garantindo que nada se perca. 
+        Visualização clara do que precisa ser feito, o que está em andamento e o que já foi concluído.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">📋</div>
+            <h3>Kanban Visual</h3>
+            <p>Arraste tarefas entre colunas</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🎯</div>
+            <h3>Prioridades</h3>
+            <p>Baixa, Média ou Alta</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">👤</div>
+            <h3>Responsáveis</h3>
+            <p>Atribua operadores às tarefas</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Criar Tarefa</h3>
+        <h3>1. O Quadro Kanban</h3>
+        <p>As tarefas estão divididas em colunas de status:</p>
+        
+        <h4>Coluna "A Fazer"</h4>
+        <ul>
+            <li>Tarefas planejadas mas ainda não iniciadas</li>
+            <li>Backlog de atividades pendentes</li>
+            <li>Priorize as mais importantes no topo</li>
+        </ul>
+        
+        <h4>Coluna "Em Progresso"</h4>
+        <ul>
+            <li>Tarefas sendo executadas neste momento</li>
+            <li>Limite recomendado: 3-5 tarefas por pessoa</li>
+            <li>Indica trabalho ativo da equipe</li>
+        </ul>
+        
+        <h4>Coluna "Concluído"</h4>
+        <ul>
+            <li>Tarefas finalizadas com sucesso</li>
+            <li>Alimenta automaticamente a barra de progresso do projeto</li>
+            <li>Histórico de entregas realizadas</li>
+        </ul>
+        
+        <h4>Coluna "Cancelado"</h4>
+        <ul>
+            <li>Tarefas que não serão mais executadas</li>
+            <li>Não contam no cálculo de progresso</li>
+            <li>Mantém registro de mudanças de escopo</li>
+        </ul>
+        
+        <p><strong>Movimentação:</strong> Podes mover os cartões entre as colunas arrastando-os (drag-and-drop) para atualizar o estado do trabalho.</p>
+    </div>
+
+    <div class="feature-section">
+        <h3>2. Criar Nova Tarefa</h3>
+        <p>Clica em <strong>"+ Nova Tarefa"</strong> e preenche:</p>
         <ol class="step-list">
-            <li>Dentro de um projeto, clique em <strong>"+ Nova Tarefa"</strong></li>
-            <li>Defina: Título, Responsável, Prazo, Prioridade</li>
-            <li>Adicione descrição e anexos</li>
-            <li>Salve</li>
+            <li><strong>Título:</strong> Nome claro e objetivo da tarefa
+                <ul>
+                    <li>Exemplo: "Configurar servidor de produção"</li>
+                    <li>Use verbos de ação</li>
+                </ul>
+            </li>
+            <li><strong>Descrição:</strong> Detalhes do que precisa ser feito
+                <ul>
+                    <li>Adicione contexto necessário</li>
+                    <li>Liste requisitos ou critérios de aceitação</li>
+                    <li>Inclua links ou referências úteis</li>
+                </ul>
+            </li>
+            <li><strong>Prioridade:</strong> Nível de urgência
+                <ul>
+                    <li><strong>Baixa:</strong> Pode esperar, não urgente</li>
+                    <li><strong>Média:</strong> Importante, prazo normal</li>
+                    <li><strong>Alta:</strong> Urgente, requer atenção imediata</li>
+                </ul>
+            </li>
+            <li><strong>Data de Vencimento:</strong> Prazo para conclusão
+                <ul>
+                    <li>Define deadline da tarefa</li>
+                    <li>Sistema alerta quando próximo do vencimento</li>
+                    <li>Tarefas atrasadas ficam destacadas em vermelho</li>
+                </ul>
+            </li>
+            <li><strong>Operador Responsável:</strong> Quem executará a tarefa
+                <ul>
+                    <li>Selecione da lista de operadores</li>
+                    <li>Responsável recebe notificação</li>
+                    <li>Pode ser reatribuído posteriormente</li>
+                </ul>
+            </li>
+            <li>Clique em <strong>"Criar Tarefa"</strong></li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Status de Tarefas</h3>
+        <h3>3. Relacionamento de Tarefas</h3>
+        <p>Uma tarefa pode ser vinculada a diferentes entidades:</p>
+        
+        <h4>Vincular a Lead</h4>
         <ul>
-            <li><strong>A Fazer:</strong> Ainda não iniciada</li>
-            <li><strong>Em Andamento:</strong> Sendo executada</li>
-            <li><strong>Revisão:</strong> Aguardando aprovação</li>
-            <li><strong>Concluída:</strong> Finalizada</li>
+            <li>Associe a tarefa a um lead específico</li>
+            <li>Útil para follow-ups e ações comerciais</li>
+            <li>Exemplo: "Enviar proposta para Lead João Silva"</li>
+            <li>Aparece no histórico do lead</li>
         </ul>
+        
+        <h4>Vincular a Projeto</h4>
+        <ul>
+            <li>Associe a tarefa a um projeto pai</li>
+            <li>Garante que o progresso da tarefa alimente a barra de conclusão do projeto</li>
+            <li>Tarefas concluídas aumentam automaticamente o % do projeto</li>
+            <li>Mantém organização hierárquica</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Impacto no Progresso</h4>
+            <p>Quando uma tarefa vinculada a um projeto é marcada como "Concluída", o percentual de progresso do projeto é recalculado automaticamente.</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Criar Novos Quadros</h3>
+        <p>Se precisares organizar tarefas de forma isolada:</p>
+        <ol class="step-list">
+            <li>Clica em <strong>"+ Novo Quadro"</strong></li>
+            <li>Define um <strong>nome</strong> para o quadro:
+                <ul>
+                    <li>Por cliente: "Tarefas - Empresa XYZ"</li>
+                    <li>Por departamento: "Marketing", "Desenvolvimento"</li>
+                    <li>Por tipo: "Bugs", "Melhorias", "Suporte"</li>
+                </ul>
+            </li>
+            <li>Escolhe uma <strong>cor</strong> de identificação</li>
+            <li>O novo quadro é criado com as 4 colunas padrão</li>
+        </ol>
+        
+        <p><strong>Benefícios de múltiplos quadros:</strong></p>
+        <ul>
+            <li>Separa contextos de trabalho diferentes</li>
+            <li>Evita misturar tarefas de clientes distintos</li>
+            <li>Permite foco em um tipo de atividade</li>
+            <li>Facilita gestão de equipes especializadas</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Filtros de Visualização</h3>
+        <p>Usa o seletor <strong>"Todos os quadros"</strong> no topo:</p>
+        <ul>
+            <li><strong>Todos os quadros:</strong> Visualiza tarefas de todos os quadros</li>
+            <li><strong>Quadro específico:</strong> Filtra apenas um contexto
+                <ul>
+                    <li>Exemplo: Ver apenas "Tarefas - Cliente ABC"</li>
+                    <li>Alterna rapidamente entre diferentes contextos</li>
+                </ul>
+            </li>
+            <li><strong>Por responsável:</strong> Filtra tarefas de um operador</li>
+            <li><strong>Por prioridade:</strong> Mostra apenas Alta, Média ou Baixa</li>
+            <li><strong>Por projeto:</strong> Tarefas de um projeto específico</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Exemplo de Uso</h4>
+            <p>Crie um quadro "Atividades Cliente Premium" para isolar tarefas VIP das atividades gerais da equipe.</p>
+        </div>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Boas Práticas Kanban</h4>
+        <ul>
+            <li>Limite tarefas "Em Progresso" para evitar sobrecarga</li>
+            <li>Mova tarefas diariamente para manter quadro atualizado</li>
+            <li>Use prioridades para ordenar coluna "A Fazer"</li>
+            <li>Revise tarefas "Concluído" semanalmente</li>
+            <li>Não deixe tarefas paradas em "Em Progresso" por muito tempo</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="projetos-templates">
+            Próximo: Templates
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

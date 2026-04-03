@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">📅</div>
+    <div class="module-icon">
+        <i data-lucide="calendar"></i>
+    </div>
     <h1>Agendamentos</h1>
     <p class="module-description">
         Gerencie compromissos, reuniões e tarefas agendadas
@@ -15,38 +17,124 @@
 <div class="content-text">
     <h2>O que são Agendamentos?</h2>
     <p>
-        O módulo de Agendamentos permite organizar todos os compromissos da sua equipe em um calendário centralizado. 
-        Agende reuniões, ligações, tarefas e receba lembretes automáticos.
+        O coração da gestão de tempo. Uma agenda visual para organizar compromissos por setor e profissional. 
+        Permite visualizar e gerenciar todos os agendamentos da equipe de forma centralizada e eficiente.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">📅</div>
+            <h3>Visualização Flexível</h3>
+            <p>Alterne entre Dia, Semana e Mês</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🔍</div>
+            <h3>Filtros Inteligentes</h3>
+            <p>Filtre por status e setor</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">👥</div>
+            <h3>Por Profissional</h3>
+            <p>Organize por setor e profissional</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Passo 1: Criar Agendamento</h3>
-        <ol class="step-list">
-            <li>Acesse <strong>Agenda</strong> → <strong>Agendamentos</strong></li>
-            <li>Clique em <strong>"+ Novo Agendamento"</strong></li>
-            <li>Preencha: Título, Data/Hora, Tipo, Participantes</li>
-            <li>Salve</li>
-        </ol>
+        <h3>Passo 1: Alternar Visualizações</h3>
+        <p>No topo da agenda, você encontra três opções de visualização:</p>
+        <ul>
+            <li><strong>Dia:</strong> Visualização detalhada de um único dia</li>
+            <li><strong>Semana:</strong> Visão geral da semana completa</li>
+            <li><strong>Mês:</strong> Calendário mensal com todos os compromissos</li>
+        </ul>
+        <p>Clique na visualização desejada para alternar entre elas.</p>
     </div>
 
     <div class="feature-section">
-        <h3>Tipos de Agendamento</h3>
+        <h3>Passo 2: Usar Filtros de Status</h3>
+        <p>À direita da tela, você encontra filtros de status para organizar os agendamentos:</p>
         <ul>
-            <li><strong>Reunião:</strong> Encontro com cliente ou equipe</li>
-            <li><strong>Ligação:</strong> Call agendada</li>
-            <li><strong>Tarefa:</strong> Atividade a ser realizada</li>
-            <li><strong>Lembrete:</strong> Notificação simples</li>
+            <li><strong>Todos:</strong> Exibe todos os agendamentos</li>
+            <li><strong>Confirmados:</strong> Apenas compromissos confirmados</li>
+            <li><strong>Pendentes:</strong> Aguardando confirmação</li>
+            <li><strong>Cancelados:</strong> Agendamentos cancelados</li>
+            <li><strong>Concluídos:</strong> Compromissos já realizados</li>
         </ul>
     </div>
 
+    <div class="feature-section">
+        <h3>Passo 3: Criar Novo Agendamento</h3>
+        <ol class="step-list">
+            <li>Clique no botão <strong>"+ Novo Agendamento"</strong></li>
+            <li>Selecione o <strong>Setor</strong> (ex: Vendas, Suporte, Atendimento)</li>
+            <li>Escolha o <strong>Profissional</strong> responsável pelo atendimento</li>
+            <li>Selecione o <strong>Cliente</strong> que será atendido</li>
+            <li>Defina data, horário e duração</li>
+            <li>Adicione observações se necessário</li>
+            <li>Clique em <strong>"Salvar"</strong></li>
+        </ol>
+    </div>
+
     <div class="tips-box">
-        <h4>💡 Dica</h4>
+        <h4>💡 Dicas de Uso</h4>
         <ul>
-            <li>Configure lembretes 15 minutos antes</li>
-            <li>Sincronize com Google Calendar</li>
-            <li>Use cores para categorizar</li>
+            <li>Use a visualização semanal para ter uma visão geral da carga de trabalho</li>
+            <li>Filtre por setor para ver apenas agendamentos de uma área específica</li>
+            <li>Clique em um agendamento existente para editar ou reagendar</li>
+            <li>Use cores diferentes para cada setor para facilitar identificação</li>
         </ul>
+    </div>
+
+    <h2>Funcionalidades Principais</h2>
+    
+    <div class="feature-section">
+        <h3>Gestão por Setor</h3>
+        <p>Organize agendamentos por departamento:</p>
+        <ul>
+            <li>Cada setor tem sua própria cor de identificação</li>
+            <li>Visualize a carga de trabalho por setor</li>
+            <li>Distribua agendamentos entre profissionais do mesmo setor</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Gestão por Profissional</h3>
+        <p>Acompanhe a agenda individual de cada profissional:</p>
+        <ul>
+            <li>Veja todos os compromissos de um profissional específico</li>
+            <li>Evite conflitos de horário</li>
+            <li>Distribua carga de trabalho de forma equilibrada</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Status dos Agendamentos</h3>
+        <ul>
+            <li><strong>Confirmado:</strong> Cliente confirmou presença</li>
+            <li><strong>Pendente:</strong> Aguardando confirmação do cliente</li>
+            <li><strong>Cancelado:</strong> Agendamento foi cancelado</li>
+            <li><strong>Concluído:</strong> Atendimento foi realizado</li>
+            <li><strong>Não Compareceu:</strong> Cliente faltou ao compromisso</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Importante</h4>
+        <ul>
+            <li>Sempre confirme agendamentos com antecedência</li>
+            <li>Envie lembretes automáticos para reduzir faltas</li>
+            <li>Mantenha os status atualizados para relatórios precisos</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="agenda-relatorios">
+            Próximo: Relatórios
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

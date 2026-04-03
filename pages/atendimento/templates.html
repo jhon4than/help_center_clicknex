@@ -1,143 +1,84 @@
 <div class="breadcrumb">
     <a href="#atendimento">Atendimento</a>
     <span>/</span>
-    <span>Templates</span>
+    <span>Templates (API Oficial)</span>
 </div>
 
 <div class="module-header">
-    <div class="module-icon">📝</div>
-    <h1>Templates de Mensagem</h1>
+    <div class="module-icon">
+        <i data-lucide="file-text"></i>
+    </div>
+    <h1>Templates de Mensagem (API Oficial)</h1>
     <p class="module-description">
-        Crie e gerencie templates aprovados pela Meta para API Oficial
+        Gestor de modelos de mensagem para a API Oficial do WhatsApp
     </p>
 </div>
 
 <div class="content-text">
     <h2>O que são Templates?</h2>
     <p>
-        Templates são modelos de mensagem pré-aprovados pela Meta (Facebook) que você pode usar para 
-        iniciar conversas via API Oficial do WhatsApp. São obrigatórios para enviar mensagens fora 
-        da janela de 24 horas após a última interação do cliente.
+        É o gestor de modelos de mensagem para a API Oficial do WhatsApp. Todo o contacto iniciado pela empresa 
+        deve utilizar um destes templates, que precisam de ser aprovados pela Meta antes do uso. 
+        Obrigatório para mensagens fora da janela de 24 horas.
     </p>
 
     <div class="info-cards">
         <div class="info-card">
             <div class="card-icon">✅</div>
             <h3>Aprovação Meta</h3>
-            <p>Templates passam por revisão antes de usar</p>
+            <p>Revisão em minutos ou até 24h</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🔤</div>
+            <h3>Variáveis Dinâmicas</h3>
+            <p>Personalize com {{1}}, {{2}}</p>
         </div>
         <div class="info-card">
             <div class="card-icon">🔄</div>
-            <h3>Reutilizáveis</h3>
-            <p>Use o mesmo template múltiplas vezes</p>
-        </div>
-        <div class="info-card">
-            <div class="card-icon">🎯</div>
-            <h3>Personalizáveis</h3>
-            <p>Adicione variáveis dinâmicas</p>
+            <h3>Sincronização</h3>
+            <p>Status atualizado automaticamente</p>
         </div>
     </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Passo 1: Criar Novo Template</h3>
+        <h3>1. Criação e Aprovação</h3>
+        <p>Clica em <strong>"+ Novo Template"</strong> e preenche:</p>
         <ol class="step-list">
-            <li>Acesse <strong>Atendimento</strong> → <strong>Templates</strong></li>
-            <li>Clique em <strong>"+ Novo Template"</strong></li>
-            <li>Preencha os dados:
+            <li><strong>Nome do Template:</strong> Identificador único
                 <ul>
-                    <li><strong>Nome:</strong> Identificador único (sem espaços, use underscore)</li>
-                    <li><strong>Categoria:</strong> Marketing, Transacional ou Autenticação</li>
-                    <li><strong>Idioma:</strong> pt_BR para português</li>
+                    <li>Apenas letras minúsculas</li>
+                    <li>Use underscores ao invés de espaços</li>
+                    <li>Exemplo: "boas_vindas_cliente"</li>
+                    <li>Exemplo: "confirmacao_pedido"</li>
+                </ul>
+            </li>
+            <li><strong>Categoria:</strong> Tipo de mensagem
+                <ul>
+                    <li><strong>Marketing:</strong> Promoções e ofertas</li>
+                    <li><strong>Utilidade:</strong> Atualizações de conta, confirmações</li>
+                    <li><strong>Autenticação:</strong> Códigos OTP, verificações</li>
+                </ul>
+            </li>
+            <li><strong>Idioma:</strong> Selecione o idioma
+                <ul>
+                    <li>pt_BR para português do Brasil</li>
+                    <li>pt_PT para português de Portugal</li>
                 </ul>
             </li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Passo 2: Escrever o Conteúdo</h3>
-        <ol class="step-list">
-            <li>Digite o texto da mensagem</li>
-            <li>Adicione variáveis usando {{1}}, {{2}}, etc</li>
-            <li>Exemplo: "Olá {{1}}, seu pedido {{2}} foi enviado!"</li>
-            <li>Adicione botões (opcional):
-                <ul>
-                    <li><strong>Call to Action:</strong> Link para site</li>
-                    <li><strong>Quick Reply:</strong> Respostas rápidas</li>
-                </ul>
-            </li>
-        </ol>
-    </div>
-
-    <div class="feature-section">
-        <h3>Passo 3: Enviar para Aprovação</h3>
-        <ol class="step-list">
-            <li>Revise o template na prévia</li>
-            <li>Clique em <strong>"Enviar para Aprovação"</strong></li>
-            <li>Aguarde análise da Meta (geralmente 1-24 horas)</li>
-            <li>Você receberá notificação do resultado</li>
-        </ol>
-    </div>
-
-    <div class="tips-box">
-        <h4>💡 Dicas para Aprovação</h4>
+        <h3>2. Personalização com Variáveis</h3>
+        <p>No corpo da mensagem, podes usar o botão <strong>"+ Variável"</strong>:</p>
+        
+        <h4>Como Funcionam as Variáveis</h4>
         <ul>
-            <li>Seja claro e objetivo no texto</li>
-            <li>Não use linguagem promocional excessiva</li>
-            <li>Sempre ofereça valor ao cliente</li>
-            <li>Inclua identificação da empresa</li>
-            <li>Evite CAPS LOCK e muitos emojis</li>
-        </ul>
-    </div>
-
-    <h2>Categorias de Templates</h2>
-    
-    <div class="feature-section">
-        <h3>Marketing</h3>
-        <p>Para promoções, ofertas e novidades:</p>
-        <ul>
-            <li>Lançamento de produtos</li>
-            <li>Promoções e descontos</li>
-            <li>Newsletters</li>
-            <li>Convites para eventos</li>
-        </ul>
-        <div class="alert-box">
-            <h4>⚠️ Atenção</h4>
-            <p>Templates de marketing têm aprovação mais rigorosa e podem ser rejeitados se forem muito promocionais.</p>
-        </div>
-    </div>
-
-    <div class="feature-section">
-        <h3>Transacional</h3>
-        <p>Para atualizações sobre transações:</p>
-        <ul>
-            <li>Confirmação de pedido</li>
-            <li>Status de entrega</li>
-            <li>Lembretes de pagamento</li>
-            <li>Confirmação de agendamento</li>
-        </ul>
-    </div>
-
-    <div class="feature-section">
-        <h3>Autenticação</h3>
-        <p>Para códigos de verificação:</p>
-        <ul>
-            <li>Códigos OTP (One-Time Password)</li>
-            <li>Verificação de conta</li>
-            <li>Reset de senha</li>
-        </ul>
-    </div>
-
-    <h2>Variáveis Dinâmicas</h2>
-    
-    <div class="feature-section">
-        <h3>Como Usar Variáveis</h3>
-        <p>Variáveis permitem personalizar cada mensagem:</p>
-        <ul>
-            <li>{{1}} = Primeira variável (ex: nome do cliente)</li>
-            <li>{{2}} = Segunda variável (ex: número do pedido)</li>
-            <li>{{3}} = Terceira variável (ex: data de entrega)</li>
+            <li><strong>{{1}}</strong> - Primeira variável (ex: nome do cliente)</li>
+            <li><strong>{{2}}</strong> - Segunda variável (ex: número do pedido)</li>
+            <li><strong>{{3}}</strong> - Terceira variável (ex: data de entrega)</li>
         </ul>
         
         <p><strong>Exemplo de template:</strong></p>
@@ -149,86 +90,119 @@ Seu pedido #{{2}} foi confirmado e será entregue em {{3}}.
 Obrigado por comprar conosco!</pre>
         </div>
         
-        <p><strong>Ao enviar, você preenche:</strong></p>
+        <p><strong>Na hora do envio, você preenche:</strong></p>
         <ul>
-            <li>{{1}} = "João"</li>
+            <li>{{1}} = "João Silva"</li>
             <li>{{2}} = "12345"</li>
             <li>{{3}} = "3 dias úteis"</li>
         </ul>
     </div>
 
-    <h2>Botões</h2>
-    
     <div class="feature-section">
-        <h3>Call to Action (CTA)</h3>
-        <p>Botões que direcionam para ações:</p>
+        <h3>3. Componentes Extras</h3>
+        <p>Podes adicionar elementos visuais e interativos:</p>
+        
+        <h4>Cabeçalhos</h4>
         <ul>
-            <li><strong>Visitar Site:</strong> Abre URL no navegador</li>
-            <li><strong>Ligar:</strong> Inicia chamada telefônica</li>
+            <li><strong>Imagem:</strong> Banner ou foto do produto</li>
+            <li><strong>Documento:</strong> PDF, catálogo</li>
+            <li><strong>Texto:</strong> Título destacado</li>
         </ul>
-        <p>Máximo de 2 botões CTA por template.</p>
+        
+        <h4>Rodapés</h4>
+        <ul>
+            <li>Texto pequeno no final da mensagem</li>
+            <li>Útil para disclaimers ou informações adicionais</li>
+            <li>Exemplo: "Esta é uma mensagem automática"</li>
+        </ul>
+        
+        <h4>Botões de Ação</h4>
+        <p>Adicione até 3 botões interativos:</p>
+        <ul>
+            <li><strong>Resposta Rápida:</strong> Cliente clica e envia resposta
+                <ul>
+                    <li>Exemplo: "Sim", "Não", "Mais informações"</li>
+                    <li>Máximo de 3 botões</li>
+                </ul>
+            </li>
+            <li><strong>Ligar para Telefone:</strong> Inicia chamada
+                <ul>
+                    <li>Insira número com DDI</li>
+                    <li>Cliente clica e liga diretamente</li>
+                </ul>
+            </li>
+            <li><strong>Link para URL:</strong> Abre site no navegador
+                <ul>
+                    <li>Insira URL completa</li>
+                    <li>Texto do botão personalizável</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <div class="feature-section">
-        <h3>Quick Reply</h3>
-        <p>Botões de resposta rápida:</p>
+        <h3>4. Sincronização com Meta</h3>
+        <p>Usa o botão <strong>"Sincronizar"</strong> para atualizar status:</p>
         <ul>
-            <li>Cliente clica e envia resposta predefinida</li>
-            <li>Útil para confirmações: "Sim", "Não", "Mais informações"</li>
-            <li>Máximo de 3 botões Quick Reply</li>
+            <li>Conecta com o painel da Meta</li>
+            <li>Atualiza status dos templates:
+                <ul>
+                    <li><strong>Aprovado:</strong> Pronto para uso (verde)</li>
+                    <li><strong>Pendente:</strong> Aguardando análise (amarelo)</li>
+                    <li><strong>Rejeitado:</strong> Não passou na aprovação (vermelho)</li>
+                </ul>
+            </li>
+            <li>Sincronize regularmente para manter atualizado</li>
         </ul>
+        
+        <div class="alert-box">
+            <h4>⚠️ Tempo de Aprovação</h4>
+            <p>A aprovação pela Meta pode levar de alguns minutos até 24 horas. Templates simples geralmente são aprovados rapidamente.</p>
+        </div>
     </div>
 
-    <h2>Status dos Templates</h2>
-    
     <div class="feature-section">
-        <h3>Possíveis Status</h3>
+        <h3>5. Pré-visualização</h3>
+        <p>O painel lateral direito mostra exatamente como a mensagem aparecerá:</p>
         <ul>
-            <li><strong>Rascunho:</strong> Ainda não enviado para aprovação</li>
-            <li><strong>Pendente:</strong> Aguardando análise da Meta</li>
-            <li><strong>Aprovado:</strong> Pronto para uso</li>
-            <li><strong>Rejeitado:</strong> Não passou na aprovação (veja motivo)</li>
-            <li><strong>Pausado:</strong> Aprovado mas desativado temporariamente</li>
+            <li>Visualização em formato de celular</li>
+            <li>Veja cabeçalho, corpo e rodapé</li>
+            <li>Teste botões interativos</li>
+            <li>Verifique formatação antes de enviar para aprovação</li>
         </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Dica de Aprovação</h4>
+            <p>Use a pré-visualização para garantir que tudo está correto antes de submeter. Isso evita rejeições e retrabalho.</p>
+        </div>
     </div>
 
     <div class="feature-section">
         <h3>Motivos Comuns de Rejeição</h3>
         <ul>
-            <li>Conteúdo muito promocional</li>
-            <li>Falta de identificação da empresa</li>
-            <li>Gramática ou ortografia incorreta</li>
+            <li>Conteúdo muito promocional ou agressivo</li>
+            <li>Falta de identificação clara da empresa</li>
+            <li>Erros de gramática ou ortografia</li>
             <li>Conteúdo enganoso ou sensacionalista</li>
             <li>Violação das políticas do WhatsApp</li>
+            <li>Uso excessivo de CAPS LOCK ou emojis</li>
         </ul>
     </div>
 
-    <div class="alert-box">
-        <h4>⚠️ Importante</h4>
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
         <ul>
-            <li>Templates aprovados não podem ser editados (apenas pausados/excluídos)</li>
-            <li>Para alterar, você precisa criar um novo template</li>
-            <li>Templates rejeitados podem ser editados e reenviados</li>
+            <li>Seja claro e objetivo no texto</li>
+            <li>Sempre identifique sua empresa</li>
+            <li>Ofereça valor ao cliente</li>
+            <li>Use linguagem profissional</li>
+            <li>Teste variáveis antes de enviar em massa</li>
         </ul>
-    </div>
-
-    <h2>Usando Templates em Campanhas</h2>
-    
-    <div class="feature-section">
-        <h3>Enviar Template</h3>
-        <ol class="step-list">
-            <li>Acesse <strong>Atendimento</strong> → <strong>Campanhas</strong></li>
-            <li>Crie nova campanha</li>
-            <li>Selecione um template aprovado</li>
-            <li>Preencha as variáveis (se houver)</li>
-            <li>Escolha os destinatários</li>
-            <li>Envie ou agende</li>
-        </ol>
     </div>
 
     <div class="navigation-buttons">
         <button class="btn-nav" data-next="atendimento-grupos">
-            Próximo: Grupos
+            Próximo: Grupos WhatsApp
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>

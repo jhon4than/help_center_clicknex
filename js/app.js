@@ -103,6 +103,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeScrollSpy();
     sanitizeSearchInput();
     
+    // Inicializar ícones Lucide
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+    
     // Gerar sumário da página inicial
     const initialSection = document.querySelector('.content-section.active');
     if (initialSection) {
@@ -306,6 +311,11 @@ async function loadSection(sectionId) {
             
             // Reinicializar event listeners para novos elementos
             initializeSectionListeners(newSection);
+            
+            // Reinicializar ícones Lucide
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
             
         } catch (error) {
             console.error('❌ Erro ao carregar seção:', error);

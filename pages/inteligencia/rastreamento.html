@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">📍</div>
+    <div class="module-icon">
+        <i data-lucide="activity"></i>
+    </div>
     <h1>Rastreamento</h1>
     <p class="module-description">
         Monitore origem e jornada dos leads
@@ -13,32 +15,179 @@
 </div>
 
 <div class="content-text">
-    <h2>O que é Rastreamento?</h2>
+    <h2>O que é Rastreamento de Campanhas?</h2>
     <p>
-        O módulo de Rastreamento identifica de onde vêm seus leads e como eles interagem 
-        com seus canais antes de converter.
+        É o painel de análise de ROI (Retorno sobre Investimento). Ele rastreia a origem dos leads vindos de tráfego pago, 
+        permitindo identificar quais anúncios, conjuntos e campanhas estão a gerar conversões e receita real no teu CRM. 
+        Fundamental para decidir onde investir mais orçamento de marketing.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">💰</div>
+            <h3>ROI Real</h3>
+            <p>Receita gerada por campanha</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">📊</div>
+            <h3>Métricas Detalhadas</h3>
+            <p>Por anúncio, conjunto e campanha</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">⏱️</div>
+            <h3>Tempo Real</h3>
+            <p>Dados atualizados constantemente</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Configurar Rastreamento</h3>
-        <ol class="step-list">
-            <li>Acesse <strong>Inteligência</strong> → <strong>Rastreamento</strong></li>
-            <li>Instale o pixel de rastreamento no site</li>
-            <li>Configure parâmetros UTM</li>
-            <li>Monitore conversões</li>
-        </ol>
+        <h3>1. Métricas de Topo</h3>
+        <p>Acompanha os indicadores principais no topo do painel:</p>
+        <ul>
+            <li><strong>Total de Leads:</strong> Quantidade total de leads rastreados
+                <ul>
+                    <li>Todos os leads vindos de tráfego pago</li>
+                    <li>Acumulado desde o início</li>
+                </ul>
+            </li>
+            <li><strong>Campanhas Ativas:</strong> Quantas campanhas estão rodando
+                <ul>
+                    <li>Campanhas com leads recentes</li>
+                    <li>Indica volume de investimento</li>
+                </ul>
+            </li>
+            <li><strong>Conversões:</strong> Leads que viraram negócios
+                <ul>
+                    <li>Taxa de conversão real</li>
+                    <li>Qualidade do tráfego</li>
+                </ul>
+            </li>
+            <li><strong>Receita Total:</strong> Valor gerado por esses leads
+                <ul>
+                    <li>Soma de todos os negócios fechados</li>
+                    <li>ROI calculado automaticamente</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <div class="feature-section">
-        <h3>Métricas Rastreadas</h3>
+        <h3>2. Filtros Temporais</h3>
+        <p>O sistema separa automaticamente os dados por período:</p>
+        
+        <h4>Leads Hoje</h4>
         <ul>
-            <li>Origem do tráfego (Google, Facebook, etc)</li>
-            <li>Páginas visitadas</li>
-            <li>Tempo no site</li>
-            <li>Ações realizadas</li>
-            <li>Taxa de conversão por canal</li>
+            <li>Leads que chegaram nas últimas 24 horas</li>
+            <li>Visão rápida do desempenho diário</li>
+            <li>Identifique picos de tráfego</li>
         </ul>
+        
+        <h4>Esta Semana</h4>
+        <ul>
+            <li>Últimos 7 dias de captação</li>
+            <li>Compare com semana anterior</li>
+            <li>Tendência semanal de crescimento</li>
+        </ul>
+        
+        <h4>Este Mês</h4>
+        <ul>
+            <li>Performance mensal completa</li>
+            <li>Acompanhe metas mensais</li>
+            <li>Planeje orçamento do próximo mês</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Métricas por Anúncio</h3>
+        <p>Nesta secção, podes ver o detalhamento exato:</p>
+        
+        <h4>Filtros Disponíveis</h4>
+        <ul>
+            <li><strong>Todas as campanhas:</strong> Visão geral completa</li>
+            <li><strong>Campanha específica:</strong> Filtre por nome</li>
+            <li><strong>Barra de busca:</strong> Encontre anúncio específico</li>
+        </ul>
+        
+        <h4>Dados Exibidos por Anúncio</h4>
+        <ul>
+            <li><strong>Nome do Anúncio:</strong> Identificação completa</li>
+            <li><strong>Conjunto de Anúncios:</strong> Grupo ao qual pertence</li>
+            <li><strong>Campanha:</strong> Campanha pai</li>
+            <li><strong>Leads Gerados:</strong> Quantidade de contactos</li>
+            <li><strong>Conversões:</strong> Quantos viraram negócios</li>
+            <li><strong>Taxa de Conversão:</strong> Percentual de sucesso</li>
+            <li><strong>Receita Gerada:</strong> Valor em R$ dos negócios fechados</li>
+            <li><strong>Custo por Lead:</strong> Se integrado com plataforma de anúncios</li>
+            <li><strong>ROI:</strong> Retorno sobre investimento</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Leads Recentes</h3>
+        <p>Uma lista em tempo real dos últimos contactos:</p>
+        <ul>
+            <li>Mostra os dados de rastreamento de cada um</li>
+            <li>Nome do lead e telefone</li>
+            <li>Campanha, conjunto e anúncio de origem</li>
+            <li>Data e hora de entrada</li>
+            <li>Status atual (novo, contatado, convertido)</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Ação Rápida</h4>
+            <p>Clique em um lead da lista para abrir o perfil completo e iniciar atendimento imediatamente.</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Botão Atualizar</h3>
+        <p>Como os dados de tráfego podem mudar a cada segundo:</p>
+        <ul>
+            <li>Usa o botão <strong>"🔄 Atualizar"</strong> no topo</li>
+            <li>Garante que estás a ver os números mais recentes</li>
+            <li>Recarrega métricas de todas as campanhas</li>
+            <li>Sincroniza com plataformas de anúncios (se integrado)</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Dica Estratégica</h4>
+        <p>
+            Este módulo é fundamental para decidir onde investir mais orçamento de marketing, 
+            focando no que realmente traz faturamento e não apenas cliques.
+        </p>
+    </div>
+
+    <div class="feature-section">
+        <h3>Análise de ROI</h3>
+        <p>Use os dados para tomar decisões:</p>
+        <ul>
+            <li><strong>Anúncios com ROI positivo:</strong> Aumente o orçamento</li>
+            <li><strong>Anúncios com ROI negativo:</strong> Pause ou otimize</li>
+            <li><strong>Alta conversão, baixo volume:</strong> Escale o investimento</li>
+            <li><strong>Alto volume, baixa conversão:</strong> Revise a qualificação</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li>Revise métricas diariamente</li>
+            <li>Compare campanhas similares</li>
+            <li>Teste diferentes criativos</li>
+            <li>Acompanhe tendências semanais</li>
+            <li>Documente aprendizados</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="inteligencia-padroes">
+            Próximo: Padrões de Rastreamento
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

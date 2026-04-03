@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">📦</div>
+    <div class="module-icon">
+        <i data-lucide="package"></i>
+    </div>
     <h1>Produtos</h1>
     <p class="module-description">
         Cadastre e gerencie seu catálogo de produtos e serviços
@@ -15,37 +17,187 @@
 <div class="content-text">
     <h2>O que são Produtos?</h2>
     <p>
-        O módulo de Produtos permite cadastrar todos os itens que você vende, com preços, 
-        descrições e variações. Facilita a criação de propostas e negócios.
+        É o catálogo digital do teu negócio. Aqui registas todos os itens e serviços que a tua empresa oferece, 
+        permitindo padronizar preços e facilitar a criação de novos negócios. Um catálogo organizado 
+        acelera o processo de vendas e garante consistência de preços.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="package"></i>
+            </div>
+            <h3>Catálogo Completo</h3>
+            <p>Todos os produtos em um só lugar</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="dollar-sign"></i>
+            </div>
+            <h3>Preços Padronizados</h3>
+            <p>Evite erros de precificação</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">
+                <i data-lucide="link"></i>
+            </div>
+            <h3>Link de Compra</h3>
+            <p>Checkout externo integrado</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Cadastrar Produto</h3>
+        <h3>1. Registo Completo de Produto</h3>
+        <p>Ao clicar em <strong>"+ Novo Produto"</strong>, preencha todos os campos:</p>
         <ol class="step-list">
-            <li>Acesse <strong>Vendas</strong> → <strong>Produtos</strong></li>
-            <li>Clique em <strong>"+ Novo Produto"</strong></li>
-            <li>Preencha:
+            <li><strong>Nome:</strong> Nome comercial do produto/serviço
                 <ul>
-                    <li>Nome do produto</li>
-                    <li>Código/SKU</li>
-                    <li>Preço</li>
-                    <li>Descrição</li>
-                    <li>Categoria</li>
+                    <li>Seja claro e descritivo</li>
+                    <li>Exemplo: "Instalação de Cozinha Completa"</li>
                 </ul>
             </li>
-            <li>Adicione imagens (opcional)</li>
-            <li>Salve</li>
+            <li><strong>Descrição:</strong> Detalhes do que está incluído
+                <ul>
+                    <li>Liste características principais</li>
+                    <li>Mencione o que está/não está incluído</li>
+                    <li>Adicione especificações técnicas</li>
+                </ul>
+            </li>
+            <li><strong>Preço:</strong> Valor de venda em R$
+                <ul>
+                    <li>Defina preço base</li>
+                    <li>Pode ser ajustado por negócio</li>
+                </ul>
+            </li>
+            <li><strong>Unidade:</strong> Como o produto é vendido
+                <ul>
+                    <li><strong>Unidade:</strong> Vendido por item</li>
+                    <li><strong>Hora:</strong> Serviços cobrados por hora</li>
+                    <li><strong>Kit:</strong> Pacotes fechados</li>
+                    <li><strong>Metro:</strong> Vendido por metragem</li>
+                </ul>
+            </li>
         </ol>
     </div>
 
-    <div class="tips-box">
-        <h4>💡 Dica</h4>
+    <div class="feature-section">
+        <h3>2. Categorização e SKU</h3>
+        <p>Organize seu catálogo para facilitar a gestão:</p>
+        
+        <h4>Campo Categoria</h4>
         <ul>
-            <li>Use categorias para organizar</li>
-            <li>Mantenha preços atualizados</li>
-            <li>Adicione descrições detalhadas</li>
+            <li>Agrupe produtos similares</li>
+            <li>Exemplos: "Cozinhas", "Banheiros", "Serviços", "Manutenção"</li>
+            <li>Facilita filtros e relatórios</li>
+            <li>Crie categorias no menu <strong>Sistema</strong> → <strong>Configurações</strong></li>
         </ul>
+        
+        <h4>Campo SKU/Código</h4>
+        <ul>
+            <li>Código único de identificação interna</li>
+            <li>Útil para controlo de stock</li>
+            <li>Referência em sistemas externos</li>
+            <li>Exemplo: "COZ-001", "SERV-INST-01"</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Link de Compra (Recurso Potente)</h3>
+        <p>Insira um link externo para checkout:</p>
+        <ul>
+            <li>Cole a URL completa do seu sistema de pagamento</li>
+            <li>Pode ser: Mercado Pago, PagSeguro, Stripe, etc</li>
+            <li>O cliente finaliza a compra fora do CLICKNEX</li>
+            <li>Útil para produtos com pagamento online</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Exemplo de Uso</h4>
+            <p>Produto: "Curso Online de Vendas"<br>
+            Link: https://pay.hotmart.com/seu-produto<br>
+            Ao criar negócio, você pode enviar o link diretamente ao cliente.</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Gestão de Status</h3>
+        <p>Na tabela principal, você pode gerenciar produtos:</p>
+        
+        <h4>Ativar/Desativar</h4>
+        <ul>
+            <li>Toggle na coluna "Status"</li>
+            <li><strong>Ativo:</strong> Aparece na lista ao criar negócios</li>
+            <li><strong>Inativo:</strong> Oculto, mas mantém histórico</li>
+            <li>Útil para produtos sazonais ou descontinuados</li>
+        </ul>
+        
+        <h4>Menu de Ações (...)</h4>
+        <p>Clique nos três pontos ao lado de cada produto:</p>
+        <ul>
+            <li><strong>Editar:</strong> Atualizar informações e preços</li>
+            <li><strong>Duplicar:</strong> Criar variação do produto</li>
+            <li><strong>Excluir:</strong> Remover permanentemente
+                <ul>
+                    <li>⚠️ Só é possível se não houver negócios vinculados</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Filtros Rápidos</h3>
+        <p>Encontre produtos rapidamente em catálogos grandes:</p>
+        
+        <h4>Barra de Pesquisa</h4>
+        <ul>
+            <li>Digite nome ou SKU do produto</li>
+            <li>Busca em tempo real</li>
+            <li>Pesquisa também na descrição</li>
+        </ul>
+        
+        <h4>Seletor de Categorias</h4>
+        <ul>
+            <li>No topo da tela, selecione uma categoria</li>
+            <li>Exibe apenas produtos daquela categoria</li>
+            <li>Opção "Todas" mostra catálogo completo</li>
+        </ul>
+        
+        <h4>Filtro de Status</h4>
+        <ul>
+            <li><strong>Ativos:</strong> Produtos disponíveis para venda</li>
+            <li><strong>Inativos:</strong> Produtos desativados</li>
+            <li><strong>Todos:</strong> Catálogo completo</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Importante</h4>
+        <ul>
+            <li>Produtos vinculados a negócios não podem ser excluídos</li>
+            <li>Alterações de preço não afetam negócios já criados</li>
+            <li>Mantenha descrições atualizadas para evitar confusão</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li>Revise preços mensalmente</li>
+            <li>Use SKUs padronizados (ex: CAT-NUMERO)</li>
+            <li>Adicione imagens aos produtos (se disponível)</li>
+            <li>Mantenha descrições detalhadas e claras</li>
+            <li>Desative produtos temporariamente indisponíveis ao invés de excluir</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="vendas-etiquetas">
+            Próximo: Etiquetas
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

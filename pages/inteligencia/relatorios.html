@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">📊</div>
+    <div class="module-icon">
+        <i data-lucide="bar-chart-3"></i>
+    </div>
     <h1>Relatórios Inteligentes</h1>
     <p class="module-description">
         Dashboards e relatórios avançados com insights automáticos
@@ -13,27 +15,233 @@
 </div>
 
 <div class="content-text">
-    <h2>O que são Relatórios Inteligentes?</h2>
+    <h2>O que são Relatórios (Dashboard Consolidado)?</h2>
     <p>
-        Relatórios que vão além de números, oferecendo insights e recomendações baseadas 
-        em análise de dados e machine learning.
+        É a visão 360º do teu negócio. Este painel agrupa os indicadores de todos os outros módulos 
+        (Vendas, Projetos, Agenda e Financeiro) num único local, permitindo analisar a saúde da empresa em tempo real. 
+        Tudo o que você precisa saber em uma única tela.
     </p>
 
-    <h2>Tipos de Relatórios</h2>
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">📊</div>
+            <h3>Visão 360º</h3>
+            <p>Todos os módulos em um lugar</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">⏱️</div>
+            <h3>Tempo Real</h3>
+            <p>Dados atualizados constantemente</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🎯</div>
+            <h3>Ação Imediata</h3>
+            <p>Saiba onde agir primeiro</p>
+        </div>
+    </div>
+
+    <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Relatórios Disponíveis</h3>
+        <h3>1. Resumo Executivo (Cards)</h3>
+        <p>No topo, visualiza rapidamente os indicadores principais:</p>
+        
+        <h4>Total de Contactos</h4>
         <ul>
-            <li><strong>Performance de Vendas:</strong> Análise completa do funil</li>
-            <li><strong>Eficiência de Atendimento:</strong> Métricas da equipe</li>
-            <li><strong>ROI de Campanhas:</strong> Retorno sobre investimento</li>
-            <li><strong>Previsão de Receita:</strong> Projeções baseadas em histórico</li>
-            <li><strong>Churn Analysis:</strong> Risco de perda de clientes</li>
+            <li>Quantidade total de leads na base</li>
+            <li>Crescimento em relação ao mês anterior</li>
+            <li>Indicador de saúde do topo do funil</li>
+        </ul>
+        
+        <h4>Negócios Abertos</h4>
+        <ul>
+            <li>Oportunidades em andamento</li>
+            <li>Quantidade de negócios no pipeline</li>
+            <li>Mostra volume de trabalho da equipe</li>
+        </ul>
+        
+        <h4>Tarefas Pendentes</h4>
+        <ul>
+            <li>Total de tarefas não concluídas</li>
+            <li>Inclui tarefas atrasadas (destacadas)</li>
+            <li>Indicador de carga operacional</li>
+        </ul>
+        
+        <h4>Valor Total no Pipeline</h4>
+        <ul>
+            <li>Soma de todos os negócios abertos</li>
+            <li>Receita potencial em negociação</li>
+            <li>Previsão de faturamento</li>
         </ul>
     </div>
 
+    <div class="feature-section">
+        <h3>2. Performance de Vendas</h3>
+        <p>Um gráfico de barras que mostra a evolução nos últimos 6 meses:</p>
+        
+        <h4>Dados Exibidos</h4>
+        <ul>
+            <li><strong>Negócios Ganhos:</strong> Barras verdes (vendas fechadas)</li>
+            <li><strong>Negócios Perdidos:</strong> Barras vermelhas (oportunidades perdidas)</li>
+            <li><strong>Comparativo Mensal:</strong> Tendência de crescimento ou queda</li>
+            <li><strong>Taxa de Ganho:</strong> Percentual de sucesso</li>
+        </ul>
+        
+        <p><strong>Use para:</strong></p>
+        <ul>
+            <li>Identificar meses de alta e baixa</li>
+            <li>Planejar ações para reverter quedas</li>
+            <li>Celebrar meses de sucesso</li>
+            <li>Prever sazonalidade</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Origem dos Contatos</h3>
+        <p>Um gráfico circular que revela por onde os teus clientes chegam:</p>
+        
+        <h4>Canais Rastreados</h4>
+        <ul>
+            <li><strong>WhatsApp API Oficial:</strong> Leads via WABA</li>
+            <li><strong>WhatsApp Não Oficial:</strong> Leads via Evolution API</li>
+            <li><strong>Site:</strong> Formulários web</li>
+            <li><strong>Manual:</strong> Adicionados pela equipe</li>
+            <li><strong>Importação:</strong> Vindos de CSV</li>
+            <li><strong>Indicação:</strong> Referências de clientes</li>
+        </ul>
+        
+        <p><strong>Ajuda a entender:</strong></p>
+        <ul>
+            <li>Qual canal é mais eficaz</li>
+            <li>Onde investir mais recursos</li>
+            <li>Canais subutilizados</li>
+            <li>Diversificação de fontes</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Operacional e Financeiro</h3>
+        <p>Seção dividida em três áreas principais:</p>
+        
+        <h4>Financeiro</h4>
+        <ul>
+            <li><strong>Saldo do Mês:</strong> Receita menos despesas
+                <ul>
+                    <li>Indicador de lucratividade</li>
+                    <li>Comparativo com mês anterior</li>
+                </ul>
+            </li>
+            <li><strong>Valores Recebidos:</strong> Pagamentos confirmados
+                <ul>
+                    <li>Dinheiro que entrou no caixa</li>
+                    <li>Fluxo de caixa positivo</li>
+                </ul>
+            </li>
+            <li><strong>Valores Pendentes:</strong> A receber
+                <ul>
+                    <li>Faturas em aberto</li>
+                    <li>Previsão de entrada</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Produtividade</h4>
+        <ul>
+            <li><strong>Taxa de Conclusão de Tarefas:</strong> % de tarefas finalizadas
+                <ul>
+                    <li>Eficiência da equipa</li>
+                    <li>Identifique gargalos</li>
+                </ul>
+            </li>
+            <li><strong>Tarefas por Operador:</strong> Distribuição de carga
+                <ul>
+                    <li>Quem está sobrecarregado</li>
+                    <li>Quem tem capacidade</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Agendamentos</h4>
+        <ul>
+            <li><strong>Compromissos de Hoje:</strong> Agenda do dia
+                <ul>
+                    <li>Quantos agendamentos hoje</li>
+                    <li>Alertas de conflitos</li>
+                </ul>
+            </li>
+            <li><strong>Total do Mês:</strong> Volume mensal
+                <ul>
+                    <li>Comparativo com meses anteriores</li>
+                    <li>Capacidade de atendimento</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Atenção Imediata</h3>
+        <p>O sistema destaca o que precisa de ação agora:</p>
+        
+        <h4>Tarefas de Hoje</h4>
+        <ul>
+            <li>Lista de tarefas com prazo para hoje</li>
+            <li><strong>Alertas de atraso:</strong> Tarefas vencidas em vermelho</li>
+            <li>Prioridade visual (Alta, Média, Baixa)</li>
+            <li>Responsável por cada tarefa</li>
+            <li>Clique para marcar como concluída</li>
+        </ul>
+        
+        <h4>Deals Recentes</h4>
+        <ul>
+            <li>Últimos negócios criados ou atualizados</li>
+            <li>Status atual de cada um</li>
+            <li>Valor e cliente associado</li>
+            <li>Próxima ação necessária</li>
+            <li>Acesso rápido ao negócio</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Gestão por Exceção</h4>
+            <p>Use esta seção para saber exatamente onde agir primeiro. Foque no que está atrasado ou requer atenção imediata.</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>Filtros e Períodos</h3>
+        <p>Personalize a visualização dos dados:</p>
+        <ul>
+            <li><strong>Período:</strong> Hoje, Semana, Mês, Trimestre, Ano</li>
+            <li><strong>Comparativo:</strong> Compare com período anterior</li>
+            <li><strong>Por Equipe:</strong> Filtre por setor ou operador</li>
+            <li><strong>Exportar:</strong> Gere PDF ou Excel para apresentações</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Atualização Automática</h4>
+        <p>
+            Os dados são atualizados automaticamente a cada 5 minutos. Para forçar atualização imediata, 
+            clique no botão "🔄 Atualizar" no topo.
+        </p>
+    </div>
+
     <div class="tips-box">
-        <h4>💡 Dica</h4>
-        <p>Configure relatórios automáticos para receber por email semanalmente.</p>
+        <h4>💡 Rotina Recomendada</h4>
+        <ul>
+            <li><strong>Manhã:</strong> Revise Tarefas de Hoje e Deals Recentes</li>
+            <li><strong>Meio-dia:</strong> Acompanhe Performance de Vendas</li>
+            <li><strong>Tarde:</strong> Analise Origem dos Contatos</li>
+            <li><strong>Fim do dia:</strong> Verifique Financeiro e Produtividade</li>
+            <li><strong>Semanal:</strong> Análise completa de tendências</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="equipes-operadores">
+            Próximo: Equipes - Operadores
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

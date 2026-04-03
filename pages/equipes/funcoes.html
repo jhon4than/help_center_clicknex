@@ -5,40 +5,280 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">🎭</div>
+    <div class="module-icon">
+        <i data-lucide="shield"></i>
+    </div>
     <h1>Funções e Permissões</h1>
     <p class="module-description">
-        Configure perfis de acesso personalizados
+        Gestor de permissões de cargos
     </p>
 </div>
 
 <div class="content-text">
     <h2>O que são Funções?</h2>
     <p>
-        Funções são perfis de permissão que definem o que cada tipo de usuário pode fazer no sistema.
+        É o gestor de permissões de cargos. Em vez de configurares cada utilizador um a um, crias "Funções" 
+        (ex: Vendedor, Suporte, Financeiro) com permissões específicas e atribuis essas funções aos teus operadores. 
+        Isto centraliza o controlo de acesso e facilita a gestão de equipas grandes.
     </p>
 
-    <h2>Funções Padrão</h2>
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">🎯</div>
+            <h3>Gestão Centralizada</h3>
+            <p>Configure uma vez, aplique a muitos</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🔒</div>
+            <h3>Controlo Granular</h3>
+            <p>Permissões específicas por módulo</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">⚡</div>
+            <h3>Aplicação Instantânea</h3>
+            <p>Mudanças refletem imediatamente</p>
+        </div>
+    </div>
+
+    <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Perfis Pré-configurados</h3>
+        <h3>1. Criar Nova Função</h3>
+        <p>Clica em <strong>"+ Nova Função"</strong> e configura:</p>
+        <ol class="step-list">
+            <li><strong>Nome da Função:</strong>
+                <ul>
+                    <li>Define um nome claro (ex: "Gerente de Vendas")</li>
+                    <li>Use nomes que reflitam o cargo real</li>
+                    <li>Evite nomes genéricos como "Função 1"</li>
+                </ul>
+            </li>
+            <li><strong>Cor de Identificação:</strong>
+                <ul>
+                    <li>Escolhe uma cor para identificação rápida</li>
+                    <li>Aparece em relatórios e listas</li>
+                    <li>Facilita visualização no sistema</li>
+                </ul>
+            </li>
+            <li><strong>Descrição (opcional):</strong>
+                <ul>
+                    <li>Breve explicação do propósito da função</li>
+                    <li>Ajuda outros administradores a entender</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="feature-section">
+        <h3>2. Configuração de Permissões Granulares</h3>
+        <p>Esta é a parte mais importante. Podes marcar ou desmarcar ações específicas para cada módulo:</p>
+        
+        <h4>Dashboard</h4>
         <ul>
-            <li><strong>Administrador:</strong> Acesso total ao sistema</li>
-            <li><strong>Gestor:</strong> Visualiza tudo, edita sua equipe</li>
-            <li><strong>Vendedor:</strong> Acesso a vendas e seus leads</li>
-            <li><strong>Atendente:</strong> Apenas módulo de atendimento</li>
-            <li><strong>Financeiro:</strong> Acesso a relatórios e cobranças</li>
+            <li><strong>Ver Dashboard:</strong> Visualizar gráficos e métricas iniciais</li>
+            <li><strong>Exportar Dados:</strong> Baixar relatórios em CSV/PDF</li>
+        </ul>
+        
+        <h4>Vendas</h4>
+        <ul>
+            <li><strong>Ver Leads:</strong> Visualizar base de contatos</li>
+            <li><strong>Criar Leads:</strong> Adicionar novos contatos</li>
+            <li><strong>Editar Leads:</strong> Modificar informações existentes</li>
+            <li><strong>Excluir Leads:</strong> Remover contatos (cuidado!)</li>
+            <li><strong>Ver Negócios:</strong> Acessar pipeline de vendas</li>
+            <li><strong>Criar Negócios:</strong> Adicionar novas oportunidades</li>
+            <li><strong>Editar Negócios:</strong> Atualizar status e valores</li>
+            <li><strong>Excluir Negócios:</strong> Remover oportunidades</li>
+            <li><strong>Ver Organizações:</strong> Acessar empresas cadastradas</li>
+            <li><strong>Gerenciar Produtos:</strong> Criar/editar catálogo</li>
+        </ul>
+        
+        <h4>Atendimento</h4>
+        <ul>
+            <li><strong>Ver Conversas:</strong> Acessar histórico de mensagens</li>
+            <li><strong>Responder Mensagens:</strong> Interagir com clientes</li>
+            <li><strong>Criar Campanhas:</strong> Disparos em massa</li>
+            <li><strong>Gerenciar Templates:</strong> Criar modelos de mensagem</li>
+            <li><strong>Configurar Chatbots:</strong> Automações de atendimento</li>
+        </ul>
+        
+        <h4>Agenda</h4>
+        <ul>
+            <li><strong>Ver Agendamentos:</strong> Visualizar calendário</li>
+            <li><strong>Criar Agendamentos:</strong> Marcar compromissos</li>
+            <li><strong>Editar Agendamentos:</strong> Alterar horários</li>
+            <li><strong>Cancelar Agendamentos:</strong> Desmarcar compromissos</li>
+            <li><strong>Ver Relatórios:</strong> Métricas de performance</li>
+        </ul>
+        
+        <h4>Projetos</h4>
+        <ul>
+            <li><strong>Ver Projetos:</strong> Acessar lista de projetos</li>
+            <li><strong>Criar Projetos:</strong> Iniciar novos projetos</li>
+            <li><strong>Gerenciar Tarefas:</strong> Criar e atribuir tarefas</li>
+            <li><strong>Acesso Cliente:</strong> Gerar links de visualização</li>
+        </ul>
+        
+        <h4>Inteligência</h4>
+        <ul>
+            <li><strong>Ver Rastreamento:</strong> Métricas de campanhas pagas</li>
+            <li><strong>Configurar Padrões:</strong> Gatilhos de rastreio</li>
+            <li><strong>Ver Relatórios:</strong> Dashboard consolidado 360º</li>
+            <li><strong>Exportar Dados:</strong> Baixar análises</li>
+        </ul>
+        
+        <h4>Equipes</h4>
+        <ul>
+            <li><strong>Ver Operadores:</strong> Lista de usuários</li>
+            <li><strong>Criar Operadores:</strong> Adicionar novos usuários</li>
+            <li><strong>Editar Operadores:</strong> Alterar dados e permissões</li>
+            <li><strong>Desativar Operadores:</strong> Remover acessos</li>
+            <li><strong>Gerenciar Funções:</strong> Criar/editar cargos</li>
+            <li><strong>Gerenciar Setores:</strong> Organizar departamentos</li>
+        </ul>
+        
+        <h4>Sistema</h4>
+        <ul>
+            <li><strong>Configurações Gerais:</strong> Ajustes do sistema</li>
+            <li><strong>API WhatsApp:</strong> Configurar conexões</li>
+            <li><strong>Tabulações:</strong> Criar campos personalizados</li>
+            <li><strong>Variáveis:</strong> Gerenciar variáveis do sistema</li>
+            <li><strong>Auditoria:</strong> Ver logs de atividades</li>
         </ul>
     </div>
 
     <div class="feature-section">
-        <h3>Criar Função Personalizada</h3>
-        <ol class="step-list">
-            <li>Acesse <strong>Equipes</strong> → <strong>Funções</strong></li>
-            <li>Clique em <strong>"+ Nova Função"</strong></li>
-            <li>Defina nome e descrição</li>
-            <li>Marque permissões desejadas</li>
-            <li>Salve</li>
-        </ol>
+        <h3>3. Selecionar Todas as Permissões</h3>
+        <p>Se estiveres a criar uma função de administrador completo:</p>
+        <ul>
+            <li>Usa o botão <strong>"Selecionar Todas"</strong> no topo</li>
+            <li>Marca todas as permissões de uma vez</li>
+            <li>Economiza tempo na configuração</li>
+            <li>Depois podes desmarcar permissões específicas se necessário</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Gestão de Operadores por Função</h3>
+        <p>Na tabela principal de funções, visualiza:</p>
+        
+        <h4>Coluna Operadores</h4>
+        <ul>
+            <li>Número de utilizadores vinculados a cada função</li>
+            <li>Clique no número para ver lista completa</li>
+            <li>Identifique funções mais usadas</li>
+        </ul>
+        
+        <h4>Coluna Permissões</h4>
+        <ul>
+            <li>Total de permissões ativas naquela função</li>
+            <li>Comparação rápida entre funções</li>
+            <li>Identifique funções muito permissivas</li>
+        </ul>
+        
+        <h4>Coluna Status</h4>
+        <ul>
+            <li><strong>Padrão:</strong> Função aplicada automaticamente a novos operadores</li>
+            <li><strong>Ativa:</strong> Função disponível para atribuição</li>
+            <li><strong>Inativa:</strong> Função desabilitada (operadores mantêm acesso)</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Ações Rápidas</h3>
+        <p>No menu <strong>"..."</strong> de cada função:</p>
+        
+        <h4>Ver Operadores</h4>
+        <ul>
+            <li>Lista completa de quem possui aquele cargo</li>
+            <li>Acesso rápido aos perfis</li>
+            <li>Identifique quem será afetado por mudanças</li>
+        </ul>
+        
+        <h4>Editar Permissões</h4>
+        <ul>
+            <li>Alterar permissões a qualquer momento</li>
+            <li><strong>Aplicação Instantânea:</strong> Mudanças refletem imediatamente</li>
+            <li>Todos os operadores daquela função são atualizados</li>
+            <li>Não precisa relogar para aplicar</li>
+        </ul>
+        
+        <h4>Duplicar Função</h4>
+        <ul>
+            <li>Cria cópia com as mesmas permissões</li>
+            <li>Útil para criar variações (ex: Vendedor Jr. e Vendedor Sr.)</li>
+            <li>Economiza tempo de configuração</li>
+        </ul>
+        
+        <h4>Excluir Função</h4>
+        <ul>
+            <li>Remove a função do sistema</li>
+            <li>Operadores vinculados perdem todas as permissões</li>
+            <li>Requer confirmação de segurança</li>
+            <li>Não pode excluir função "Administrador" padrão</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Dica de Segurança</h4>
+        <p>A função "Administrador" é geralmente a <strong>Padrão</strong> e possui acesso total ao sistema.</p>
+        <ul>
+            <li>Evita criar muitas funções com permissões de "Excluir"</li>
+            <li>Mantém a integridade dos teus dados</li>
+            <li>Apenas gestores de confiança devem ter acesso total</li>
+            <li>Revisa permissões regularmente</li>
+            <li>Use o princípio do "menor privilégio necessário"</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li><strong>Funções por Departamento:</strong> Crie funções que reflitam a estrutura da empresa (Vendas, Suporte, Financeiro)</li>
+            <li><strong>Hierarquia Clara:</strong> Defina níveis (Jr., Pleno, Sr.) com permissões progressivas</li>
+            <li><strong>Teste Antes:</strong> Crie um operador de teste para validar permissões</li>
+            <li><strong>Documentação:</strong> Use o campo descrição para explicar o propósito de cada função</li>
+            <li><strong>Revisão Trimestral:</strong> Reveja permissões a cada 3 meses</li>
+            <li><strong>Auditoria:</strong> Use o módulo Sistema → Auditoria para ver quem fez o quê</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Exemplos de Funções Comuns</h3>
+        
+        <h4>Vendedor</h4>
+        <ul>
+            <li>Ver e criar Leads</li>
+            <li>Ver, criar e editar Negócios (apenas os seus)</li>
+            <li>Responder mensagens de WhatsApp</li>
+            <li>Ver relatórios de vendas</li>
+            <li>SEM permissão para excluir ou ver dados de outros vendedores</li>
+        </ul>
+        
+        <h4>Atendente</h4>
+        <ul>
+            <li>Ver e responder conversas de WhatsApp</li>
+            <li>Criar agendamentos</li>
+            <li>Ver informações básicas de clientes</li>
+            <li>SEM acesso a vendas, financeiro ou configurações</li>
+        </ul>
+        
+        <h4>Gerente</h4>
+        <ul>
+            <li>Ver todos os dados da equipe</li>
+            <li>Criar e editar em todos os módulos</li>
+            <li>Acesso a relatórios completos</li>
+            <li>Gerenciar operadores do seu setor</li>
+            <li>SEM acesso a configurações críticas do sistema</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="equipes-setores">
+            Próximo: Setores
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

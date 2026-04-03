@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">👤</div>
+    <div class="module-icon">
+        <i data-lucide="user"></i>
+    </div>
     <h1>Operadores</h1>
     <p class="module-description">
         Gerencie usuários e permissões da equipe
@@ -15,36 +17,222 @@
 <div class="content-text">
     <h2>O que são Operadores?</h2>
     <p>
-        Operadores são os usuários do sistema - atendentes, vendedores, gestores. 
-        Cada um tem permissões específicas baseadas em sua função.
+        É a central de gestão de utilizadores do sistema. Aqui podes cadastrar a tua equipa, definir níveis de permissão, 
+        organizar colaboradores por setores e monitorizar a produtividade e o tempo de atividade de cada um. 
+        Controle completo sobre quem acessa o quê no sistema.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">👤</div>
+            <h3>Gestão Completa</h3>
+            <p>Cadastro e permissões centralizadas</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🕒</div>
+            <h3>Tempo Online</h3>
+            <p>Monitore produtividade da equipe</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🏢</div>
+            <h3>Por Setor</h3>
+            <p>Organize por departamentos</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Adicionar Operador</h3>
+        <h3>1. Cadastrar Novo Operador</h3>
+        <p>Clica em <strong>"+ Novo Operador"</strong> e preenche:</p>
         <ol class="step-list">
-            <li>Acesse <strong>Equipes</strong> → <strong>Operadores</strong></li>
-            <li>Clique em <strong>"+ Novo Operador"</strong></li>
-            <li>Preencha: Nome, Email, Telefone</li>
-            <li>Defina função (Atendente, Vendedor, Gestor, Admin)</li>
-            <li>Escolha setores de atuação</li>
-            <li>Envie convite por email</li>
+            <li><strong>Dados Básicos:</strong>
+                <ul>
+                    <li><strong>Nome:</strong> Nome completo do colaborador</li>
+                    <li><strong>Email:</strong> Email corporativo (será o login)</li>
+                    <li><strong>Telefone:</strong> Número de contacto</li>
+                </ul>
+            </li>
+            <li><strong>Senha Segura:</strong>
+                <ul>
+                    <li>Define uma senha inicial</li>
+                    <li>Recomendado: mínimo 8 caracteres</li>
+                    <li>Operador pode alterar no primeiro acesso</li>
+                </ul>
+            </li>
+            <li>Clique em <strong>"Salvar"</strong></li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Gerenciar Permissões</h3>
+        <h3>2. Hierarquia e Permissões</h3>
+        <p>Configure o nível de acesso do operador:</p>
+        
+        <h4>Nível de Acesso</h4>
+        <p>Escolhe entre três níveis hierárquicos:</p>
         <ul>
-            <li>Acesso a módulos específicos</li>
-            <li>Visualizar apenas seus dados ou de toda equipe</li>
-            <li>Permissões de edição e exclusão</li>
-            <li>Acesso a relatórios financeiros</li>
+            <li><strong>Proprietário:</strong> Acesso total e irrestrito
+                <ul>
+                    <li>Pode tudo no sistema</li>
+                    <li>Gerencia outros administradores</li>
+                    <li>Acesso a configurações críticas</li>
+                    <li>Geralmente o dono da empresa</li>
+                </ul>
+            </li>
+            <li><strong>Administrador:</strong> Acesso amplo de gestão
+                <ul>
+                    <li>Pode gerenciar operadores</li>
+                    <li>Acesso a relatórios completos</li>
+                    <li>Configura automações</li>
+                    <li>Não pode alterar proprietário</li>
+                </ul>
+            </li>
+            <li><strong>Membro:</strong> Acesso limitado por função
+                <ul>
+                    <li>Permissões definidas pela função atribuída</li>
+                    <li>Acesso apenas ao necessário</li>
+                    <li>Ideal para operadores de linha de frente</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Função/Cargo</h4>
+        <p>Atribui uma função específica que define o que o operador pode ver:</p>
+        <ul>
+            <li><strong>Comercial:</strong> Acesso a vendas e leads</li>
+            <li><strong>Agenda:</strong> Apenas módulo de agendamentos</li>
+            <li><strong>Suporte:</strong> Atendimento e tickets</li>
+            <li><strong>Financeiro:</strong> Relatórios e cobranças</li>
+            <li>Funções personalizadas criadas em <strong>Equipes → Funções</strong></li>
+        </ul>
+        
+        <h4>Setor/Departamento</h4>
+        <p>Seleciona um ou mais setores para os quais o operador trabalhará:</p>
+        <ul>
+            <li>Exemplo: "Comercial", "Manicure Maria"</li>
+            <li>Operador pode pertencer a múltiplos setores</li>
+            <li>Define onde aparece na agenda</li>
+            <li>Controla transferências de atendimento</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Monitorização de Trabalho</h3>
+        <p>Na tabela principal, visualiza em tempo real:</p>
+        
+        <h4>Coluna Status</h4>
+        <ul>
+            <li><strong>Ativo:</strong> Operador com acesso habilitado (verde)</li>
+            <li><strong>Inativo:</strong> Acesso desabilitado temporariamente (cinza)</li>
+            <li>Toggle rápido para ativar/desativar</li>
+        </ul>
+        
+        <h4>Coluna Tarefas Pendentes</h4>
+        <ul>
+            <li>Número de tarefas atribuídas não concluídas</li>
+            <li>Identifique quem está sobrecarregado</li>
+            <li>Redistribua carga de trabalho</li>
+            <li>Clique no número para ver lista de tarefas</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Relatório de Tempo Online</h3>
+        <p>Clica no botão <strong>"🕒 Relatório de Tempo"</strong>:</p>
+        
+        <h4>Métricas Disponíveis</h4>
+        <ul>
+            <li><strong>Tempo Online:</strong> Quanto tempo passou disponível
+                <ul>
+                    <li>Status 🟢 Online ativo</li>
+                    <li>Recebendo atendimentos</li>
+                </ul>
+            </li>
+            <li><strong>Tempo Em Pausa:</strong> Pausas durante o expediente
+                <ul>
+                    <li>Status 🟡 Em pausa</li>
+                    <li>Não recebe novos atendimentos</li>
+                </ul>
+            </li>
+            <li><strong>Tempo Invisível:</strong> Monitorando sem aparecer
+                <ul>
+                    <li>Status ⚪ Invisível</li>
+                    <li>Geralmente gestores</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Filtragem por Período</h4>
+        <ul>
+            <li>Últimos 7 dias</li>
+            <li>Últimos 30 dias</li>
+            <li>Mês atual</li>
+            <li>Período personalizado</li>
+        </ul>
+        
+        <h4>Exportação de Dados</h4>
+        <ul>
+            <li>Clique em <strong>"Exportar CSV"</strong></li>
+            <li>Arquivo com todos os dados de tempo</li>
+            <li>Útil para análise externa de RH</li>
+            <li>Integração com folha de pagamento</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Ações de Gestão</h3>
+        <p>No menu <strong>"..."</strong> de cada operador:</p>
+        
+        <h4>Editar Dados</h4>
+        <ul>
+            <li>Atualizar nome, email, telefone</li>
+            <li>Alterar função ou setor</li>
+            <li>Modificar nível de acesso</li>
+        </ul>
+        
+        <h4>Alterar Senha</h4>
+        <ul>
+            <li>Redefina senha do operador</li>
+            <li>Útil quando esquecem a senha</li>
+            <li>Força troca no próximo login (opcional)</li>
+        </ul>
+        
+        <h4>Desativar Operador</h4>
+        <ul>
+            <li>Remove acesso ao sistema</li>
+            <li>Mantém histórico de atividades</li>
+            <li>Não exclui dados vinculados</li>
+            <li>Pode ser reativado posteriormente</li>
         </ul>
     </div>
 
     <div class="alert-box">
         <h4>⚠️ Importante</h4>
-        <p>Apenas administradores podem adicionar novos operadores e alterar permissões.</p>
+        <ul>
+            <li>Apenas administradores podem adicionar novos operadores</li>
+            <li>Operadores desativados não contam no limite de licenças</li>
+            <li>Alterações de permissão aplicam-se imediatamente</li>
+            <li>Mantenha sempre pelo menos um proprietário ativo</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li>Use funções ao invés de permissões individuais</li>
+            <li>Revise acessos trimestralmente</li>
+            <li>Desative operadores que saíram da empresa</li>
+            <li>Monitore tempo online para identificar padrões</li>
+            <li>Exporte relatórios mensalmente para RH</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="equipes-funcoes">
+            Próximo: Funções
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">💼</div>
+    <div class="module-icon">
+        <i data-lucide="briefcase"></i>
+    </div>
     <h1>Negócios</h1>
     <p class="module-description">
         Gerencie seu funil de vendas e acompanhe negociações até o fechamento
@@ -13,25 +15,32 @@
 </div>
 
 <div class="content-text">
-    <h2>O que são Negócios?</h2>
+    <h2>O que é o Pipeline de Negócios?</h2>
     <p>
-        Negócios são oportunidades de venda em andamento. Quando um lead está pronto para comprar, 
-        ele é convertido em negócio e passa pelas etapas do funil de vendas até o fechamento.
+        É o funil de vendas (CRM) onde geres as tuas oportunidades comerciais. Permite visualizar 
+        em que fase da venda cada cliente se encontra, desde o primeiro contacto até ao fecho do negócio. 
+        Uma ferramenta visual e intuitiva para acompanhar todo o processo de vendas.
     </p>
 
     <div class="info-cards">
         <div class="info-card">
-            <div class="card-icon">🎯</div>
+            <div class="card-icon">
+                <i data-lucide="target"></i>
+            </div>
             <h3>Funil Visual</h3>
             <p>Visualize todas as etapas da venda</p>
         </div>
         <div class="info-card">
-            <div class="card-icon">💰</div>
+            <div class="card-icon">
+                <i data-lucide="dollar-sign"></i>
+            </div>
             <h3>Previsão de Receita</h3>
             <p>Calcule automaticamente o valor previsto</p>
         </div>
         <div class="info-card">
-            <div class="card-icon">📊</div>
+            <div class="card-icon">
+                <i data-lucide="bar-chart-3"></i>
+            </div>
             <h3>Análise de Performance</h3>
             <p>Identifique gargalos no processo</p>
         </div>
@@ -40,55 +49,79 @@
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Passo 1: Criar Novo Negócio</h3>
-        <ol class="step-list">
-            <li>Acesse <strong>Vendas</strong> → <strong>Negócios</strong></li>
-            <li>Clique em <strong>"+ Novo Negócio"</strong></li>
-            <li>Preencha as informações:
-                <ul>
-                    <li><strong>Título:</strong> Nome descritivo do negócio</li>
-                    <li><strong>Cliente:</strong> Selecione o lead/organização</li>
-                    <li><strong>Valor:</strong> Valor estimado da venda</li>
-                    <li><strong>Produto/Serviço:</strong> O que está sendo vendido</li>
-                    <li><strong>Data Prevista:</strong> Quando espera fechar</li>
-                </ul>
-            </li>
-            <li>Clique em <strong>"Criar Negócio"</strong></li>
-        </ol>
-    </div>
-
-    <div class="feature-section">
-        <h3>Passo 2: Movimentar pelo Funil</h3>
-        <p>O funil padrão possui estas etapas:</p>
-        <ol class="step-list">
-            <li><strong>Qualificação:</strong> Validar se o cliente tem fit</li>
-            <li><strong>Proposta:</strong> Enviar proposta comercial</li>
-            <li><strong>Negociação:</strong> Ajustar condições e valores</li>
-            <li><strong>Fechamento:</strong> Assinar contrato</li>
-        </ol>
-        
-        <p>Para mover um negócio:</p>
+        <h3>1. Visualização em Pipeline (Kanban)</h3>
+        <p>Os negócios aparecem organizados em colunas, cada uma representando uma etapa do funil:</p>
         <ul>
-            <li>Arraste o card para a próxima etapa (visualização Kanban)</li>
-            <li>Ou abra o negócio e clique em <strong>"Avançar Etapa"</strong></li>
+            <li>Cada negócio é representado por um <strong>cartão</strong> visual</li>
+            <li>As colunas representam as <strong>etapas</strong> do processo de venda</li>
+            <li>Use <strong>drag-and-drop</strong> (arrastar e soltar) para mover negócios entre etapas</li>
+            <li>Basta clicar no cartão, segurar e arrastar para a coluna desejada</li>
         </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Dica Visual</h4>
+            <p>Ao arrastar um negócio, a coluna de destino fica destacada. Solte o cartão na nova etapa para atualizar automaticamente.</p>
+        </div>
     </div>
 
     <div class="feature-section">
-        <h3>Passo 3: Registrar Atividades</h3>
+        <h3>2. Adicionar Novo Negócio</h3>
         <ol class="step-list">
-            <li>Abra o negócio</li>
-            <li>Na aba <strong>"Atividades"</strong>, clique em <strong>"+ Nova Atividade"</strong></li>
-            <li>Escolha o tipo:
+            <li>Clique no botão <strong>"+ Negócio"</strong> no topo da tela</li>
+            <li>Preencha os campos obrigatórios:
                 <ul>
-                    <li><strong>Ligação:</strong> Registrar call com o cliente</li>
-                    <li><strong>Reunião:</strong> Agendar ou registrar reunião</li>
-                    <li><strong>Email:</strong> Enviar proposta ou follow-up</li>
-                    <li><strong>Tarefa:</strong> Lembrete de ação necessária</li>
+                    <li><strong>Título:</strong> Nome descritivo do negócio (ex: "Venda Cozinha - João Silva")</li>
+                    <li><strong>Produto/Serviço:</strong> Selecione do catálogo cadastrado</li>
+                    <li><strong>Valor:</strong> Valor estimado da venda em R$</li>
                 </ul>
             </li>
-            <li>Preencha os detalhes e salve</li>
+            <li>Adicione <strong>etiquetas coloridas</strong> para identificar prioridades:
+                <ul>
+                    <li>Clique em "Adicionar Etiqueta"</li>
+                    <li>Escolha cores como vermelho (urgente), verde (qualificado), etc</li>
+                    <li>As etiquetas aparecem no cartão para identificação rápida</li>
+                </ul>
+            </li>
+            <li>Clique em <strong>"Salvar"</strong></li>
         </ol>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Personalizar Etapas do Funil</h3>
+        <p>Adapte o pipeline ao seu processo de vendas:</p>
+        <ol class="step-list">
+            <li>Clique no botão <strong>"+ Nova Etapa"</strong> no topo do pipeline</li>
+            <li>Defina o <strong>nome da etapa</strong>:
+                <ul>
+                    <li>Exemplos: "Qualificação", "Proposta Enviada", "Negociação", "Fechamento"</li>
+                    <li>Use nomes que façam sentido para seu processo</li>
+                </ul>
+            </li>
+            <li>Escolha uma <strong>cor específica</strong> para a etapa:
+                <ul>
+                    <li>Cores ajudam na identificação visual rápida</li>
+                    <li>Sugestão: cores frias (azul) para início, cores quentes (verde) para fechamento</li>
+                </ul>
+            </li>
+            <li>Defina a ordem arrastando as etapas</li>
+            <li>Salve as alterações</li>
+        </ol>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Usar Filtros de Pipeline</h3>
+        <p>No topo da tela, você encontra o seletor de pipelines:</p>
+        <ul>
+            <li><strong>Pipeline Padrão:</strong> Funil principal de vendas</li>
+            <li><strong>Outros Funis:</strong> Se você criou pipelines personalizados, aparecem aqui</li>
+            <li>Clique no seletor para alternar entre diferentes fluxos de venda</li>
+            <li>Útil para gerenciar produtos diferentes ou equipes separadas</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Exemplo de Uso</h4>
+            <p>Crie um pipeline "Vendas Corporativas" e outro "Vendas Varejo" para gerenciar processos diferentes com etapas específicas.</p>
+        </div>
     </div>
 
     <div class="tips-box">

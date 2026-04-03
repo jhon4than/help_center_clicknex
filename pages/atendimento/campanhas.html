@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">📨</div>
+    <div class="module-icon">
+        <i data-lucide="send"></i>
+    </div>
     <h1>Campanhas (Disparos API)</h1>
     <p class="module-description">
         Envie mensagens em massa via API Oficial e Não Oficial do WhatsApp
@@ -13,12 +15,210 @@
 </div>
 
 <div class="content-text">
-    <h2>O que são Campanhas?</h2>
+    <h2>O que são Campanhas (Disparos WhatsApp)?</h2>
     <p>
-        Campanhas são disparos de mensagens do WhatsApp realizados através da API Oficial (WABA) 
-        e API Não Oficial. Permitem enviar mensagens para múltiplos contatos de forma automatizada, 
-        respeitando as políticas do WhatsApp.
+        É a ferramenta de comunicação em massa do sistema. Permite enviar mensagens para grandes listas de contactos 
+        (Leads ou Grupos) de forma automatizada e programada, com suporte a métricas de entrega e leitura. 
+        Alcance centenas ou milhares de clientes simultaneamente.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">📊</div>
+            <h3>Métricas Completas</h3>
+            <p>Entrega, leitura e falhas</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">⏰</div>
+            <h3>Agendamento</h3>
+            <p>Programe envios futuros</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🔄</div>
+            <h3>Recorrente</h3>
+            <p>Campanhas automáticas periódicas</p>
+        </div>
+    </div>
+
+    <h2>Como Utilizar</h2>
+    
+    <div class="feature-section">
+        <h3>1. Criar Novo Disparo</h3>
+        <p>Inicie uma nova campanha de mensagens:</p>
+        <ol class="step-list">
+            <li>Clica em <strong>"+ Novo Disparo"</strong></li>
+            <li>Define um <strong>nome</strong> para a campanha:
+                <ul>
+                    <li>Exemplo: "Promoção Black Friday"</li>
+                    <li>Exemplo: "Lembrete de Pagamento - Novembro"</li>
+                    <li>Exemplo: "Novidades do Mês"</li>
+                    <li>Use nomes descritivos para facilitar identificação</li>
+                </ul>
+            </li>
+            <li>Clique em <strong>"Avançar"</strong></li>
+        </ol>
+    </div>
+
+    <div class="feature-section">
+        <h3>2. Configuração de Envio</h3>
+        <p>Escolhe o tipo de conexão que será usado:</p>
+        
+        <h4>Evolution API (Não Oficial)</h4>
+        <ul>
+            <li>Instância própria conectada via WhatsApp Web</li>
+            <li>Mais flexível para mensagens livres</li>
+            <li>Não requer templates aprovados</li>
+            <li>Ideal para comunicações informais</li>
+            <li>Pode enviar qualquer tipo de conteúdo</li>
+        </ul>
+        
+        <h4>API Oficial Meta (WABA)</h4>
+        <ul>
+            <li>Conta Business verificada pela Meta</li>
+            <li>Exige uso de Templates pré-aprovados</li>
+            <li>Maior confiabilidade e entregabilidade</li>
+            <li>Menor risco de bloqueio</li>
+            <li>Ideal para comunicações corporativas</li>
+        </ul>
+        
+        <div class="alert-box">
+            <h4>⚠️ Diferença Importante</h4>
+            <p><strong>API Oficial:</strong> Só pode usar templates aprovados pela Meta<br>
+            <strong>API Não Oficial:</strong> Permite mensagens livres sem aprovação prévia</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Agendamento e Delay</h3>
+        <p>Configure quando e como as mensagens serão enviadas:</p>
+        
+        <h4>Tipo de Envio</h4>
+        <ul>
+            <li><strong>Envio Imediato:</strong> Dispara assim que confirmar
+                <ul>
+                    <li>Mensagens começam a ser enviadas instantaneamente</li>
+                    <li>Útil para comunicações urgentes</li>
+                </ul>
+            </li>
+            <li><strong>Agendar:</strong> Programa uma data e hora futura
+                <ul>
+                    <li>Escolha dia e horário específico</li>
+                    <li>Sistema envia automaticamente no horário definido</li>
+                    <li>Ideal para campanhas planejadas</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Delay entre Mensagens (CRUCIAL)</h4>
+        <p>É crucial definir o <strong>Delay entre mensagens</strong> em segundos:</p>
+        <ul>
+            <li><strong>Recomendado:</strong> 3-5 segundos entre cada envio</li>
+            <li><strong>Por quê?</strong> Evita bloqueios do WhatsApp</li>
+            <li><strong>Comportamento Humano:</strong> Simula digitação natural</li>
+            <li><strong>Segurança:</strong> Reduz risco de banimento</li>
+        </ul>
+        
+        <div class="tips-box">
+            <h4>💡 Configuração Segura</h4>
+            <p>Para 1000 mensagens com delay de 5 segundos:<br>
+            Tempo total: ~1h23min (muito mais seguro que envio instantâneo)</p>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Selecionar Destinatários</h3>
+        <p>Podes selecionar destinatários de três formas:</p>
+        
+        <h4>Opção A: Leads</h4>
+        <ul>
+            <li><strong>Todos os Leads:</strong> Envia para toda a base de contactos</li>
+            <li><strong>Seleção Manual:</strong> Escolhe leads específicos
+                <ul>
+                    <li>Filtre por etiquetas</li>
+                    <li>Filtre por origem</li>
+                    <li>Filtre por responsável</li>
+                </ul>
+            </li>
+            <li><strong>Por Segmento:</strong> Use filtros avançados
+                <ul>
+                    <li>Leads criados nos últimos 30 dias</li>
+                    <li>Leads sem interação há X dias</li>
+                    <li>Leads de uma região específica</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Opção B: Grupos</h4>
+        <ul>
+            <li>Dispara para grupos de WhatsApp específicos</li>
+            <li>Selecione um ou múltiplos grupos</li>
+            <li>Útil para comunicados coletivos</li>
+            <li>Todos os membros do grupo recebem</li>
+        </ul>
+        
+        <h4>Opção C: Manual</h4>
+        <ul>
+            <li>Insere números diretamente no campo</li>
+            <li>Um número por linha</li>
+            <li>Formato: 5511999999999 (DDI + DDD + número)</li>
+            <li>Útil para listas externas</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Dashboard de Estatísticas</h3>
+        <p>No separador <strong>"Uso / Limites"</strong> e no ícone de gráfico de cada campanha, podes monitorizar:</p>
+        
+        <h4>Métricas Principais</h4>
+        <ul>
+            <li><strong>Total de Mensagens Enviadas:</strong> Quantidade total disparada</li>
+            <li><strong>Entregues:</strong> Mensagens que chegaram ao destinatário
+                <ul>
+                    <li>Indica sucesso na entrega</li>
+                    <li>Percentual de entregabilidade</li>
+                </ul>
+            </li>
+            <li><strong>Lidas:</strong> Mensagens visualizadas pelo cliente
+                <ul>
+                    <li>Disponível apenas na API Oficial</li>
+                    <li>Indica engajamento real</li>
+                </ul>
+            </li>
+            <li><strong>Falhas:</strong> Mensagens que não foram entregues
+                <ul>
+                    <li>Números inválidos</li>
+                    <li>Bloqueios</li>
+                    <li>Erros de conexão</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Informações Temporais</h4>
+        <ul>
+            <li><strong>Horário de Início:</strong> Quando o disparo começou</li>
+            <li><strong>Horário de Conclusão:</strong> Quando terminou</li>
+            <li><strong>Duração Total:</strong> Tempo decorrido</li>
+            <li><strong>Taxa de Envio:</strong> Mensagens por minuto</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>6. Agendamento Recorrente (Dica de Segurança)</h3>
+        <p>O sistema permite configurar campanhas periódicas automáticas:</p>
+        <ul>
+            <li><strong>Diário:</strong> Todos os dias no mesmo horário</li>
+            <li><strong>Semanal:</strong> Escolha dias da semana específicos</li>
+            <li><strong>Mensal:</strong> Dia específico de cada mês</li>
+        </ul>
+        
+        <p><strong>Casos de uso:</strong></p>
+        <ul>
+            <li>Lembretes de pagamento mensais</li>
+            <li>Newsletter semanal</li>
+            <li>Bom dia diário para clientes VIP</li>
+            <li>Promoções de fim de semana</li>
+        </ul>
+    </div>
 
     <div class="info-cards">
         <div class="info-card">
@@ -40,27 +240,81 @@
 
     <h2>Como Utilizar</h2>
     
+    <div class="alert-box">
+        <h4>⚠️ Importante - Compatibilidade</h4>
+        <p>
+            As campanhas funcionam tanto para <strong>API Oficial (WABA)</strong> quanto para 
+            <strong>API Não Oficial</strong>. O processo é o mesmo, mas com algumas diferenças:
+        </p>
+        <ul>
+            <li><strong>API Oficial:</strong> Requer templates pré-aprovados pela Meta</li>
+            <li><strong>API Não Oficial:</strong> Permite mensagens livres sem aprovação prévia</li>
+        </ul>
+    </div>
+
     <div class="feature-section">
-        <h3>Passo 1: Acessar o Módulo</h3>
+        <h3>Passo 1: Definir o Público-Alvo</h3>
+        <p>Antes de criar a campanha, você precisa definir quem receberá as mensagens:</p>
         <ol class="step-list">
-            <li>No menu lateral, clique em <strong>Atendimento</strong></li>
-            <li>Selecione <strong>Campanhas</strong></li>
-            <li>Você verá a lista de campanhas existentes</li>
+            <li>Acesse <strong>Atendimento</strong> → <strong>Campanhas</strong></li>
+            <li>Clique em <strong>"Nova Campanha"</strong></li>
+            <li>Defina o público de 3 formas:
+                <ul>
+                    <li><strong>Lista de Contatos:</strong> Selecione uma lista pré-cadastrada</li>
+                    <li><strong>Importar CSV:</strong> Faça upload de arquivo com números</li>
+                    <li><strong>Manual:</strong> Digite os números manualmente</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <div class="tips-box">
+            <h4>💡 Formato do CSV</h4>
+            <p>O arquivo CSV deve conter uma coluna com os números no formato:</p>
+            <ul>
+                <li>5511999999999 (com DDI e DDD)</li>
+                <li>Sem espaços, traços ou parênteses</li>
+                <li>Um número por linha</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <h3>Passo 2: Definir o Template da Mensagem</h3>
+        <p>Configure a mensagem que será enviada:</p>
+        
+        <h4>Para API Oficial (WABA):</h4>
+        <ol class="step-list">
+            <li>Selecione um <strong>Template Aprovado</strong> pela Meta</li>
+            <li>Preencha as variáveis do template (se houver)</li>
+            <li>Visualize a prévia da mensagem</li>
+        </ol>
+
+        <h4>Para API Não Oficial:</h4>
+        <ol class="step-list">
+            <li>Digite a mensagem livremente no campo de texto</li>
+            <li>Adicione variáveis personalizadas (opcional):
+                <ul>
+                    <li><code>{{nome}}</code> - Nome do contato</li>
+                    <li><code>{{empresa}}</code> - Nome da empresa</li>
+                    <li><code>{{custom1}}</code> - Campo personalizado</li>
+                </ul>
+            </li>
+            <li>Adicione mídias (imagem, vídeo, documento) se necessário</li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Passo 2: Criar Nova Campanha</h3>
+        <h3>Passo 3: Configurar e Enviar</h3>
         <ol class="step-list">
-            <li>Clique no botão <strong>"Nova Campanha"</strong></li>
-            <li>Preencha os dados básicos:
+            <li>Defina o tipo de envio:
                 <ul>
-                    <li><strong>Nome da Campanha:</strong> Identificação interna</li>
-                    <li><strong>Descrição:</strong> Objetivo da campanha</li>
-                    <li><strong>Canal:</strong> Selecione o número do WhatsApp</li>
+                    <li><strong>Envio Imediato:</strong> Dispara assim que confirmar</li>
+                    <li><strong>Agendar:</strong> Escolha data e hora para envio</li>
                 </ul>
             </li>
-            <li>Clique em <strong>"Avançar"</strong></li>
+            <li>Configure o intervalo entre mensagens (recomendado: 3-5 segundos)</li>
+            <li>Revise todos os dados da campanha</li>
+            <li>Clique em <strong>"Confirmar e Enviar"</strong></li>
         </ol>
     </div>
 

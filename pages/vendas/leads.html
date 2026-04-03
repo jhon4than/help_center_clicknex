@@ -5,7 +5,9 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">🎯</div>
+    <div class="module-icon">
+        <i data-lucide="target"></i>
+    </div>
     <h1>Leads</h1>
     <p class="module-description">
         Gerencie seus leads e transforme oportunidades em clientes
@@ -15,23 +17,30 @@
 <div class="content-text">
     <h2>O que são Leads?</h2>
     <p>
-        Leads são potenciais clientes que demonstraram interesse em seus produtos ou serviços. 
-        No CLICKNEX, você pode captar, qualificar e nutrir leads até convertê-los em negócios fechados.
+        É a base de dados de potenciais clientes. Aqui geres todos os contactos que entraram no sistema, 
+        identificando a sua origem e informações básicas antes de se tornarem um negócio concreto. 
+        É o primeiro ponto de contacto com possíveis clientes.
     </p>
 
     <div class="info-cards">
         <div class="info-card">
-            <div class="card-icon">📥</div>
+            <div class="card-icon">
+                <i data-lucide="inbox"></i>
+            </div>
             <h3>Captação</h3>
             <p>Receba leads de múltiplas fontes automaticamente</p>
         </div>
         <div class="info-card">
-            <div class="card-icon">⭐</div>
+            <div class="card-icon">
+                <i data-lucide="star"></i>
+            </div>
             <h3>Qualificação</h3>
             <p>Classifique leads por potencial de compra</p>
         </div>
         <div class="info-card">
-            <div class="card-icon">🚀</div>
+            <div class="card-icon">
+                <i data-lucide="rocket"></i>
+            </div>
             <h3>Conversão</h3>
             <p>Transforme leads em negócios com facilidade</p>
         </div>
@@ -40,47 +49,109 @@
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Passo 1: Adicionar Novo Lead</h3>
+        <h3>1. Adicionar Leads</h3>
+        <p>Existem duas formas principais de adicionar leads ao sistema:</p>
+        
+        <h4>Método 1: Criar Manualmente</h4>
         <ol class="step-list">
-            <li>No menu lateral, clique em <strong>Vendas</strong> → <strong>Leads</strong></li>
-            <li>Clique no botão <strong>"+ Novo Lead"</strong></li>
-            <li>Preencha os dados do contato:
+            <li>Clique no botão <strong>"+ Novo Lead"</strong> no topo da tela</li>
+            <li>Preencha os dados do contacto:
                 <ul>
-                    <li><strong>Nome:</strong> Nome completo do lead</li>
-                    <li><strong>Telefone:</strong> Número com DDD</li>
-                    <li><strong>Email:</strong> Email de contato</li>
-                    <li><strong>Empresa:</strong> Nome da empresa (opcional)</li>
+                    <li><strong>Nome:</strong> Nome completo</li>
+                    <li><strong>Telefone:</strong> Número com DDD (ex: 11999999999)</li>
+                    <li><strong>Email:</strong> Email de contacto</li>
+                    <li><strong>Empresa:</strong> Nome da organização (opcional)</li>
                 </ul>
             </li>
+            <li>Adicione etiquetas para categorização</li>
             <li>Clique em <strong>"Salvar"</strong></li>
         </ol>
+        
+        <h4>Método 2: Importar em Massa</h4>
+        <ol class="step-list">
+            <li>Clique no botão <strong>"Importar CSV"</strong></li>
+            <li>Faça upload do arquivo CSV com a lista de contactos</li>
+            <li>Mapeie as colunas (Nome, Telefone, Email, etc)</li>
+            <li>Confirme a importação</li>
+        </ol>
+        
+        <div class="tips-box">
+            <h4>💡 Formato do CSV</h4>
+            <p>O arquivo deve conter colunas: Nome, Telefone, Email, Empresa</p>
+            <ul>
+                <li>Telefone: 5511999999999 (com DDI e DDD, sem espaços)</li>
+                <li>Uma linha por lead</li>
+                <li>Primeira linha com cabeçalhos</li>
+            </ul>
+        </div>
     </div>
 
     <div class="feature-section">
-        <h3>Passo 2: Qualificar o Lead</h3>
+        <h3>2. Gestão de Colunas</h3>
+        <p>Personalize a visualização da tabela de leads:</p>
         <ol class="step-list">
-            <li>Abra o lead clicando sobre ele na lista</li>
-            <li>Defina o <strong>Status</strong>:
+            <li>Clique no botão <strong>"Colunas"</strong> no topo da tabela</li>
+            <li>Marque/desmarque as informações que deseja visualizar:
                 <ul>
-                    <li><strong>Novo:</strong> Lead recém-captado</li>
-                    <li><strong>Contatado:</strong> Já houve primeiro contato</li>
-                    <li><strong>Qualificado:</strong> Lead tem potencial de compra</li>
-                    <li><strong>Desqualificado:</strong> Não tem perfil adequado</li>
+                    <li><strong>E-mail:</strong> Endereço de email do lead</li>
+                    <li><strong>Telefone:</strong> Número de contacto</li>
+                    <li><strong>Origem:</strong> De onde o lead veio</li>
+                    <li><strong>Data de Criação:</strong> Quando entrou no sistema</li>
+                    <li><strong>Responsável:</strong> Vendedor atribuído</li>
+                    <li><strong>Etiquetas:</strong> Tags de categorização</li>
                 </ul>
             </li>
-            <li>Atribua uma <strong>Pontuação</strong> (1 a 5 estrelas)</li>
-            <li>Adicione <strong>Tags</strong> para categorizar (ex: "Urgente", "Grande Porte")</li>
+            <li>As colunas selecionadas aparecem na tabela</li>
+            <li>A configuração é salva automaticamente</li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Passo 3: Fazer Follow-up</h3>
-        <ol class="step-list">
-            <li>Na tela do lead, clique em <strong>"Adicionar Atividade"</strong></li>
-            <li>Escolha o tipo: Ligação, Email, Reunião ou WhatsApp</li>
-            <li>Registre o resultado da interação</li>
-            <li>Agende o próximo contato clicando em <strong>"Agendar Follow-up"</strong></li>
-        </ol>
+        <h3>3. Origem e Etiquetas</h3>
+        <p>O sistema identifica automaticamente a origem dos leads:</p>
+        <ul>
+            <li><strong>WhatsApp API Oficial:</strong> Leads que entraram via WABA</li>
+            <li><strong>WhatsApp Não Oficial:</strong> Contactos da API não oficial</li>
+            <li><strong>Site:</strong> Formulários do website</li>
+            <li><strong>Manual:</strong> Adicionados manualmente</li>
+            <li><strong>Importação:</strong> Vindos de arquivo CSV</li>
+        </ul>
+        
+        <p>Adicione etiquetas para segmentar:</p>
+        <ul>
+            <li>Clique no lead e depois em <strong>"Adicionar Etiqueta"</strong></li>
+            <li>Escolha etiquetas existentes ou crie novas</li>
+            <li>Exemplos: "Cozinha", "Banheiro", "Urgente", "VIP"</li>
+            <li>Use cores para identificação visual rápida</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Ações Rápidas</h3>
+        <p>Ao clicar nos três pontos <strong>"..."</strong> ao lado de um lead, você pode:</p>
+        
+        <h4>Ir para Conversa</h4>
+        <ul>
+            <li>Abre o chat do WhatsApp diretamente</li>
+            <li>Útil para responder rapidamente</li>
+            <li>Mantém o histórico de conversas</li>
+        </ul>
+        
+        <h4>Criar Negócio</h4>
+        <ul>
+            <li>Transforma o lead em oportunidade no Pipeline</li>
+            <li>Abre formulário pré-preenchido com dados do lead</li>
+            <li>Define valor e produto/serviço</li>
+            <li>O lead é automaticamente vinculado ao negócio</li>
+        </ul>
+        
+        <h4>Editar/Etiquetar</h4>
+        <ul>
+            <li><strong>Editar:</strong> Atualizar dados cadastrais</li>
+            <li><strong>Etiquetar:</strong> Adicionar marcadores de segmentação</li>
+            <li><strong>Atribuir:</strong> Definir responsável pelo lead</li>
+            <li><strong>Excluir:</strong> Remover lead do sistema</li>
+        </ul>
     </div>
 
     <div class="tips-box">

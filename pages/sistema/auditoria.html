@@ -5,51 +5,347 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">🔍</div>
+    <div class="module-icon">
+        <i data-lucide="search"></i>
+    </div>
     <h1>Auditoria e Logs</h1>
     <p class="module-description">
-        Monitore todas as ações realizadas no sistema
+        Registo histórico de todas as ações do sistema
     </p>
 </div>
 
 <div class="content-text">
     <h2>O que é Auditoria?</h2>
     <p>
-        O módulo de Auditoria registra todas as ações importantes realizadas no sistema, 
-        permitindo rastrear quem fez o quê e quando.
+        É o registo histórico (logs) de todas as ações relevantes realizadas no sistema. Serve como ferramenta de 
+        segurança e transparência, permitindo rastrear alterações em leads, negócios, configurações ou acessos de 
+        utilizadores. É essencial para resolver dúvidas sobre "quem fez o quê" e garantir responsabilidade de cada operador.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">🔒</div>
+            <h3>Segurança</h3>
+            <p>Rastreamento completo de ações</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">📋</div>
+            <h3>Transparência</h3>
+            <p>Histórico imutável e auditável</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🔍</div>
+            <h3>Investigação</h3>
+            <p>Resolva dúvidas rapidamente</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Visualizar Logs</h3>
-        <ol class="step-list">
-            <li>Acesse <strong>Sistema</strong> → <strong>Auditoria</strong></li>
-            <li>Use filtros para encontrar ações específicas:
+        <h3>1. Consulta de Histórico</h3>
+        <p>No painel central, aparecem os logs detalhados de todas as ações:</p>
+        
+        <h4>Informações Exibidas</h4>
+        <ul>
+            <li><strong>Usuário:</strong> Quem realizou a ação
                 <ul>
-                    <li>Por usuário</li>
-                    <li>Por módulo</li>
-                    <li>Por tipo de ação</li>
-                    <li>Por período</li>
+                    <li>Nome completo do operador</li>
+                    <li>Email de login</li>
+                    <li>Função/Cargo</li>
                 </ul>
             </li>
-            <li>Clique em um registro para ver detalhes</li>
+            <li><strong>Ação Realizada:</strong> O que foi feito
+                <ul>
+                    <li>Criou, Editou, Excluiu, Visualizou</li>
+                    <li>Login, Logout</li>
+                    <li>Exportou dados</li>
+                    <li>Alterou configuração</li>
+                </ul>
+            </li>
+            <li><strong>Entidade Afetada:</strong> Onde aconteceu
+                <ul>
+                    <li>Lead, Negócio, Projeto, Agendamento</li>
+                    <li>Nome ou ID do registro</li>
+                    <li>Módulo do sistema</li>
+                </ul>
+            </li>
+            <li><strong>Data/Hora:</strong> Quando ocorreu
+                <ul>
+                    <li>Timestamp preciso (até segundos)</li>
+                    <li>Fuso horário do sistema</li>
+                </ul>
+            </li>
+            <li><strong>Detalhes:</strong> Informações adicionais
+                <ul>
+                    <li>Valores antes e depois (em edições)</li>
+                    <li>IP de origem</li>
+                    <li>Dispositivo usado</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>2. Busca Avançada</h3>
+        <p>Ferramentas poderosas para encontrar ações específicas:</p>
+        
+        <h4>Busca por Utilizador</h4>
+        <ul>
+            <li>Procura por nome ou email do operador</li>
+            <li>Ver todas as ações de uma pessoa específica</li>
+            <li>Útil para:
+                <ul>
+                    <li>Auditar trabalho de um funcionário</li>
+                    <li>Investigar suspeita de uso indevido</li>
+                    <li>Avaliar produtividade</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Busca por Entidade</h4>
+        <ul>
+            <li>Procura por nome de um lead ou ID de um negócio</li>
+            <li>Ver histórico completo de um registro</li>
+            <li>Exemplo: "João Silva" mostra:
+                <ul>
+                    <li>Quem criou o lead</li>
+                    <li>Quem editou dados</li>
+                    <li>Quem criou negócio vinculado</li>
+                    <li>Quem enviou mensagens</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Busca por Texto Livre</h4>
+        <ul>
+            <li>Campo de busca geral</li>
+            <li>Procura em todos os campos simultaneamente</li>
+            <li>Útil quando não sabes exatamente o que procuras</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Filtros Inteligentes</h3>
+        <p>Utiliza os filtros de topo para segmentar a visualização:</p>
+        
+        <h4>Filtro por Tipo de Ação</h4>
+        <ul>
+            <li><strong>Criação:</strong> Novos registros adicionados</li>
+            <li><strong>Edição:</strong> Alterações em dados existentes</li>
+            <li><strong>Exclusão:</strong> Registros removidos (crítico!)</li>
+            <li><strong>Visualização:</strong> Acessos a dados sensíveis</li>
+            <li><strong>Exportação:</strong> Downloads de dados</li>
+            <li><strong>Login/Logout:</strong> Acessos ao sistema</li>
+            <li><strong>Configuração:</strong> Mudanças em settings</li>
+        </ul>
+        
+        <h4>Filtro por Módulo</h4>
+        <ul>
+            <li>Dashboard</li>
+            <li>Vendas (Leads, Negócios, Organizações)</li>
+            <li>Atendimento (WhatsApp, Campanhas)</li>
+            <li>Agenda</li>
+            <li>Projetos</li>
+            <li>Inteligência</li>
+            <li>Equipes</li>
+            <li>Sistema</li>
+        </ul>
+        
+        <h4>Filtro por Período</h4>
+        <ul>
+            <li><strong>Hoje:</strong> Últimas 24 horas</li>
+            <li><strong>Esta Semana:</strong> Últimos 7 dias</li>
+            <li><strong>Este Mês:</strong> Mês atual</li>
+            <li><strong>Personalizado:</strong> Define data início e fim</li>
+        </ul>
+        
+        <h4>Filtro por Severidade</h4>
+        <ul>
+            <li><strong>Crítico:</strong> Exclusões, alterações de permissões</li>
+            <li><strong>Alto:</strong> Edições importantes, exportações</li>
+            <li><strong>Médio:</strong> Criações, visualizações</li>
+            <li><strong>Baixo:</strong> Logins, navegação</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Controlo e Responsabilidade</h3>
+        <p>É a ferramenta ideal para resolver dúvidas e garantir accountability:</p>
+        
+        <h4>Casos de Uso Comuns</h4>
+        
+        <h5>"Quem apagou este lead?"</h5>
+        <ol class="step-list">
+            <li>Busca pelo nome do lead</li>
+            <li>Filtra por ação "Exclusão"</li>
+            <li>Sistema mostra quem, quando e de onde apagou</li>
+        </ol>
+        
+        <h5>"Quem alterou o valor deste negócio?"</h5>
+        <ol class="step-list">
+            <li>Busca pelo ID ou nome do negócio</li>
+            <li>Filtra por ação "Edição"</li>
+            <li>Ver detalhes mostra valor antes e depois</li>
+            <li>Identifica quem fez a alteração</li>
+        </ol>
+        
+        <h5>"Quem acessou dados sensíveis?"</h5>
+        <ol class="step-list">
+            <li>Filtra por módulo "Vendas" ou "Financeiro"</li>
+            <li>Filtra por ação "Visualização" ou "Exportação"</li>
+            <li>Ver lista de acessos com timestamps</li>
+        </ol>
+        
+        <h5>"Quando este operador trabalhou?"</h5>
+        <ol class="step-list">
+            <li>Busca pelo nome do operador</li>
+            <li>Filtra por período desejado</li>
+            <li>Ver horários de login/logout e atividades</li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Ações Registradas</h3>
+        <h3>5. Detalhes de um Log</h3>
+        <p>Clica em qualquer registro para ver informações completas:</p>
+        
+        <h4>Painel de Detalhes</h4>
         <ul>
-            <li>Login e logout de usuários</li>
-            <li>Criação, edição e exclusão de registros</li>
-            <li>Alterações de permissões</li>
-            <li>Exportação de dados</li>
-            <li>Configurações modificadas</li>
+            <li><strong>Resumo da Ação:</strong> Descrição em linguagem natural</li>
+            <li><strong>Dados Alterados:</strong> Comparação antes/depois (diff)
+                <ul>
+                    <li>Campos modificados destacados</li>
+                    <li>Valores antigos em vermelho</li>
+                    <li>Valores novos em verde</li>
+                </ul>
+            </li>
+            <li><strong>Contexto Técnico:</strong>
+                <ul>
+                    <li>IP de origem</li>
+                    <li>User Agent (navegador/dispositivo)</li>
+                    <li>Sessão ID</li>
+                    <li>Request ID (para suporte técnico)</li>
+                </ul>
+            </li>
+            <li><strong>Ações Relacionadas:</strong> Outras ações do mesmo usuário no mesmo período</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>6. Exportação de Logs</h3>
+        <p>Para análises externas ou conformidade legal:</p>
+        
+        <h4>Como Exportar</h4>
+        <ol class="step-list">
+            <li>Aplica filtros desejados</li>
+            <li>Clica em <strong>"Exportar Logs"</strong></li>
+            <li>Escolhe formato:
+                <ul>
+                    <li><strong>CSV:</strong> Para Excel/análise</li>
+                    <li><strong>JSON:</strong> Para processamento técnico</li>
+                    <li><strong>PDF:</strong> Para documentação/impressão</li>
+                </ul>
+            </li>
+            <li>Download inicia automaticamente</li>
+        </ol>
+        
+        <h4>Quando Exportar</h4>
+        <ul>
+            <li>Auditorias internas trimestrais</li>
+            <li>Investigações de segurança</li>
+            <li>Conformidade LGPD/GDPR</li>
+            <li>Processos legais</li>
+            <li>Backup de registros importantes</li>
         </ul>
     </div>
 
     <div class="alert-box">
-        <h4>⚠️ Importante</h4>
-        <p>Logs são mantidos por 90 dias. Após esse período, são arquivados automaticamente.</p>
+        <h4>🔒 Destaque: Imutabilidade</h4>
+        <p>Os logs de auditoria são gerados automaticamente pelo sistema e <strong>não podem ser editados</strong> pelos operadores.</p>
+        <ul>
+            <li>Garante autenticidade das informações</li>
+            <li>Nem administradores podem alterar logs</li>
+            <li>Timestamp criptograficamente assinado</li>
+            <li>Conformidade com normas de auditoria</li>
+            <li>Prova legal em disputas</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>Ações Registradas Automaticamente</h3>
+        
+        <h4>Módulo Vendas</h4>
+        <ul>
+            <li>Criação, edição, exclusão de Leads</li>
+            <li>Criação, edição, exclusão de Negócios</li>
+            <li>Mudança de etapa no pipeline</li>
+            <li>Alteração de valores</li>
+            <li>Atribuição a operadores</li>
+        </ul>
+        
+        <h4>Módulo Atendimento</h4>
+        <ul>
+            <li>Envio de campanhas</li>
+            <li>Criação de templates</li>
+            <li>Transferências de conversas</li>
+            <li>Encerramento de atendimentos</li>
+        </ul>
+        
+        <h4>Módulo Equipes</h4>
+        <ul>
+            <li>Criação de operadores</li>
+            <li>Alteração de permissões</li>
+            <li>Mudança de funções</li>
+            <li>Desativação de usuários</li>
+        </ul>
+        
+        <h4>Módulo Sistema</h4>
+        <ul>
+            <li>Alterações em configurações</li>
+            <li>Conexão/desconexão de WhatsApp</li>
+            <li>Criação de tabulações</li>
+            <li>Modificação de variáveis</li>
+        </ul>
+        
+        <h4>Segurança</h4>
+        <ul>
+            <li>Login bem-sucedido</li>
+            <li>Tentativas de login falhadas</li>
+            <li>Logout (manual ou automático)</li>
+            <li>Alteração de senha</li>
+            <li>Exportação de dados</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li><strong>Revisão Regular:</strong> Verifica logs semanalmente para identificar anomalias</li>
+            <li><strong>Investigação Rápida:</strong> Usa filtros para encontrar informações rapidamente</li>
+            <li><strong>Backup:</strong> Exporta logs importantes mensalmente</li>
+            <li><strong>Treinamento:</strong> Ensina equipa que ações são rastreadas</li>
+            <li><strong>Transparência:</strong> Informa operadores sobre auditoria (reduz má conduta)</li>
+            <li><strong>Conformidade:</strong> Mantém logs por período legal exigido (geralmente 5 anos)</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Retenção de Dados</h4>
+        <ul>
+            <li>Logs são mantidos por <strong>90 dias</strong> no sistema ativo</li>
+            <li>Após 90 dias, são arquivados automaticamente</li>
+            <li>Logs arquivados podem ser recuperados mediante solicitação</li>
+            <li>Exporta logs importantes antes do arquivamento</li>
+            <li>Conformidade LGPD: Dados podem ser solicitados por titulares</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="sistema-configuracoes">
+            Próximo: Configurações
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>

@@ -5,40 +5,278 @@
 </div>
 
 <div class="module-header">
-    <div class="module-icon">🏢</div>
+    <div class="module-icon">
+        <i data-lucide="building-2"></i>
+    </div>
     <h1>Setores</h1>
     <p class="module-description">
-        Organize equipe em departamentos
+        Divisão lógica da empresa por departamentos
     </p>
 </div>
 
 <div class="content-text">
     <h2>O que são Setores?</h2>
     <p>
-        Setores permitem organizar operadores em departamentos (Vendas, Suporte, Financeiro, etc) 
-        para melhor distribuição de atendimentos e relatórios segmentados.
+        É a divisão lógica da tua empresa. Os setores permitem organizar operadores por departamentos 
+        (ex: Comercial, Suporte, Financeiro) ou por unidades de serviço (ex: Cabeleireiro, Manicure). 
+        Isto facilita a transferência de chamadas, a organização da agenda e a distribuição inteligente 
+        de atendimentos entre a tua equipa.
     </p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="card-icon">🎯</div>
+            <h3>Organização Clara</h3>
+            <p>Estrutura por departamentos</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🔄</div>
+            <h3>Transferências</h3>
+            <p>Direcionamento automático</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">⏰</div>
+            <h3>Expediente</h3>
+            <p>Horários personalizados</p>
+        </div>
+    </div>
 
     <h2>Como Utilizar</h2>
     
     <div class="feature-section">
-        <h3>Criar Setor</h3>
+        <h3>1. Criar Novo Setor</h3>
+        <p>Clica em <strong>"+ Novo Setor"</strong> e configura:</p>
         <ol class="step-list">
-            <li>Acesse <strong>Equipes</strong> → <strong>Setores</strong></li>
-            <li>Clique em <strong>"+ Novo Setor"</strong></li>
-            <li>Defina nome e descrição</li>
-            <li>Adicione operadores ao setor</li>
-            <li>Configure horário de funcionamento</li>
+            <li><strong>Nome do Setor:</strong>
+                <ul>
+                    <li>Define um nome claro (ex: "Comercial", "Suporte Técnico")</li>
+                    <li>Pode ser por departamento ou por serviço</li>
+                    <li>Exemplos: "Manicure Maria", "Cabeleireiro João"</li>
+                </ul>
+            </li>
+            <li><strong>Descrição:</strong>
+                <ul>
+                    <li>Breve explicação do que este setor faz</li>
+                    <li>Ajuda na organização interna</li>
+                    <li>Exemplo: "Responsável por vendas B2B"</li>
+                </ul>
+            </li>
+            <li><strong>Cor de Identificação (opcional):</strong>
+                <ul>
+                    <li>Escolhe uma cor para visualização rápida</li>
+                    <li>Aparece na agenda e relatórios</li>
+                </ul>
+            </li>
         </ol>
     </div>
 
     <div class="feature-section">
-        <h3>Benefícios</h3>
+        <h3>2. Configurar Frase Padrão</h3>
+        <p>Podes configurar uma mensagem automática que o cliente recebe sempre que for transferido para este setor:</p>
         <ul>
-            <li>Transferência automática entre setores</li>
-            <li>Relatórios por departamento</li>
-            <li>Metas específicas por setor</li>
-            <li>Horários de atendimento diferentes</li>
+            <li><strong>Exemplo 1:</strong> "Aguarde um momento, estamos a transferi-lo para a nossa equipa Comercial"</li>
+            <li><strong>Exemplo 2:</strong> "Você será atendido pela nossa equipa de Suporte Técnico em instantes"</li>
+            <li><strong>Exemplo 3:</strong> "Transferindo para o setor Financeiro. Aguarde, por favor"</li>
         </ul>
+        <p>Esta mensagem é enviada automaticamente via WhatsApp quando:</p>
+        <ul>
+            <li>Um operador transfere a conversa manualmente</li>
+            <li>O Chatbot direciona para um setor específico</li>
+            <li>Um Agente IA identifica a necessidade de transferência</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>3. Vincular Funcionários ao Setor</h3>
+        <p>Após salvar o setor, podes vincular quais operadores (funcionários) pertencem a ele:</p>
+        
+        <h4>Como Adicionar Funcionários</h4>
+        <ol class="step-list">
+            <li>Na tabela principal, clique no setor desejado</li>
+            <li>Acesse a aba <strong>"Funcionários"</strong></li>
+            <li>Clique em <strong>"+ Adicionar Funcionário"</strong></li>
+            <li>Selecione os operadores da lista</li>
+            <li>Confirme a adição</li>
+        </ol>
+        
+        <h4>Visualização na Tabela</h4>
+        <ul>
+            <li>A coluna <strong>"Funcionários"</strong> mostra quantos operadores estão em cada setor</li>
+            <li>Clique no número para ver lista completa</li>
+            <li>Um operador pode pertencer a múltiplos setores</li>
+        </ul>
+        
+        <h4>Benefícios da Vinculação</h4>
+        <ul>
+            <li><strong>Agenda:</strong> Operador aparece apenas nos setores vinculados</li>
+            <li><strong>Atendimento:</strong> Recebe apenas conversas do seu setor</li>
+            <li><strong>Relatórios:</strong> Métricas segmentadas por setor</li>
+            <li><strong>Transferências:</strong> Sistema sabe para quem direcionar</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>4. Configurações de Expediente</h3>
+        <p>O sistema permite definir o horário de funcionamento de cada setor, garantindo que os agendamentos 
+        respeitem as horas de trabalho:</p>
+        
+        <h4>Configurar Horário</h4>
+        <ol class="step-list">
+            <li>Clique no menu <strong>"..."</strong> do setor</li>
+            <li>Selecione <strong>"Configurar Expediente"</strong></li>
+            <li>Defina horários para cada dia da semana:
+                <ul>
+                    <li><strong>Segunda a Sexta:</strong> 09:00 - 18:00</li>
+                    <li><strong>Sábado:</strong> 09:00 - 13:00</li>
+                    <li><strong>Domingo:</strong> Fechado</li>
+                </ul>
+            </li>
+            <li>Marque dias de folga ou feriados</li>
+            <li>Salve as configurações</li>
+        </ol>
+        
+        <h4>Impacto no Sistema</h4>
+        <ul>
+            <li><strong>Agenda:</strong> Bloqueia horários fora do expediente</li>
+            <li><strong>Chatbot:</strong> Informa horário de funcionamento automaticamente</li>
+            <li><strong>Campanhas:</strong> Respeita horários para disparos</li>
+            <li><strong>Relatórios:</strong> Calcula produtividade baseado no expediente</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>5. Gestão de Status</h3>
+        <p>Podes ativar ou desativar um setor inteiro através do botão de switch (ligar/desligar) na tabela principal:</p>
+        
+        <h4>Setor Ativo (🟢)</h4>
+        <ul>
+            <li>Recebe novos atendimentos</li>
+            <li>Aparece nas opções de transferência</li>
+            <li>Visível na agenda</li>
+            <li>Chatbot pode direcionar para ele</li>
+        </ul>
+        
+        <h4>Setor Inativo (⚪)</h4>
+        <ul>
+            <li>Não recebe novos atendimentos</li>
+            <li>Oculto nas opções de transferência</li>
+            <li>Não aparece na agenda</li>
+            <li>Útil para setores temporários ou sazonais</li>
+            <li>Mantém histórico de atendimentos anteriores</li>
+        </ul>
+    </div>
+
+    <div class="feature-section">
+        <h3>6. Ações de Gestão</h3>
+        <p>No menu <strong>"..."</strong> de cada setor:</p>
+        
+        <h4>Editar Setor</h4>
+        <ul>
+            <li>Alterar nome, descrição ou frase padrão</li>
+            <li>Modificar cor de identificação</li>
+            <li>Ajustar configurações gerais</li>
+        </ul>
+        
+        <h4>Ver Funcionários</h4>
+        <ul>
+            <li>Lista completa de operadores vinculados</li>
+            <li>Status de cada funcionário (Online/Offline)</li>
+            <li>Remover ou adicionar membros</li>
+        </ul>
+        
+        <h4>Configurar Expediente</h4>
+        <ul>
+            <li>Definir horários de funcionamento</li>
+            <li>Marcar feriados e folgas</li>
+            <li>Configurar intervalos</li>
+        </ul>
+        
+        <h4>Ver Estatísticas</h4>
+        <ul>
+            <li>Total de atendimentos do setor</li>
+            <li>Tempo médio de resposta</li>
+            <li>Taxa de resolução</li>
+            <li>Agendamentos realizados</li>
+        </ul>
+        
+        <h4>Excluir Setor</h4>
+        <ul>
+            <li>Remove o setor do sistema</li>
+            <li>Requer confirmação de segurança</li>
+            <li>Não pode excluir se houver funcionários vinculados</li>
+            <li>Histórico de atendimentos é mantido</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Dica: Uso com Chatbot e Agentes IA</h4>
+        <p>Organizar por setores é a melhor forma de usar o <strong>Chatbot</strong> ou os <strong>Agentes IA</strong> 
+        para direcionar o cliente para a pessoa certa de forma automática.</p>
+        <ul>
+            <li><strong>Exemplo 1:</strong> Cliente pergunta sobre vendas → Chatbot transfere para setor "Comercial"</li>
+            <li><strong>Exemplo 2:</strong> Cliente relata problema → Agente IA identifica e transfere para "Suporte"</li>
+            <li><strong>Exemplo 3:</strong> Cliente quer agendar → Sistema direciona para setor específico do serviço</li>
+        </ul>
+        <p>Quanto melhor organizados os setores, mais eficiente será a automação!</p>
+    </div>
+
+    <div class="feature-section">
+        <h3>Exemplos de Estruturas de Setores</h3>
+        
+        <h4>Empresa de Serviços</h4>
+        <ul>
+            <li><strong>Comercial:</strong> Vendas e prospecção</li>
+            <li><strong>Suporte:</strong> Atendimento pós-venda</li>
+            <li><strong>Financeiro:</strong> Cobranças e pagamentos</li>
+            <li><strong>Projetos:</strong> Gestão de entregas</li>
+        </ul>
+        
+        <h4>Salão de Beleza</h4>
+        <ul>
+            <li><strong>Cabeleireiro João:</strong> Cortes e coloração</li>
+            <li><strong>Manicure Maria:</strong> Unhas e design</li>
+            <li><strong>Estética Ana:</strong> Tratamentos faciais</li>
+            <li><strong>Recepção:</strong> Agendamentos gerais</li>
+        </ul>
+        
+        <h4>Clínica Médica</h4>
+        <ul>
+            <li><strong>Clínico Geral:</strong> Consultas gerais</li>
+            <li><strong>Pediatria:</strong> Atendimento infantil</li>
+            <li><strong>Ortopedia:</strong> Especialidade</li>
+            <li><strong>Exames:</strong> Laboratório e imagem</li>
+        </ul>
+    </div>
+
+    <div class="alert-box">
+        <h4>⚠️ Importante</h4>
+        <ul>
+            <li>Um operador pode pertencer a múltiplos setores</li>
+            <li>Setores inativos não aparecem para clientes</li>
+            <li>Frase padrão é enviada automaticamente em transferências</li>
+            <li>Expediente afeta disponibilidade na agenda</li>
+            <li>Não exclua setores com histórico importante</li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h4>💡 Boas Práticas</h4>
+        <ul>
+            <li><strong>Nomes Claros:</strong> Use nomes que clientes e equipe entendam facilmente</li>
+            <li><strong>Frase Padrão:</strong> Sempre configure para melhorar experiência do cliente</li>
+            <li><strong>Expediente Realista:</strong> Configure horários reais de funcionamento</li>
+            <li><strong>Revisão Mensal:</strong> Verifique se a estrutura ainda faz sentido</li>
+            <li><strong>Estatísticas:</strong> Use dados para identificar setores sobrecarregados</li>
+            <li><strong>Integração:</strong> Conecte setores com Chatbot para automação máxima</li>
+        </ul>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="btn-nav" data-next="sistema-config-whatsapp">
+            Próximo: Sistema
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </div>
 </div>
