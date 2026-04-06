@@ -240,9 +240,12 @@ body {
 }
 
 .nav-item svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     flex-shrink: 0;
+    stroke-width: 1.5;
 }
 
 /* Dropdown */
@@ -818,34 +821,42 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 96px;
+    height: 96px;
     background: rgba(30, 58, 138, 0.1);
     border-radius: 16px;
     margin-bottom: var(--spacing-lg);
+    padding: 20px;
+    flex-shrink: 0;
 }
 
 .hero-icon-svg {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
     color: var(--color-accent-hover);
+    stroke-width: 1.5;
+    flex-shrink: 0;
 }
 
 .card-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     background: rgba(30, 58, 138, 0.1);
     border-radius: 12px;
     margin-bottom: var(--spacing-md);
+    padding: 14px;
+    flex-shrink: 0;
 }
 
 .card-icon i {
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     color: var(--color-accent-hover);
+    stroke-width: 1.5;
+    flex-shrink: 0;
 }
 
 .module-icon,
@@ -853,24 +864,31 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     background: rgba(30, 58, 138, 0.1);
     border-radius: 14px;
     margin-bottom: var(--spacing-md);
+    padding: 16px;
+    flex-shrink: 0;
 }
 
 .module-icon i,
 .document-icon i {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     color: var(--color-accent-hover);
+    stroke-width: 1.5;
+    flex-shrink: 0;
 }
 
 /* Ícones nos botões de feedback */
 .btn-feedback i {
     width: 20px;
     height: 20px;
+    color: var(--color-text);
+    stroke-width: 1.5;
+    flex-shrink: 0;
 }
 
 /* ========================================
