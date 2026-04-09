@@ -16,6 +16,17 @@ const PAGE_MAP = {
     // Páginas principais
     'conheca': 'conheca.html',
     
+    // Módulos
+    'modulo-dashboard': 'modulos/dashboard.html',
+    'modulo-agenda': 'modulos/agenda.html',
+    'modulo-vendas': 'modulos/vendas.html',
+    'modulo-projetos': 'modulos/projetos.html',
+    'modulo-atendimento': 'modulos/atendimento.html',
+    'modulo-inteligencia': 'modulos/inteligencia.html',
+    'modulo-equipe': 'modulos/equipe.html',
+    'modulo-sistema': 'modulos/sistema.html',
+    'modulo-financeiro': 'modulos/financeiro.html',
+    
     // Dashboard
     'dashboard': 'dashboard/dashboard.html',
     'dashboard-financeiro': 'dashboard/financeiro.html',
