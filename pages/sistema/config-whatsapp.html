@@ -1,5 +1,5 @@
 <div class="breadcrumb">
-    <a href="#sistema">Sistema</a>
+    <a href="#modulo-sistema">Sistema</a>
     <span>/</span>
     <span>Config. WhatsApp</span>
 </div>
@@ -29,7 +29,7 @@
             <p>Conecte vários números simultaneamente</p>
         </div>
         <div class="info-card">
-            <div class="card-icon">🤖</div>
+            <div class="card-icon"><i data-lucide="bot"></i></div>
             <h3>Automação</h3>
             <p>Vincule a Chatbots e Agentes IA</p>
         </div>
@@ -135,9 +135,9 @@
         
         <h4>Status de Conexão</h4>
         <ul>
-            <li><strong>🟢 Conectado:</strong> Instância ativa e funcional</li>
-            <li><strong>🟡 Conectando:</strong> Aguardando leitura do QR Code</li>
-            <li><strong>🔴 Desconectado:</strong> Conexão perdida ou inativa</li>
+            <li><strong><i data-lucide="circle-dot" style="color: #22C55E;"></i> Conectado:</strong> Instância ativa e funcional</li>
+            <li><strong><i data-lucide="circle-dot" style="color: #F59E0B;"></i> Conectando:</strong> Aguardando leitura do QR Code</li>
+            <li><strong><i data-lucide="circle-dot" style="color: #EF4444;"></i> Desconectado:</strong> Conexão perdida ou inativa</li>
             <li><strong><i data-lucide="alert-triangle"></i> Erro:</strong> Problema na configuração</li>
         </ul>
         
@@ -209,7 +209,7 @@
         <ul>
             <li><strong>Nome:</strong> Identificador da instância</li>
             <li><strong>Número:</strong> Telefone conectado</li>
-            <li><strong>Status:</strong> Estado da conexão (🟢🟡🔴)</li>
+            <li><strong>Status:</strong> Estado da conexão (ativo/conectando/desconectado)</li>
             <li><strong>Provedor:</strong> API utilizada</li>
             <li><strong>Criado em:</strong> Data de criação</li>
             <li><strong>Ações:</strong> Menu com opções</li>
@@ -226,7 +226,7 @@
     </div>
 
     <div class="alert-box">
-        <h4><i data-lucide="alert-triangle"></i> Importante</h4>
+        <h4><i data-lucide="alert-triangle" style="width: 16px; height: 16px; display: inline; vertical-align: text-bottom; margin-right: 8px;"></i> Importante</h4>
         <ul>
             <li>Cada número só pode estar conectado em um sistema por vez</li>
             <li>Não desconectes durante campanhas ativas (pode causar falhas)</li>
@@ -237,7 +237,7 @@
     </div>
 
     <div class="tips-box">
-        <h4><i data-lucide="lightbulb"></i> Boas Práticas</h4>
+        <h4><i data-lucide="lightbulb" style="width: 16px; height: 16px; display: inline; vertical-align: text-bottom; margin-right: 8px;"></i> Boas Práticas</h4>
         <ul>
             <li><strong>Nomes Claros:</strong> Use nomes que identifiquem o propósito (ex: vendas-principal, suporte-24h)</li>
             <li><strong>Múltiplas Instâncias:</strong> Separe por departamento ou função</li>
@@ -267,7 +267,7 @@
         
         <h4>Mensagens não enviam</h4>
         <ul>
-            <li>Verifica status da conexão (deve estar 🟢)</li>
+            <li>Verifica status da conexão (deve estar ativo (verde))</li>
             <li>Consulta logs webhook para erros específicos</li>
             <li>Confirma que o número não foi bloqueado pelo WhatsApp</li>
         </ul>

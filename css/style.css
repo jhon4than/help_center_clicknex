@@ -1288,3 +1288,77 @@ html {
     background: #eff6ff;
     transform: translateY(-1px);
 }
+
+/* ========================================
+   FIX: ÍCONES EM TÍTULOS
+   ======================================== */
+h1 [data-lucide],
+h2 [data-lucide],
+h3 [data-lucide],
+h4 [data-lucide],
+h5 [data-lucide],
+h6 [data-lucide] {
+    display: inline !important;
+    vertical-align: text-bottom !important;
+    margin-right: 8px !important;
+}
+
+/* ========================================
+   METHOD ICON - ÍCONE + TEXTO NA MESMA LINHA
+   ======================================== */
+.method-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.method-icon i {
+    width: 24px;
+    height: 24px;
+    color: var(--color-accent-hover);
+    flex-shrink: 0;
+}
+
+/* ========================================
+   REQ ICON - ÍCONE + TEXTO EM CARDS DE REQUISITOS
+   ======================================== */
+.req-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.req-icon i {
+    width: 24px;
+    height: 24px;
+    color: var(--color-accent-hover);
+    flex-shrink: 0;
+}
+
+/* ========================================
+   FEATURE ICON - ÍCONE + TEXTO NA MESMA LINHA
+   ======================================== */
+.feature-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-icon i {
+    width: 24px;
+    height: 24px;
+    color: var(--color-accent-hover);
+    flex-shrink: 0;
+}
